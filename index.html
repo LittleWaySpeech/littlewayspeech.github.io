@@ -264,9 +264,15 @@
   </form>
 </section>
   
-  <footer>
-    <p>© 2026 Little Way Speech Therapy</p>
-  </footer>
+<footer>
+  <p>© <span id="year"></span> Little Way Speech Therapy</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
 </div>
 
