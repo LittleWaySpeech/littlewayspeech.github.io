@@ -7,115 +7,170 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #ba82af;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 10px;
-    }
+  
+<style>
+  body {
+    background-color: #ba82af;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+  }
 
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #7a5c7a;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tagline {
+    font-size: 22px;
+    color: #5a3e5c;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .subtle-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .subtle-link:hover {
+    text-decoration: underline;
+  }
+
+  h2 {
+    text-align: left;
+    color: #7a5c7a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  #contact {
+    margin-top: 30px;
+    padding: 0;
+    text-align: left;
+  }
+
+  #contact h2 {
+    margin-bottom: 10px;
+  }
+
+  #contact p {
+    margin-bottom: 20px;
+  }
+
+  #contact form {
+    text-align: left;
+  }
+
+  #contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  #contact textarea {
+    resize: vertical;
+  }
+
+  #contact button {
+    background-color: #5a3e85;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #contact button:hover {
+    opacity: 0.9;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
     .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
+      padding: 20px;
     }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 48px;
-      margin-bottom: 5px;
-      color: #7a5c7a;
+      font-size: 38px;
     }
 
-    .logo {
-      max-width: 200px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    
     .tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 22px;
-  color: #5a3e5c; /* dark purple */
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-    .subtle-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.subtle-link:hover {
-  text-decoration: underline;
-}
-
-    h2 {
-      text-align: left;
-      color: #7a5c7a;
-      margin-top: 30px;
+      font-size: 18px;
     }
 
-    ul, p {
-      text-align: left;
+    #contact button {
+      width: 100%;
     }
-
-#contact {
-  max-width: 30px;
-  padding: 0;
-  text-align: left;
-}
-
-#contact h2 {
-  margin-bottom: 10px;
-}
-
-#contact p {
-  margin-bottom: 20px;
-}
-
-#contact input,
-#contact textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-#contact button {
-  background-color: #5a3e85; /* soft dark purple */
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#contact button:hover {
-  opacity: 0.9;
-}
-
-#contact form {
-  text-align: left;
-}
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
@@ -137,6 +192,7 @@
     Kathleen 'Kat' Winger, M.S., CCC-SLP</a>, in San Diego, California.
 </p>
 
+<p>
   Little Way Speech Therapy is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s ‘Little Way,’ this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
 </p>
 
