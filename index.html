@@ -144,12 +144,23 @@
     opacity: 0.9;
   }
 
-.contact-note {
-  margin-top: 16px;
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.5;
-}  
+/* Success message hidden by default */
+.contact-success {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background-color: #f3edf7;
+  border: 1px solid #d9cbe3;
+  color: #4e3b5f;
+  font-weight: 500;
+}
+
+/* Show only after redirect to #contact-success */
+#contact-success:target {
+  display: block;
+}
   
   footer {
     text-align: center;
@@ -247,6 +258,10 @@
   in San Marcos, California, as a clinical education site for graduate student clinicians.  Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits.  To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.  Parents and caregivers maintain the right to limit or decline student involvement.  Student clinicians are not involved with Independent Educational Evaluations (IEEs).
 </p>
 
+Best fix: move the success message ABOVE the privacy note
+
+Use this order instead:
+
 <section id="contact">
   <h2>Contact</h2>
   <p>
@@ -254,12 +269,12 @@
   </p>
 
   <form
-    action="https://formspree.io/f/mgopnkok"
+    action="https://formspree.io/f/xxxxabcd"
     method="POST"
     autocomplete="on"
     class="contact-form"
   >
-    <input type="hidden" name="_subject" value="New Inquiry – Little Way Speech Therapy">
+    <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
     <input type="hidden" name="_next" value="https://littlewayspeech.com/#contact-success">
     <input type="text" name="_gotcha" style="display:none">
 
@@ -275,13 +290,15 @@
     <button type="submit">Send Message</button>
   </form>
 
-  <p class="contact-note">
-    Please do not include sensitive medical or confidential information in this form.
-  </p>
-
+  <!-- Success message goes HERE -->
   <div id="contact-success" class="contact-success">
     Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
   </div>
+
+  <!-- Privacy note goes AFTER -->
+  <p class="contact-note">
+    Please do not include sensitive medical or confidential information in this form.
+  </p>
 </section>
   
 <footer>
