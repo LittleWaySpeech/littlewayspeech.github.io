@@ -10,8 +10,7 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-  
+ 
 <style>
   body {
     background-color: #ba82af;
@@ -145,6 +144,13 @@
     opacity: 0.9;
   }
 
+.contact-note {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}  
+  
   footer {
     text-align: center;
     margin-top: 30px;
@@ -241,24 +247,41 @@
   in San Marcos, California, as a clinical education site for graduate student clinicians.  Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits.  To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.  Parents and caregivers maintain the right to limit or decline student involvement.  Student clinicians are not involved with Independent Educational Evaluations (IEEs).
 </p>
 
-  <section id="contact">
+<section id="contact">
   <h2>Contact</h2>
-<p>
+  <p>
     To inquire about services, availability, or scheduling, please complete the form below.
-</p>
+  </p>
 
-  <form action="mailto:info@littlewayspeech.com" method="post" enctype="text/plain">
-    <label for="name">Name</label><br>
-    <input type="text" id="name" name="Name" required><br><br>
+  <form
+    action="https://formspree.io/f/mgopnkok"
+    method="POST"
+    autocomplete="on"
+    class="contact-form"
+  >
+    <input type="hidden" name="_subject" value="New Inquiry – Little Way Speech Therapy">
+    <input type="hidden" name="_next" value="https://littlewayspeech.com/#contact-success">
+    <input type="text" name="_gotcha" style="display:none">
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="Email" required><br><br>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" autocomplete="name" required>
 
-    <label for="message">Message</label><br>
-    <textarea id="message" name="Message" rows="5" required></textarea><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
 
     <button type="submit">Send Message</button>
   </form>
+
+  <p class="contact-note">
+    Please do not include sensitive medical or confidential information in this form.
+  </p>
+
+  <div id="contact-success" class="contact-success">
+    Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
+  </div>
 </section>
   
 <footer>
