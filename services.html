@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Little Way Speech Therapy</title>
 
   <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
 
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,8 +29,7 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "City", "name": "San Diego" },
-
+      { "@type": "City", "name": "San Diego" }
     ],
     "serviceType": [
       "Early Intervention Speech Therapy",
@@ -37,15 +44,17 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
-  <!-- Top centered logo -->
+  <!-- Top Logo -->
   <div class="top-logo">
     <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-left">
       <div class="title-group">
@@ -63,44 +72,90 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
-    <h2>Services</h2>
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Services</h2>
+      <p>
+        Individualized speech and language services designed to support children and families across San Diego County.
+      </p>
 
-    <ul>
-      <li>
-        Early Start services through the
-        <a href="https://www.sdrc.org/services/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-          San Diego Regional Center
-        </a>
-      </li>
-      <li>
-        <a href="https://www.cde.ca.gov/sp/se/qa/pssummary.asp" target="_blank" rel="noopener noreferrer" class="subtle-link">
-          Independent Educational Evaluations (IEEs)
-        </a>
-      </li>
-    </ul>
+      <a href="contact.html" class="cta-button">Request Services</a>
+    </section>
 
-    <h2>Early Start</h2>
-    <p>
-      After you are approved for speech therapy services through the San Diego Regional Center, you may request Little Way Speech Therapy as your vendor. Services are limited to select zip codes in San Diego County, so please use the contact form to find out if your home is in range.
-    </p>
+    <!-- SERVICES OVERVIEW -->
+    <section class="card">
+      <h2>Services Offered</h2>
 
-    <h2>What is an IEE?</h2>
-    <p>
-      An Independent Educational Evaluation is a second opinion regarding your child’s need for special education services in school. It is a comprehensive evaluation done at a parent's request following an IEP evaluation, either because a child is denied for special education services or because the services approved are judged by the parent to be inadequate. Under federal law, parents are entitled to an IEE for their child.
-    </p>
+      <ul>
+        <li>
+          Early Start services through the
+          <a href="https://www.sdrc.org/services/" target="_blank" rel="noopener noreferrer" class="subtle-link">
+            San Diego Regional Center
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cde.ca.gov/sp/se/qa/pssummary.asp" target="_blank" rel="noopener noreferrer" class="subtle-link">
+            Independent Educational Evaluations (IEEs)
+          </a>
+        </li>
+      </ul>
+    </section>
 
-    <p>
-      You may request that your child’s IEE be completed by Little Way Speech Therapy, even if the practice is not listed as a preferred provider by your school district.
-    </p>
+    <!-- EARLY START -->
+    <section class="card">
+      <h2>Early Start Services</h2>
 
-    <footer>
-      <p>© <span id="year"></span> Little Way Speech Therapy</p>
-    </footer>
+      <p>
+        After you are approved for speech therapy services through the San Diego Regional Center, you may request Little Way Speech Therapy as your vendor.
+      </p>
 
-  </div>
+      <p>
+        Services are limited to select zip codes in San Diego County. Please use the contact form to confirm whether your home is within the service area.
+      </p>
+    </section>
 
+    <!-- IEE -->
+    <section class="card">
+      <h2>What is an Independent Educational Evaluation (IEE)?</h2>
+
+      <p>
+        An Independent Educational Evaluation (IEE) is a second opinion regarding your child’s need for special education services in school.
+      </p>
+
+      <p>
+        It is a comprehensive evaluation requested by a parent following an IEP evaluation, either because services were denied or because the approved services are felt to be insufficient.
+      </p>
+
+      <p>
+        Under federal law, parents are entitled to request an IEE for their child.
+      </p>
+
+      <p>
+        You may request that your child’s IEE be completed by Little Way Speech Therapy, even if the practice is not listed as a preferred provider by your school district.
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="card">
+      <h2>Get Started</h2>
+      <p>
+        If you have questions about services or would like to begin the process, please reach out using the contact form.
+      </p>
+
+      <a href="contact.html" class="cta-button">Contact</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
+
+  <!-- Dynamic Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
