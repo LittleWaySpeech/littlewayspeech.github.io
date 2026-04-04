@@ -22,8 +22,7 @@ body {
 
 .logo {
   display: block;
-  width: 120px;        /* smaller fixed size */
-  max-width: 120px;
+  width: 100px;          /* adjust this smaller if needed */
   height: auto;
   margin: 20px auto;
 }
