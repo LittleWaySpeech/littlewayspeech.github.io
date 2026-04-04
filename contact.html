@@ -10,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Little Way Speech Therapy</title>
-
-  <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
+  <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and school evaluations.">
 
   <!-- SEO Schema -->
   <script type="application/ld+json">
@@ -45,6 +44,201 @@
   }
   </script>
 
+  <!-- Styles (can also move to a separate CSS file) -->
+  <style>
+    :root {
+      --bg: #fffaf7;
+      --text: #4a3f35;
+      --primary: #7a5c58;
+      --primary-dark: #5f4642;
+      --accent: #5e4b8b;
+      --accent-light: #7a6a9a;
+      --header-bg: #f3e8ff;
+      --border-light: #e5d4f5;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Logo */
+    .top-logo img {
+      width: 80px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      max-width: 900px;
+      margin: 10px auto 20px;
+      background-color: var(--header-bg);
+      border-bottom: 1px solid var(--border-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .title-group h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 0;
+      color: var(--accent);
+    }
+
+    .title-group .tagline {
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-top: 2px;
+      color: var(--accent-light);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: var(--primary);
+      margin-left: 18px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .navbar a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* HERO */
+    .hero {
+      margin-bottom: 40px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .cta-button:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Card */
+    .card {
+      background-color: #fff;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .subtle-link {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .subtle-link:hover {
+      color: var(--primary-dark);
+    }
+
+    .profile-pic {
+      display: block;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      margin: 20px auto 0;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px 0;
+      font-size: 0.95rem;
+      color: #8b6f6a;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .site-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-left {
+        flex-direction: column;
+      }
+      .navbar a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .hero p, .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -75,14 +269,13 @@
   <!-- MAIN CONTENT -->
   <main class="container">
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="hero">
-      <h2>Compassionate Speech Therapy for Young Learners</h2>
+      <h2>Speech-Language Therapy from the Comfort of Home</h2>
       <p>
-        Supporting children and families through meaningful communication, connection, and individualized care.
+        Home Health Intervention and School Evaluation Services
       </p>
-
-      <a href="#contact" class="cta-button">Schedule a Consultation</a>
+      <a href="contact.html" class="cta-button">Schedule a Consultation</a>
     </section>
 
     <!-- CONTACT CARD -->
