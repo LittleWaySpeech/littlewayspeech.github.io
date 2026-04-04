@@ -20,6 +20,24 @@ body {
   height: auto;
 }
 
+.logo {
+  display: block;
+  width: 120px;        /* smaller fixed size */
+  max-width: 120px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.profile-pic {
+  display: block;
+  width: 160px;        /* smaller fixed size */
+  max-width: 160px;
+  height: auto;
+  margin: 30px auto 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 /* Main site title */
 h1 {
   font-family: 'Great Vibes', cursive;
