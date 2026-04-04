@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--bg);
+  background-color: #f8f1ff;
   color: var(--text);
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -52,7 +52,7 @@ section {
 }
 
 .top-logo img {
-  width: 65px;           /* MAIN FIX: controls size */
+  width: 80px;           /* MAIN FIX: controls size */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -98,7 +98,7 @@ section {
 }
 
 .logo {
-  width: 70px;
+  width: 80px;
 }
 
 .hero {
