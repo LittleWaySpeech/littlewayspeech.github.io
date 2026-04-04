@@ -240,6 +240,11 @@ footer p {
     width: 100%;
   }
 
+  .container img {
+  max-width: 100%;
+  height: auto;
+  }
+
   .profile-pic {
   display: block;
   width: 100%;
