@@ -99,11 +99,12 @@ p {
 /* Profile photo */
 .profile-pic {
   display: block;
-  width: 100%;
-  max-width: 220px;
-  height: auto;
+  width: 160px;
+  max-width: 160px;
+  height: 160px;          /* make height equal to width */
+  object-fit: cover;      /* prevents stretching/cropping issues */
   margin: 30px auto 20px auto;
-  border-radius: 12px;
+  border-radius: 50%;     /* makes it a perfect circle */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
