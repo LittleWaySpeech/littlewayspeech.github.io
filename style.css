@@ -15,7 +15,7 @@ body {
 }
 
 /* Keep all images inside page width */
-.container img {
+.container img:not(.logo) {
   max-width: 100%;
   height: auto;
 }
