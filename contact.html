@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Little Way Speech Therapy</title>
+  <meta name="description" content="Contact Little Way Speech Therapy for services, availability, or scheduling.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Little Way Speech Therapy</h1>
+
+  <img src="logo.jpg" alt="Little Way Speech Therapy logo" class="logo">
+
+  <p class="tagline">Nurturing Communication with Care</p>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      To inquire about services, availability, or scheduling, please complete the form below.
+    </p>
+
+    <form
+      action="https://formspree.io/f/mgopnkok"
+      method="POST"
+      autocomplete="on"
+      class="contact-form"
+    >
+      <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
+      <input type="hidden" name="_next" value="https://littlewayspeech.com/contact.html#contact-success">
+      <input type="text" name="_gotcha" style="display:none">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="contact-success" class="contact-success">
+      Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
+    </div>
+
+    <p class="contact-note">
+      Please do not include sensitive medical or confidential information in this form.
+    </p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
