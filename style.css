@@ -152,7 +152,11 @@ footer {
     max-width: 140px;
   }
 
+@media (max-width: 600px) {
+  /* existing styles... */
+
   .profile-pic {
-    max-width: 180px;
+    width: 140px;
+    height: 140px;
   }
 }
