@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,51 +9,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+  <header class="site-header">
+    <div class="header-left">
+      <img src="logo.png" class="logo" alt="Little Way Speech Therapy logo">
+      <div class="title-group">
+        <h1>Little Way Speech Therapy</h1>
+        <p class="tagline">Nurturing Communication with Care</p>
+      </div>
+    </div>
 
-  <h1>Little Way Speech Therapy</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="students.html">Students</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <img src="logo.jpg" alt="Little Way Speech Therapy logo" class="logo">
+  <div class="container">
 
-  <p class="tagline">Nurturing Communication with Care</p>
+    <h2>Student Interns</h2>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="students.html">Students</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <p>
+      Little Way Speech Therapy partners with
+      <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
+        the University of St. Augustine for Health Sciences (USAHS)
+      </a>
+      in San Marcos, California, as a clinical education site for graduate student clinicians.
+    </p>
 
-  <h2>Student Interns</h2>
+    <p>
+      Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits. To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.
+    </p>
 
-  <p>
-    Little Way Speech Therapy partners with
-    <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-      the University of St. Augustine for Health Sciences (USAHS)
-    </a>
-    in San Marcos, California, as a clinical education site for graduate student clinicians.
-  </p>
+    <p>
+      Parents and caregivers maintain the right to limit or decline student involvement. Student clinicians are not involved with Independent Educational Evaluations (IEEs).
+    </p>
 
-  <p>
-    Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits. To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.
-  </p>
+    <footer>
+      <p>© <span id="year"></span> Little Way Speech Therapy</p>
+    </footer>
 
-  <p>
-    Parents and caregivers maintain the right to limit or decline student involvement. Student clinicians are not involved with Independent Educational Evaluations (IEEs).
-  </p>
+  </div>
 
-  <footer>
-    <p>© <span id="year"></span> Little Way Speech Therapy</p>
-  </footer>
-
-</div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
