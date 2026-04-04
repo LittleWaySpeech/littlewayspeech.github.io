@@ -63,14 +63,15 @@ section {
 /* Partner logo (school logo, etc.) */
 .partner-logo {
   text-align: center;
-  margin: 30px 0 10px;
+  margin: 10px;
 }
 
 .partner-logo img {
-  max-width: 100%;
+  max-width: 200px;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
   display: block;
-  opacity: 0.9;
 }
 
 /* =========================
