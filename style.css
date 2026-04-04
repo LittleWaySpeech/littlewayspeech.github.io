@@ -1,151 +1,158 @@
+body {
+  background-color: #ba82af;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
 
-  <title>Little Way Speech Therapy</title>
-  <meta name="description" content="Speech language therapy services located in San Diego California specializing in Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations aka IEEs.">
-</head>
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #7a5c7a;
+}
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
- 
-<style>
-  body {
-    background-color: #ba82af;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 10px;
-  }
+.logo {
+  max-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .container {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-  }
+.tagline {
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  color: #5a3e5c;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-  h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 48px;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #7a5c7a;
-  }
+.subtle-link {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .logo {
-    max-width: 200px;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.subtle-link:hover {
+  text-decoration: underline;
+}
 
-  .tagline {
-    font-family: 'Georgia', serif;
-    font-size: 22px;
-    color: #5a3e5c;
-    text-align: center;
-    font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+.navbar {
+  text-align: center;
+  margin: 10px 0 30px;
+}
 
-  .subtle-link {
-    color: inherit;
-    text-decoration: none;
-  }
+.navbar a {
+  display: inline-block;
+  margin: 6px 6px;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #6b4b6f;
+  font-weight: bold;
+  border: 1px solid #d8c2d8;
+  border-radius: 20px;
+  background-color: #faf7fb;
+  transition: 0.3s ease;
+}
 
-  .subtle-link:hover {
-    text-decoration: underline;
-  }
+.navbar a:hover {
+  background-color: #f3edf7;
+}
 
-  h2 {
-    text-align: left;
-    color: #7a5c7a;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
+h2 {
+  text-align: left;
+  color: #7a5c7a;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
-  p {
-    text-align: left;
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
+p {
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 
-  ul {
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
+ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 
-  li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
+li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
 
-  #contact {
-    margin-top: 30px;
-    padding: 0;
-    text-align: left;
-  }
+#contact {
+  margin-top: 30px;
+  padding: 0;
+  text-align: left;
+}
 
-  #contact h2 {
-    margin-bottom: 10px;
-  }
+#contact h2 {
+  margin-bottom: 10px;
+}
 
-  #contact p {
-    margin-bottom: 20px;
-  }
+#contact p {
+  margin-bottom: 20px;
+}
 
-  #contact form {
-    text-align: left;
-  }
+#contact form {
+  text-align: left;
+}
 
-  #contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: normal;
-  }
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
 
-  #contact input,
-  #contact textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
+#contact input,
+#contact textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
-  #contact textarea {
-    resize: vertical;
-  }
+#contact textarea {
+  resize: vertical;
+}
 
-  #contact button {
-    background-color: #5a3e85;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+#contact button {
+  background-color: #5a3e85;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  #contact button:hover {
-    opacity: 0.9;
-  }
+#contact button:hover {
+  opacity: 0.9;
+}
 
 /* Success message hidden by default */
 .contact-success {
@@ -165,17 +172,18 @@
   display: block;
 }
 
-  .contact-note {
+.contact-note {
   margin-top: 16px;
   font-size: 0.95rem;
   color: #777;
   line-height: 1.5;
+  text-align: left;
 }
 
 .footer-quote {
   text-align: center;
   max-width: 800px;
-  margin: 60px auto 30px;
+  margin: 60px auto 60px;
   padding: 0 20px;
 }
 
@@ -185,7 +193,7 @@
   font-size: 1.2rem;
   line-height: 1.8;
   font-style: italic;
-  color: #5c4a6b; /* soft muted purple */
+  color: #5c4a6b;
   font-weight: 500;
 }
 
@@ -195,47 +203,40 @@
   font-family: 'Georgia', serif;
   font-weight: 600;
   color: #7a5c8e;
-}
-
-  .footer-quote {
   text-align: center;
-  max-width: 800px;
-  margin: 60px auto 60px; /* last value adds bottom space */
-  padding: 0 20px;
 }
-  
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 14px;
-    color: #777;
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #777;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
   }
 
-  footer p {
-    text-align: center;
-    margin-bottom: 0;
+  h1 {
+    font-size: 38px;
   }
 
-  @media (max-width: 600px) {
-    .container {
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 38px;
-    }
-
-    .tagline {
-      font-size: 18px;
-    }
-
-    #contact button {
-      width: 100%;
-    }
+  .tagline {
+    font-size: 18px;
   }
-</style>
-</head>
 
-<body>
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+  }
 
-<div class="container">
+  #contact button {
+    width: 100%;
+  }
+}
