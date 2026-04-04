@@ -15,14 +15,20 @@ body {
   box-sizing: border-box;
 }
 
+.top-logo img {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .top-logo {
   text-align: center;
   margin-top: 20px;
 }
 
 .top-logo img {
-  width: 90px;
-  height: auto;
+  width: 90px !important;
 }
 
 /* Keep images responsive (except logo) */
