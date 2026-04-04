@@ -2,7 +2,7 @@
 
   <!-- Top centered logo -->
   <div class="top-logo">
-    <img src="logo.jpg" alt="Little Way Speech Therapy logo">
+    <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
   <header class="site-header">
@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -22,9 +22,9 @@
     </nav>
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <h2>About</h2>
+    <h2>About Our Speech Therapy Services in San Diego</h2>
 
     <p>
       Little Way Speech Therapy is a sole proprietorship owned and operated by speech-language pathologist
@@ -36,8 +36,8 @@
     <p>
       Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s
       <a href="https://www.britannica.com/question/What-is-the-Little-Way-of-St-Therese-of-Lisieux" target="_blank" rel="noopener noreferrer" class="subtle-link">
-        “Little Way,”
-      </a>
+        “Little Way”
+      </a>,
       this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
     </p>
 
@@ -45,13 +45,18 @@
       Kat has been working with children of all ages in pediatric private practice since 2019. She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
     </p>
 
-    <img src="profile.jpg" alt="Kathleen 'Kat' Winger, M.S., CCC-SLP" class="profile-pic">
+    <img 
+      src="profile.jpg" 
+      alt="Speech-language pathologist Kathleen Kat Winger providing pediatric speech therapy" 
+      class="profile-pic"
+      loading="lazy"
+    >
 
-    <footer>
-      <p>© <span id="year"></span> Little Way Speech Therapy</p>
-    </footer>
+  </main>
 
-  </div>
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
