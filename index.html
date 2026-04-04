@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Little Way Speech Therapy</title>
 
   <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
 
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,8 +29,7 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "City", "name": "San Diego" },
-
+      { "@type": "City", "name": "San Diego" }
     ],
     "serviceType": [
       "Early Intervention Speech Therapy",
@@ -37,15 +44,17 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
-  <!-- Top centered logo -->
+  <!-- Top Logo -->
   <div class="top-logo">
     <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-left">
       <div class="title-group">
@@ -63,31 +72,48 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
-    <h2>Welcome</h2>
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Compassionate Speech Therapy for Young Learners</h2>
+      <p>
+        Providing individualized speech and language support for children and families throughout San Diego County.
+      </p>
 
-    <p>
-      Little Way Speech Therapy provides pediatric speech-language services in San Diego County, with a focus on Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations (IEEs).
-    </p>
+      <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+    </section>
 
-    <p>
-      Each child is approached with patience, compassion, and individualized care, with the belief that small moments of connection can lead to meaningful growth.
-    </p>
+    <!-- WELCOME / ABOUT CARD -->
+    <section class="card">
+      <h2>Welcome</h2>
 
-    <section class="footer-quote">
+      <p>
+        Little Way Speech Therapy provides pediatric speech-language services in San Diego County, with a focus on Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations (IEEs).
+      </p>
+
+      <p>
+        Each child is approached with patience, compassion, and individualized care, with the belief that small moments of connection can lead to meaningful growth.
+      </p>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="card footer-quote">
       <blockquote>
         “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm. If every tiny flower wanted to be a rose, spring would lose its loveliness.”
       </blockquote>
       <p class="quote-author">— St. Thérèse of Lisieux</p>
     </section>
 
-    <footer>
-      <p>© <span id="year"></span> Little Way Speech Therapy</p>
-    </footer>
+  </main>
 
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
 
+  <!-- Dynamic Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
