@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Little Way Speech Therapy</title>
 
   <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
 
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,8 +29,7 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "City", "name": "San Diego" },
-
+      { "@type": "City", "name": "San Diego" }
     ],
     "serviceType": [
       "Early Intervention Speech Therapy",
@@ -37,15 +44,17 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
-  <!-- Top centered logo -->
+  <!-- Top Logo -->
   <div class="top-logo">
     <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-left">
       <div class="title-group">
@@ -63,42 +72,58 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
-    <h2>About Our Speech Therapy Services in San Diego</h2>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h2>Compassionate Speech Therapy for Young Learners</h2>
+      <p>
+        Supporting children and families through meaningful communication, connection, and individualized care.
+      </p>
 
-    <p>
-      Little Way Speech Therapy is a sole proprietorship owned and operated by speech-language pathologist
-      <a href="https://www.linkedin.com/in/kathleen-winger-ccc-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-        Kathleen "Kat" Winger, M.S., CCC-SLP
-      </a>, in San Diego, California.
-    </p>
+      <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+    </section>
 
-    <p>
-      Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s
-      <a href="https://www.britannica.com/question/What-is-the-Little-Way-of-St-Therese-of-Lisieux" target="_blank" rel="noopener noreferrer" class="subtle-link">
-        “Little Way”
-      </a>,
-      this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
-    </p>
+    <!-- ABOUT CARD -->
+    <section class="card">
+      <h2>About</h2>
 
-    <p>
-      Kat has been working with children of all ages in pediatric private practice since 2019. She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
-    </p>
+      <p>
+        Little Way Speech Therapy is a sole proprietorship owned and operated by speech-language pathologist
+        <a href="https://www.linkedin.com/in/kathleen-winger-ccc-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
+          Kathleen "Kat" Winger, M.S., CCC-SLP
+        </a>, in San Diego, California.
+      </p>
 
-    <img 
-      src="profile.jpg" 
-      alt="Speech-language pathologist Kathleen Kat Winger providing pediatric speech therapy" 
-      class="profile-pic"
-      loading="lazy"
-    >
+      <p>
+        Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s
+        <a href="https://www.britannica.com/question/What-is-the-Little-Way-of-St-Therese-of-Lisieux" target="_blank" rel="noopener noreferrer" class="subtle-link">
+          “Little Way”
+        </a>,
+        this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
+      </p>
+
+      <p>
+        Kat has been working with children of all ages in pediatric private practice since 2019. She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
+      </p>
+
+      <img 
+        src="profile.jpg" 
+        alt="Speech-language pathologist Kathleen Kat Winger providing pediatric speech therapy" 
+        class="profile-pic"
+        loading="lazy"
+      >
+    </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© <span id="year"></span> Little Way Speech Therapy</p>
   </footer>
 
+  <!-- Dynamic Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
