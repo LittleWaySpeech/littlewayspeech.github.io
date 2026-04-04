@@ -1,18 +1,49 @@
-/* GENERAL PAGE STYLING */
+/* =========================
+   ROOT VARIABLES (FASTER EDITS + CONSISTENCY)
+   ========================= */
+:root {
+  --bg: #fffaf7;
+  --text: #4a3f35;
+  --primary: #7a5c58;
+  --primary-dark: #5f4642;
+  --accent: #5e4b8b;
+  --accent-light: #7a6a9a;
+  --header-bg: #f3e8ff;
+  --border-light: #e5d4f5;
+}
+
+/* =========================
+   GENERAL PAGE STYLING
+   ========================= */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fffaf7;
-  color: #4a3f35;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 0;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Better box model for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box;
+}
+
+/* =========================
+   LOGOS
+   ========================= */
+.top-logo {
+  text-align: center;
+  margin: 20px 0 5px;
 }
 
 .top-logo img {
@@ -22,39 +53,26 @@ body {
   margin: 0 auto;
 }
 
-.top-logo {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.top-logo {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-.top-logo img {
-  width: 90px !important;
-}
-
 .partner-logo {
   text-align: center;
-  margin: 40px 0 10px 0;
+  margin: 40px 0 10px;
 }
 
 .partner-logo img {
-  width: 140px;   /* adjust size here */
+  width: 140px;
   height: auto;
-  opacity: 0.9;   /* slightly softer look */
+  opacity: 0.9;
 }
 
-/* Keep images responsive (except logo) */
+/* Responsive images */
 .container img:not(.logo) {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* =========================
-   HEADER (PROFESSIONAL STYLE)
+   HEADER
    ========================= */
 .site-header {
   display: flex;
@@ -62,101 +80,100 @@ body {
   align-items: center;
   padding: 15px 20px;
   max-width: 900px;
-  margin: 10px auto 20px auto;
-  background-color: #f3e8ff;   /* lavender */
-  border-bottom: 1px solid #e5d4f5;
+  margin: 10px auto 20px;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-light);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Left side (logo + title) */
 .header-left {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* Logo (FINAL clean version) */
 .logo {
   width: 70px;
   height: auto;
-  margin: 0;
 }
 
-/* Title + tagline in header */
+/* =========================
+   TYPOGRAPHY
+   ========================= */
 .title-group h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8rem;
   margin: 0;
-  color: #5e4b8b;
+  color: var(--accent);
 }
 
 .title-group .tagline {
   font-style: italic;
   font-size: 0.95rem;
-  margin: 2px 0 0 0;
-  color: #7a6a9a;
+  margin-top: 2px;
+  color: var(--accent-light);
 }
 
-/* Navigation */
-.navbar {
-  margin: 0;
+h2 {
+  font-size: 2rem;
+  margin: 30px 0 20px;
+  color: var(--primary);
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto 20px;
+  max-width: 700px;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
 .navbar a {
   text-decoration: none;
-  color: #7a5c58;
+  color: var(--primary);
   margin-left: 18px;
   font-weight: bold;
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
-.navbar a:hover {
-  color: #5f4642;
+.navbar a:hover,
+.navbar a:focus {
+  color: var(--primary-dark);
 }
 
 /* =========================
-   MAIN CONTENT TYPOGRAPHY
+   PROFILE IMAGE
    ========================= */
-
-/* Page headings */
-h2 {
-  font-size: 2rem;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: #7a5c58;
-}
-
-/* Paragraph text */
-p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin: 0 auto 20px auto;
-  max-width: 700px;
-}
-
-/* Profile photo (circular) */
 .profile-pic {
   display: block;
   width: 160px;
   height: 160px;
   object-fit: cover;
-  margin: 30px auto 20px auto;
+  margin: 30px auto 20px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* Subtle inline links */
+/* =========================
+   LINKS
+   ========================= */
 .subtle-link {
-  color: #7a5c58;
+  color: var(--primary);
   text-decoration: underline;
 }
 
-.subtle-link:hover {
-  color: #5f4642;
+.subtle-link:hover,
+.subtle-link:focus {
+  color: var(--primary-dark);
 }
 
+/* =========================
+   CONTACT FORM
+   ========================= */
 .contact-form {
   max-width: 500px;
   margin: 20px auto;
@@ -165,8 +182,7 @@ p {
 
 .contact-form label {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin: 15px 0 5px;
   font-weight: bold;
 }
 
@@ -177,31 +193,46 @@ p {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
-  box-sizing: border-box;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent-light);
+  border-color: transparent;
+}
+
+/* Button */
 .contact-form button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #7a5c58;
-  color: white;
+  background-color: var(--primary);
+  color: #fff;
   border: none;
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .contact-form button:hover {
-  background-color: #5f4642;
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
 }
 
+.contact-form button:active {
+  transform: translateY(0);
+}
+
+/* Success message */
 .contact-success {
   display: none;
   margin-top: 20px;
-  color: #5e4b8b;
+  color: var(--accent);
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+   ========================= */
 footer {
   margin-top: 40px;
   padding: 20px 0;
@@ -213,7 +244,6 @@ footer {
    MOBILE RESPONSIVE
    ========================= */
 @media (max-width: 600px) {
-  /* Header stacks vertically */
   .site-header {
     flex-direction: column;
     text-align: center;
@@ -232,18 +262,15 @@ footer {
     margin: 6px 8px;
   }
 
-  /* Smaller logo on mobile */
   .logo {
     width: 60px;
   }
 
-  /* Smaller profile image */
   .profile-pic {
     width: 140px;
     height: 140px;
   }
 
-  /* Typography adjustments */
   h2 {
     font-size: 1.6rem;
   }
