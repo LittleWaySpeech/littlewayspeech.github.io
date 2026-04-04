@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Little Way Speech Therapy</title>
 
   <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
 
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,8 +29,7 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "City", "name": "San Diego" },
-
+      { "@type": "City", "name": "San Diego" }
     ],
     "serviceType": [
       "Early Intervention Speech Therapy",
@@ -37,15 +44,17 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
-  <!-- Top centered logo -->
+  <!-- Top Logo -->
   <div class="top-logo">
     <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-left">
       <div class="title-group">
@@ -63,36 +72,60 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
-    <h2>Student Interns</h2>
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Student Interns</h2>
+      <p>
+        Supporting the next generation of speech-language pathologists while maintaining high-quality care for families.
+      </p>
+    </section>
 
-    <p>
-      Little Way Speech Therapy partners with
-      <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-        the University of St. Augustine for Health Sciences (USAHS)
-      </a>
-      in San Marcos, California, as a clinical education site for graduate student clinicians.
-    </p>
+    <!-- CONTENT CARD -->
+    <section class="card">
 
-    <p>
-      Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits. To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.
-    </p>
+      <p>
+        Little Way Speech Therapy partners with
+        <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
+          the University of St. Augustine for Health Sciences (USAHS)
+        </a>
+        in San Marcos, California, as a clinical education site for graduate student clinicians.
+      </p>
 
-    <p>
-      Parents and caregivers maintain the right to limit or decline student involvement. Student clinicians are not involved with Independent Educational Evaluations (IEEs).
-    </p>
+      <p>
+        Graduate student clinicians are carefully interviewed and selected and may assist with Early Start home visits. To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.
+      </p>
 
-<div class="partner-logo">
-  <img src="usahs-logo.png" alt="University of St. Augustine for Health Sciences logo">
-</div>
-    
-    <footer>
-      <p>© <span id="year"></span> Little Way Speech Therapy</p>
-    </footer>
+      <p>
+        Parents and caregivers always maintain the right to limit or decline student involvement. Student clinicians are not involved with Independent Educational Evaluations (IEEs).
+      </p>
 
-  </div>
+      <div class="partner-logo">
+        <img src="usahs-logo.png" alt="University of St. Augustine for Health Sciences logo">
+      </div>
 
+    </section>
+
+    <!-- OPTIONAL CTA -->
+    <section class="card">
+      <h2>Questions About Student Involvement?</h2>
+      <p>
+        If you have questions about student participation in sessions, feel free to reach out for more information.
+      </p>
+
+      <a href="contact.html" class="cta-button">Contact</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
+
+  <!-- Dynamic Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
