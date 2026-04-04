@@ -125,6 +125,50 @@ p {
   color: #5f4642;
 }
 
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7a5c58;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5f4642;
+}
+
+.contact-success {
+  display: none;
+  margin-top: 20px;
+  color: #5e4b8b;
+}
+
 /* Footer */
 footer {
   margin-top: 40px;
