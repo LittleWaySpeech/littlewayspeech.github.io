@@ -1,45 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Little Way Speech Therapy</title>
+  <meta name="description" content="Speech therapy services including Early Start through SDRC and Independent Educational Evaluations (IEEs).">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Little Way Speech Therapy</title>
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="students.html">Students</a>
-<a href="contact.html">Contact</a>
-</nav>
+<div class="container">
 
-    <h2>Services</h2>
-<ul>
-  <li>
-    Early Start services through the 
-    <a href="https://www.sdrc.org/services/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-      San Diego Regional Center
-    </a>
-  </li>
-  <li>
-    <a href="https://www.cde.ca.gov/sp/se/qa/pssummary.asp" target="_blank" rel="noopener noreferrer" class="subtle-link">
-      Independent Educational Evaluations (IEEs)
-    </a>
-  </li>
-</ul>
+  <h1>Little Way Speech Therapy</h1>
 
-      <h2>Early Start</h2>
+  <img src="logo.jpg" alt="Little Way Speech Therapy logo" class="logo">
+
+  <p class="tagline">Nurturing Communication with Care</p>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h2>Services</h2>
+
+  <ul>
+    <li>
+      Early Start services through the
+      <a href="https://www.sdrc.org/services/" target="_blank" rel="noopener noreferrer" class="subtle-link">
+        San Diego Regional Center
+      </a>
+    </li>
+    <li>
+      <a href="https://www.cde.ca.gov/sp/se/qa/pssummary.asp" target="_blank" rel="noopener noreferrer" class="subtle-link">
+        Independent Educational Evaluations (IEEs)
+      </a>
+    </li>
+  </ul>
+
+  <h2>Early Start</h2>
   <p>
-    After you are approved for speech therapy services through the San Diego Recional Center, you may request Little Way Speech Therapy as your vendor.  Services are limited to select zip codes in San Diego county, so please use the contact form below to find out if your home is in range.
+    After you are approved for speech therapy services through the San Diego Regional Center, you may request Little Way Speech Therapy as your vendor. Services are limited to select zip codes in San Diego County, so please use the contact form to find out if your home is in range.
   </p>
-  
-    <h2>What is an IEE?</h2>
+
+  <h2>What is an IEE?</h2>
   <p>
-    An Independent Educational Evaluation is a second opinion regarding your child’s need for special education services in school.
-    It is a comprehensive evaluation done at a parent's request following an IEP evaluation, either because a child is denied for special education services or because the services approved are judged by the parent to be inadequate.
-    Under federal law, parents are entitled to an IEE for their child.
+    An Independent Educational Evaluation is a second opinion regarding your child’s need for special education services in school. It is a comprehensive evaluation done at a parent's request following an IEP evaluation, either because a child is denied for special education services or because the services approved are judged by the parent to be inadequate. Under federal law, parents are entitled to an IEE for their child.
   </p>
-  </p>
+
   <p>
     You may request that your child’s IEE be completed by Little Way Speech Therapy, even if the practice is not listed as a preferred provider by your school district.
   </p>
+
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
