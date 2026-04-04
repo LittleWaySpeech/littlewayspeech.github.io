@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Little Way Speech Therapy</title>
 
   <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and evaluations.">
 
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,8 +29,7 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "City", "name": "San Diego" },
-
+      { "@type": "City", "name": "San Diego" }
     ],
     "serviceType": [
       "Early Intervention Speech Therapy",
@@ -37,15 +44,17 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
-  <!-- Top centered logo -->
+  <!-- Top Logo -->
   <div class="top-logo">
     <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="header-left">
       <div class="title-group">
@@ -63,9 +72,21 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
-    <section id="contact">
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Compassionate Speech Therapy for Young Learners</h2>
+      <p>
+        Supporting children and families through meaningful communication, connection, and individualized care.
+      </p>
+
+      <a href="#contact" class="cta-button">Schedule a Consultation</a>
+    </section>
+
+    <!-- CONTACT CARD -->
+    <section class="card" id="contact">
       <h2>Contact</h2>
 
       <p>
@@ -103,12 +124,14 @@
       </div>
     </section>
 
-    <footer>
-      <p>© <span id="year"></span> Little Way Speech Therapy</p>
-    </footer>
+  </main>
 
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
 
+  <!-- Dynamic Year -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
