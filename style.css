@@ -54,13 +54,6 @@ section {
   margin: 10px 0 0;
 }
 
-.top-logo img {
-  width: 80px;           /* MAIN FIX: controls size */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 /* Header logo (if used later) */
 .logo {
   width: 60px;
