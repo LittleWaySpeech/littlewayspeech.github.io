@@ -1,359 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Little Way Speech Therapy</title>
   <meta name="description" content="Speech language therapy services located in San Diego California specializing in Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations aka IEEs.">
-</head>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
- 
-<style>
-  body {
-    background-color: #ba82af;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 10px;
-  }
-
-  .container {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 48px;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #7a5c7a;
-  }
-
-  .logo {
-    max-width: 200px;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .tagline {
-    font-family: 'Georgia', serif;
-    font-size: 22px;
-    color: #5a3e5c;
-    text-align: center;
-    font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .subtle-link {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .subtle-link:hover {
-    text-decoration: underline;
-  }
-
-  h2 {
-    text-align: left;
-    color: #7a5c7a;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    text-align: left;
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-
-  ul {
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-
-  li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-  }
-
-  #contact {
-    margin-top: 30px;
-    padding: 0;
-    text-align: left;
-  }
-
-  #contact h2 {
-    margin-bottom: 10px;
-  }
-
-  #contact p {
-    margin-bottom: 20px;
-  }
-
-  #contact form {
-    text-align: left;
-  }
-
-  #contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: normal;
-  }
-
-  #contact input,
-  #contact textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-
-  #contact textarea {
-    resize: vertical;
-  }
-
-  #contact button {
-    background-color: #5a3e85;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  #contact button:hover {
-    opacity: 0.9;
-  }
-
-/* Success message hidden by default */
-.contact-success {
-  display: none;
-  margin-top: 20px;
-  margin-bottom: 16px;
-  padding: 14px 16px;
-  border-radius: 8px;
-  background-color: #f3edf7;
-  border: 1px solid #d9cbe3;
-  color: #4e3b5f;
-  font-weight: 500;
-}
-
-/* Show only after redirect to #contact-success */
-#contact-success:target {
-  display: block;
-}
-
-  .contact-note {
-  margin-top: 16px;
-  font-size: 0.95rem;
-  color: #777;
-  line-height: 1.5;
-}
-
-.footer-quote {
-  text-align: center;
-  max-width: 800px;
-  margin: 60px auto 30px;
-  padding: 0 20px;
-}
-
-.footer-quote blockquote {
-  margin: 0;
-  font-family: 'Georgia', serif;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  font-style: italic;
-  color: #5c4a6b; /* soft muted purple */
-  font-weight: 500;
-}
-
-.footer-quote .quote-author {
-  margin-top: 14px;
-  font-size: 1rem;
-  font-family: 'Georgia', serif;
-  font-weight: 600;
-  color: #7a5c8e;
-}
-
-  .footer-quote {
-  text-align: center;
-  max-width: 800px;
-  margin: 60px auto 60px; /* last value adds bottom space */
-  padding: 0 20px;
-}
-  
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 14px;
-    color: #777;
-  }
-
-  footer p {
-    text-align: center;
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 600px) {
-    .container {
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 38px;
-    }
-
-    .tagline {
-      font-size: 18px;
-    }
-
-    #contact button {
-      width: 100%;
-    }
-  }
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
 
   <h1>Little Way Speech Therapy</h1>
 
-  <img src="logo.jpg" alt="Logo" class="logo">
+  <img src="logo.jpg" alt="Little Way Speech Therapy logo" class="logo">
 
   <p class="tagline">Nurturing Communication with Care</p>
 
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <h2>About</h2>
-  
-<p>
-  Little Way Speech Therapy is a sole proprietorship owned and operated by speech-language pathologist 
-  <a href="https://www.linkedin.com/in/kathleen-winger-ccc-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-    Kathleen 'Kat' Winger, M.S., CCC-SLP</a>, in San Diego, California.
-</p>
-  
-<p>
-  Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s <a href="https://www.britannica.com/question/What-is-the-Little-Way-of-St-Therese-of-Lisieux" target="_blank" rel="noopener noreferrer" class="subtle-link">‘Little Way,’</a> this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
-</p>
+  <h2>Welcome</h2>
 
- <p> 
-  Kat has been working with children of all ages in pediatric private practice since 2019.  She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
-</p>
-
-    <h2>Services</h2>
-<ul>
-  <li>
-    Early Start services through the 
-    <a href="https://www.sdrc.org/services/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-      San Diego Regional Center
-    </a>
-  </li>
-  <li>
-    <a href="https://www.cde.ca.gov/sp/se/qa/pssummary.asp" target="_blank" rel="noopener noreferrer" class="subtle-link">
-      Independent Educational Evaluations (IEEs)
-    </a>
-  </li>
-</ul>
-
-      <h2>Early Start</h2>
   <p>
-    After you are approved for speech therapy services through the San Diego Recional Center, you may request Little Way Speech Therapy as your vendor.  Services are limited to select zip codes in San Diego county, so please use the contact form below to find out if your home is in range.
+    Little Way Speech Therapy provides pediatric speech-language services in San Diego County, with a focus on Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations (IEEs).
   </p>
-  
-    <h2>What is an IEE?</h2>
+
   <p>
-    An Independent Educational Evaluation is a second opinion regarding your child’s need for special education services in school.
-    It is a comprehensive evaluation done at a parent's request following an IEP evaluation, either because a child is denied for special education services or because the services approved are judged by the parent to be inadequate.
-    Under federal law, parents are entitled to an IEE for their child.
-  </p>
-  <p>
-    You may request that your child’s IEE be completed by Little Way Speech Therapy, even if the practice is not listed as a preferred provider by your school district.
-  </p>
-  
-    <h2>Student Interns</h2>
-<p>
-  Little Way Speech Therapy partners with 
-  <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank" rel="noopener noreferrer" class="subtle-link">
-    the University of St. Augustine for Health Sciences (USAHS)
-  </a>
-  in San Marcos, California, as a clinical education site for graduate student clinicians.  Graduate student clinicians are carefully interviewed and selected, and they often assist with Early Start home visits.  To better support the diverse cultural and linguistic backgrounds of the families served, bilingual student clinicians are given priority.  Parents and caregivers maintain the right to limit or decline student involvement.  Student clinicians are not involved with Independent Educational Evaluations (IEEs).
-</p>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    To inquire about services, availability, or scheduling, please complete the form below.
+    Each child is approached with patience, compassion, and individualized care, with the belief that small moments of connection can lead to meaningful growth.
   </p>
 
-  <form
-    action="https://formspree.io/f/mgopnkok"
-    method="POST"
-    autocomplete="on"
-    class="contact-form"
-  >
-    <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-    <input type="hidden" name="_next" value="https://littlewayspeech.com/#contact-success">
-    <input type="text" name="_gotcha" style="display:none">
+  <section class="footer-quote">
+    <blockquote>
+      “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm. If every tiny flower wanted to be a rose, spring would lose its loveliness.”
+    </blockquote>
+    <p class="quote-author">— St. Thérèse of Lisieux</p>
+  </section>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" autocomplete="name" required>
+  <footer>
+    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+  </footer>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" autocomplete="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <!-- Success message goes HERE -->
-  <div id="contact-success" class="contact-success">
-    Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
-  </div>
-
-  <!-- Privacy note goes AFTER -->
-  <p class="contact-note">
-    Please do not include sensitive medical or confidential information in this form.
-  </p>
-</section>
-
-<section class="footer-quote">
-  <blockquote>
-    “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm.  If every tiny flower wanted to be a rose, spring would lose its loveliness.”
-  </blockquote>
-  <p class="quote-author">— St. Thérèse of Lisieux</p>
-</section>
-  
-<footer>
-  <p>© <span id="year"></span> Little Way Speech Therapy</p>
-</footer>
+</div>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-</div>
+
 </body>
 </html>
