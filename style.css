@@ -239,4 +239,13 @@ footer p {
   #contact button {
     width: 100%;
   }
+
+  .profile-pic {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin: 30px auto 20px auto;
+  border-radius: 12px;
+  }
 }
