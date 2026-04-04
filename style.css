@@ -36,6 +36,17 @@ body {
   width: 90px !important;
 }
 
+.partner-logo {
+  text-align: center;
+  margin: 40px 0 10px 0;
+}
+
+.partner-logo img {
+  width: 140px;   /* adjust size here */
+  height: auto;
+  opacity: 0.9;   /* slightly softer look */
+}
+
 /* Keep images responsive (except logo) */
 .container img:not(.logo) {
   max-width: 100%;
