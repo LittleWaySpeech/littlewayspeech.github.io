@@ -1,315 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
-  <!-- Meta -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Way Speech Therapy</title>
-  <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and school evaluations.">
 
-  <!-- SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SpeechPathology",
-    "name": "Little Way Speech Therapy",
-    "image": "https://littlewayspeech.com/logo.jpg",
-    "url": "https://littlewayspeech.com/",
-    "description": "Early intervention speech therapy in San Diego specializing in pediatric communication, IEEs, and individualized care for young children and families.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Diego",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "San Diego" }
-    ],
-    "serviceType": [
-      "Early Intervention Speech Therapy",
-      "Pediatric Speech Therapy",
-      "Independent Educational Evaluations (IEEs)",
-      "Speech and Language Therapy for Children"
-    ],
-    "provider": {
-      "@type": "Person",
-      "name": "Kathleen Winger, M.S., CCC-SLP",
-      "jobTitle": "Speech-Language Pathologist"
-    }
-  }
-  </script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
-  <!-- Styles (can also move to a separate CSS file) -->
   <style>
-:root {
-  --bg: #fffaf7;
-  --text: #4a3f35;
-  --primary: #4a3f35;
-  --primary-dark: #3c2e47;
-  --accent: #5e4b8b;
-  --accent-light: #7a6a9a;
-  --header-bg: #f3e8ff;
-  --border-light: #e5d4f5;
-}
-
     body {
-      font-family: 'Inter', Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f4fb;
+      color: #333;
     }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Logo */
-    .top-logo img {
-      width: 80px;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-    }
-
-    /* Header */
-    .site-header {
+    /* NAV BAR */
+    nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      max-width: 900px;
-      margin: 10px auto 20px;
-      background-color: var(--header-bg);
-      border-bottom: 1px solid var(--border-light);
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      justify-content: flex-end;
+      padding: 15px 40px;
+      background-color: #5e2b97;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .title-group h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin: 0;
-      color: var(--accent);
-    }
-
-    .title-group .tagline {
-      font-style: italic;
-      font-size: 0.95rem;
-      margin-top: 2px;
-      color: var(--accent-light);
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: var(--primary);
-      margin-left: 18px;
-      font-weight: bold;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    .navbar a:hover {
-      color: var(--primary-dark);
-    }
-
-    /* HERO */
-    .hero {
-      margin-bottom: 40px;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      max-width: 700px;
-      margin: 0 auto 20px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: var(--primary);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 25px;
+    nav a {
+      color: white;
+      margin-left: 25px;
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
-    .cta-button:hover {
-      background-color: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-
-    /* Card */
-    .card {
-      background-color: #fff;
-      padding: 30px;
-      margin-bottom: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      text-align: left;
-    }
-
-    .card h2 {
-      color: var(--primary);
-      margin-top: 0;
-    }
-
-    .card p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-
-    .subtle-link {
-      color: var(--primary);
+    nav a:hover {
       text-decoration: underline;
     }
 
-    .subtle-link:hover {
-      color: var(--primary-dark);
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #7b3fcf, #b084f5);
+      color: white;
     }
 
-    .profile-pic {
-      display: block;
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      margin: 20px auto 0;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    .hero h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 64px;
+      margin-bottom: 10px;
     }
 
-    /* Footer */
+    .hero p {
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 36px;
+      color: #5e2b97;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* FOOTER */
     footer {
-      margin-top: 40px;
-      padding: 20px 0;
-      font-size: 0.95rem;
-      color: #8b6f6a;
-    }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-      .site-header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .header-left {
-        flex-direction: column;
-      }
-      .navbar a {
-        display: inline-block;
-        margin: 6px 8px;
-      }
-      .profile-pic {
-        width: 140px;
-        height: 140px;
-      }
-      .hero h2 {
-        font-size: 1.5rem;
-      }
-      .hero p, .card p {
-        font-size: 1rem;
-      }
+      text-align: center;
+      padding: 20px;
+      background-color: #5e2b97;
+      color: white;
     }
   </style>
-
 </head>
 
 <body>
 
-  <!-- Top Logo -->
-  <div class="top-logo">
-    <img src="logo.jpg" alt="Little Way Speech Therapy logo" loading="eager">
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Little Way Speech Therapy</h1>
+    <p>Nurturing Communication with Care</p>
   </div>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-left">
-      <div class="title-group">
-        <h1>Little Way Speech Therapy</h1>
-        <p class="tagline">Nurturing Communication with Care</p>
-      </div>
-    </div>
+  <!-- ABOUT -->
+  <div id="about" class="section">
+    <h2>About</h2>
+    <p>
+      We provide compassionate, individualized speech therapy services to support children and families.
+    </p>
+  </div>
 
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="students.html">Students</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main class="container">
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <h2>Speech-Language Therapy from the Comfort of Home</h2>
-      <p>
-        Home Health Intervention and School Evaluation Services
-      </p>
-      <a href="contact.html" class="cta-button">Schedule a Consultation</a>
-    </section>
-
-    <!-- WELCOME / ABOUT CARD -->
-    <section class="card">
-      <h2>Welcome</h2>
-
-      <p>
-        Little Way Speech Therapy provides pediatric speech-language services in San Diego County, with a focus on Early Start home health services through the San Diego Regional Center and Independent Educational Evaluations (IEEs).
-      </p>
-
-      <p>
-        Each child is approached with patience, compassion, and individualized care, with the belief that small moments of connection can lead to meaningful growth.
-      </p>
-    </section>
-
-    <!-- QUOTE SECTION -->
-    <section class="card footer-quote">
-      <blockquote>
-        “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm. If every tiny flower wanted to be a rose, spring would lose its loveliness.”
-      </blockquote>
-      <p class="quote-author">— St. Thérèse of Lisieux</p>
-    </section>
-
-  </main>
+  <!-- CONTACT -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      Email: your@email.com<br>
+      Phone: (123) 456-7890
+    </p>
+  </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>© <span id="year"></span> Little Way Speech Therapy</p>
+    <p>© 2026 Little Way Speech Therapy</p>
   </footer>
-
-  <!-- Dynamic Year -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>
