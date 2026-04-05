@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<img src="Little Way logo no background.png" alt="Description" class="main-image">
-<title>Contact</title>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Little Way Speech Therapy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <nav>
-<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="students.html">Students</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="students.html">Students</a>
+  <a href="contact.html">Contact</a>
 </nav>
+
+<!-- INTRO -->
 <div class="section">
-<h1>Contact</h1>
+  <h1>Contact</h1>
 
-  <main class="container">
-    
-      <p>
-        To inquire about services, availability, or scheduling, please complete the form below.
-      </p>
+  <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="main-image">
 
-      <form
-        action="https://formspree.io/f/mgopnkok"
-        method="POST"
-        autocomplete="on"
-        class="contact-form"
-      >
-        <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-        <input type="hidden" name="_next" value="https://littlewayspeech.com/contact.html#contact-success">
-        <input type="text" name="_gotcha" style="display:none">
+  <p>
+    We’d love to hear from you. Whether you have questions about services, availability, or next steps, 
+    please reach out using the form below.
+  </p>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" autocomplete="name" required>
+  <p class="contact-note">
+    Please do not include medical or confidential information in this form.
+  </p>
+</div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
+<!-- FORM -->
+<div class="section">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
+  <form
+    action="https://formspree.io/f/mgopnkok"
+    method="POST"
+    autocomplete="on"
+    class="contact-form"
+  >
+    <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
+    <input type="hidden" name="_next" value="https://littlewayspeech.com/contact.html#contact-success">
+    <input type="text" name="_gotcha" style="display:none">
 
-        <p class="contact-note">
-          Please do not include medical or confidential information in this form.
-        </p>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-        <button type="submit">Send Message</button>
-      </form>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-      <div id="contact-success" class="contact-success">
-        Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
-      </div>
-    </section>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-  </main>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- SUCCESS MESSAGE -->
+  <div id="contact-success" class="contact-success">
+    Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
+  </div>
 
 </div>
+
+<footer>
+  © 2026 Little Way Speech Therapy
+</footer>
+
 </body>
 </html>
