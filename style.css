@@ -117,10 +117,12 @@ nav a:hover::after {
   max-width: 500px;
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .logo-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
