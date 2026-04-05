@@ -3,102 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Little Way Speech Therapy</title>
+  <title>Rates | Little Way Speech Therapy</title>
+  <meta name="description" content="Private pay rates for speech and language services with Little Way Speech Therapy, including evaluations, therapy sessions, travel fees, and superbill information.">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fffaf7;
+      --text: #4a3f35;
+      --primary: #4a3f35;
+      --primary-dark: #3c2e47;
+      --accent: #5e4b8b;
+      --accent-light: #7a6a9a;
+      --header-bg: #f3e8e2;
+      --card-bg: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+      --max-width: 900px;
+    }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      padding: 20px 0;
+      box-shadow: var(--shadow);
+    }
+
+    nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 0 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 50px auto;
+      padding: 0 20px 60px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .rates-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    .rates-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1.05rem;
+    }
+
+    .rates-list li:last-child {
+      border-bottom: none;
+    }
+
+    .note {
+      background-color: #f8f2ff;
+      border-left: 5px solid var(--accent);
+      padding: 18px 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .note strong {
+      color: var(--primary-dark);
+    }
+
+    a.inline-link {
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.inline-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      background-color: var(--header-bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .rates-list li {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="rates.html">Rates</a>
-  <a href="students.html">Students</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="students.html">Students</a>
+      <a href="rates.html" class="active">Rates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<!-- HEADER -->
-<div class="section">
-  <h1>Services</h1>
+  <main>
+    <section class="hero">
+      <h1>Rates</h1>
+      <p>
+        In addition to contracting with the San Diego Regional Center and local school districts, 
+        Little Way Speech Therapy offers private pay services for families seeking flexible, direct access to care.
+      </p>
+    </section>
 
-  <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="logo">
+    <section class="card">
+      <h2>Private Pay Information</h2>
+      <p>
+        Private pay means clients are responsible for full payment of services. No doctor’s referral is needed, 
+        and there is no limit to the number of visits.
+      </p>
+      <p>
+        Private pay clients can receive services in the home, at a private school, or virtually.
+      </p>
+    </section>
 
-  <p>
-    We offer individualized, family-centered speech and language services designed to support each child’s 
-    unique communication needs. Sessions are engaging, play-based, and tailored to promote meaningful progress.
-  </p>
-</div>
+    <section class="card">
+      <h2>Rates</h2>
+      <ul class="rates-list">
+        <li><strong>60-minute initial evaluation (home visit or virtual):</strong> $190</li>
+        <li><strong>30-minute therapy session (home visit):</strong> $65</li>
+        <li><strong>30-minute therapy session (virtual):</strong> $60</li>
+        <li><strong>50-minute therapy session (home visit):</strong> $90</li>
+        <li><strong>50-minute therapy session (virtual):</strong> $85</li>
+      </ul>
+    </section>
 
-<!-- SERVICES GRID -->
-<div class="section">
-  <h2>Areas of Support</h2>
+    <section class="card">
+      <h2>Travel Fee</h2>
+      <div class="note">
+        <p>
+          <strong>Note:</strong> For longer travel distances or consistently poor traffic conditions, 
+          a <strong>$30 travel fee</strong> will be added to each service.
+        </p>
+        <p>
+          Locations to which this fee may apply include, but are not limited to, 
+          National City, Chula Vista, Del Mar, Escondido, Lakeside, and Alpine.
+        </p>
+        <p>
+          Advance notice will be given if this fee applies.
+        </p>
+      </div>
+    </section>
 
-  <div class="cards">
+    <section class="card">
+      <h2>Insurance & Funding Information</h2>
+      <p>
+        Superbills can be provided upon request. A superbill is a detailed invoice that clients can use 
+        to request reimbursement from their insurance providers for services already paid.
+      </p>
+      <p>
+        Your child may also be eligible for services funded by the San Diego Regional Center. 
+        <a href="https://www.sdrc.org/apply" target="_blank" rel="noopener noreferrer" class="inline-link">Click here to apply</a>.
+      </p>
+      <p>
+        Virtual sessions can be provided to any client and family located in the State of California.
+      </p>
+    </section>
+  </main>
 
-    <div class="card">
-      <h3>Speech Sound Disorders</h3>
-      <p>Support for articulation and phonological development to improve speech intelligibility.</p>
-    </div>
-
-    <div class="card">
-      <h3>Language Development</h3>
-      <p>Building comprehension and expressive language skills for effective communication.</p>
-    </div>
-
-    <div class="card">
-      <h3>Social Communication</h3>
-      <p>Helping children develop conversational skills with perspective-taking for improved social interaction.</p>
-    </div>
-
-    <div class="card">
-      <h3>AAC Support</h3>
-      <p>Guidance with augmentative and alternative communication systems, including funding and programming.</p>
-    </div>
-
-    <div class="card">
-      <h3>Early Intervention</h3>
-      <p>Play-based therapy for infants and toddlers to support early communication development.</p>
-    </div>
-
-    <div class="card">
-      <h3>Parent Coaching</h3>
-      <p>Equipping caregivers with practical strategies to support communication in everyday routines.</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- PROCESS SECTION -->
-<div class="section">
-  <h2>What to Expect</h2>
-  <p>
-    Services typically begin with an initial evaluation, followed by individualized 
-    therapy sessions.  Close collaboration with with families is prioritized to ensure strategies carry over into daily life, 
-    supporting consistent and lasting progress.
-  </p>
-</div>
-
-<!-- CTA -->
-<div class="section">
-  <h2>Get Started</h2>
-  <p>
-    If you’re interested in services or have questions about your child’s communication, please reach out!
-  </p>
-
-  <a href="contact.html" class="cta-button">Request a Consultation</a>
-</div>
-
-<footer>
-  © 2026 Little Way Speech Therapy
-</footer>
+  <footer>
+    &copy; 2026 Little Way Speech Therapy. All rights reserved.
+  </footer>
 
 </body>
 </html>
