@@ -114,8 +114,9 @@ nav a:hover::after {
 }
 
 .logo2 {
-  width: 200px;
-  margin: 0 auto 14px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
