@@ -5,124 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Way Speech Therapy</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f4fb;
-      color: #333;
-    }
-
-    /* NAV BAR (THINNER) */
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      padding: 8px 30px; /* reduced height */
-      background-color: #5e2b97;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      text-align: center;
-      padding: 80px 20px 60px;
-      background: linear-gradient(135deg, #7b3fcf, #b084f5);
-      color: white;
-    }
-
-    .hero h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 64px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      font-family: 'Playfair Display', serif;
-    }
-
-    /* SECTION */
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 36px;
-      color: #5e2b97;
-      text-align: center;
-    }
-
-    .section p {
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #5e2b97;
-      color: white;
-    }
+    body { margin:0; font-family:'Open Sans',sans-serif; background:#f8f4fb; }
+    nav { display:flex; justify-content:flex-end; padding:8px 30px; background:#5e2b97; }
+    nav a { color:white; margin-left:20px; text-decoration:none; font-size:14px; }
+    .hero { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#7b3fcf,#b084f5); color:white; }
+    .hero h1 { font-family:'Dancing Script',cursive; font-size:64px; margin-bottom:10px; }
+    .hero p { font-family:'Playfair Display',serif; font-size:20px; }
+    .logo { width:120px; margin:15px auto; display:block; }
+    .section { padding:60px 20px; max-width:900px; margin:auto; text-align:center; }
+    .section h2 { font-family:'Dancing Script',cursive; color:#5e2b97; font-size:36px; }
+    footer { text-align:center; padding:20px; background:#5e2b97; color:white; }
   </style>
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="students.html">Students</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="students.html">Students</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Little Way Speech Therapy</h1>
-    <p>Nurturing Communication with Care</p>
-  </div>
+<div class="hero">
+  <h1>Little Way Speech Therapy</h1>
+  <img src="logo.png" alt="Little Way Speech Therapy logo" class="logo">
+  <p>Nurturing Communication with Care</p>
+</div>
 
-  <!-- ABOUT -->
-  <div id="about" class="section">
-    <h2>About</h2>
-    <p>
-      We provide compassionate, individualized speech therapy services to support children and families.
-    </p>
-  </div>
+<div class="section">
+  <h2>Welcome</h2>
+  <p>Providing thoughtful, individualized speech and language services for children and families.</p>
+</div>
 
-  <!-- CONTACT -->
-  <div id="contact" class="section">
-    <h2>Contact</h2>
-    <p>
-      Email: your@email.com<br>
-      Phone: (123) 456-7890
-    </p>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Little Way Speech Therapy</p>
-  </footer>
-
+<footer>© 2026 Little Way Speech Therapy</footer>
 </body>
 </html>
