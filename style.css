@@ -1,4 +1,4 @@
-  /* =========================================
+/* =========================================
    LITTLE WAY SPEECH THERAPY - POLISHED CSS
 ========================================= */
 
@@ -92,7 +92,8 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+nav a:hover::after,
+nav a.active::after {
   width: 100%;
 }
 
@@ -307,6 +308,59 @@ nav a:hover::after {
   background: var(--white);
   border-radius: 22px;
   box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   RATES PAGE
+========================= */
+.rates-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 0;
+  text-align: left;
+}
+
+.rates-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #e7def6;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.rates-list li:last-child {
+  border-bottom: none;
+}
+
+.note {
+  max-width: 700px;
+  margin: 20px auto 0;
+  background: var(--soft-lilac);
+  border-left: 5px solid var(--accent);
+  padding: 18px 20px;
+  border-radius: 14px;
+  text-align: left;
+  box-shadow: var(--shadow-soft);
+}
+
+.note p {
+  max-width: none;
+  margin: 0 0 12px;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.inline-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
 }
 
 /* =========================
@@ -541,6 +595,14 @@ footer p {
   .quote-card {
     padding: 20px 18px;
     border-radius: 18px;
+  }
+
+  .rates-list li {
+    font-size: 1rem;
+  }
+
+  .note {
+    padding: 16px 16px;
   }
 
   footer {
