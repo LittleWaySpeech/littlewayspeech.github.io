@@ -8,8 +8,11 @@
 body{margin:0;font-family:'Open Sans';background:#f8f4fb;}
 nav{display:flex;justify-content:flex-end;padding:8px 30px;background:#5e2b97;}
 nav a{color:white;margin-left:20px;text-decoration:none;}
-.section{padding:80px 20px;max-width:900px;margin:auto;text-align:center;}
+.section{padding:80px 20px;max-width:1000px;margin:auto;text-align:center;}
 h1{font-family:'Dancing Script';color:#5e2b97;font-size:48px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px;}
+.card{background:white;padding:25px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+.card h3{color:#5e2b97;margin-bottom:10px;}
 </style>
 </head>
 <body>
@@ -18,7 +21,29 @@ h1{font-family:'Dancing Script';color:#5e2b97;font-size:48px;}
 </nav>
 <div class="section">
 <h1>Services</h1>
-<p>Speech therapy, language support, AAC guidance, and parent coaching tailored to each child.</p>
+
+<div class="cards">
+  <div class="card">
+    <h3>Speech Therapy</h3>
+    <p>Individualized sessions targeting articulation, fluency, and expressive language.</p>
+  </div>
+
+  <div class="card">
+    <h3>Language Support</h3>
+    <p>Helping children build understanding, vocabulary, and communication skills.</p>
+  </div>
+
+  <div class="card">
+    <h3>AAC Guidance</h3>
+    <p>Support with augmentative and alternative communication devices and systems.</p>
+  </div>
+
+  <div class="card">
+    <h3>Parent Coaching</h3>
+    <p>Empowering families with strategies to support communication at home.</p>
+  </div>
+</div>
+
 </div>
 </body>
 </html>
