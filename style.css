@@ -1,10 +1,11 @@
 /* =========================
    ROOT VARIABLES
    ========================= */
+<style>
 :root {
   --bg: #fffaf7;
   --text: #4a3f35;
-  --primary: #4a3f35;
+  --primary: #370a54;
   --primary-dark: #3c2e47;
   --accent: #5e4b8b;
   --accent-light: #7a6a9a;
