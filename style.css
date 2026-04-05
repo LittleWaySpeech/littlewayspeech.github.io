@@ -108,6 +108,14 @@ p {
   margin: 0 auto;
 }
 
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* CARDS */
 .cards {
   display: grid;
