@@ -1,17 +1,31 @@
+/* =========================================
+   LITTLE WAY SPEECH THERAPY - POLISHED CSS
+   Copy/paste this entire file
+========================================= */
+
 :root {
   --bg: #f9f6fc;
   --text: #3f3550;
   --primary: #5e2b97;
   --primary-dark: #4a217a;
   --accent: #8c52d9;
-  --accent-light: #c2a6f7;
+  --accent-light: #cbb0f7;
   --soft-purple: #efe7fb;
+  --soft-lilac: #f6f0fd;
   --white: #ffffff;
+  --shadow-soft: 0 8px 24px rgba(94, 43, 151, 0.08);
+  --shadow-hover: 0 14px 30px rgba(94, 43, 151, 0.14);
 }
 
-/* Reset + base */
+/* =========================
+   RESET + BASE
+========================= */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,33 +33,52 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-/* Remove giant default spacing from headings/paragraphs */
+/* Remove inconsistent browser default spacing */
 h1, h2, h3, p {
   margin-top: 0;
 }
 
-/* NAV */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 12px 30px;
+  gap: 22px;
+  padding: 14px 30px;
   background: var(--primary);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
 nav a {
   color: white;
-  margin-left: 24px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
+  margin-left: 0;
+  letter-spacing: 0.2px;
 }
 
 /* subtle underline animation */
@@ -55,7 +88,7 @@ nav a::after {
   width: 0%;
   height: 2px;
   left: 0;
-  bottom: -3px;
+  bottom: -4px;
   background: var(--accent-light);
   transition: width 0.3s ease;
 }
@@ -64,42 +97,46 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
   text-align: center;
-  padding: 70px 20px 50px;
+  padding: 68px 20px 52px;
   background: linear-gradient(135deg, var(--accent), var(--accent-light));
   color: white;
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 0.9s ease-in;
+}
+
+.logo {
+  width: 165px;
+  margin: 0 auto 14px;
+  animation: float 4s ease-in-out infinite;
 }
 
 .hero h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 64px;
-  margin-bottom: 8px;
+  font-size: 60px;
+  line-height: 1.05;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  opacity: 0.95;
+  max-width: 680px;
   margin: 0 auto;
-  max-width: 650px;
+  opacity: 0.97;
+  line-height: 1.5;
 }
 
-/* Logo */
-.logo {
-  width: 180px;
-  margin: 10px auto 8px;
-  display: block;
-  animation: float 4s ease-in-out infinite;
-}
-
-/* SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 .section {
+  max-width: 920px;
+  margin: 0 auto;
   padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
   text-align: center;
   animation: fadeUp 0.8s ease both;
 }
@@ -107,143 +144,188 @@ nav a:hover::after {
 .section h2 {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
-  font-size: 36px;
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  color: var(--primary);
   margin-bottom: 8px;
+  font-size: 22px;
 }
 
 .section p {
-  font-size: 18px;
-  max-width: 650px;
+  font-size: 17px;
+  max-width: 700px;
   margin: 0 auto 14px;
+  line-height: 1.7;
 }
 
 .section p:last-child {
   margin-bottom: 0;
 }
 
-a {
-  color: var(--primary);
+/* Optional subtle divider look between sections */
+.section + .section {
+  padding-top: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-top: 24px;
-}
-
-.card {
-  background: var(--white);
-  padding: 24px;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(94,43,151,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(94,43,151,0.15);
-}
-
-.card h3 {
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 16px;
-  margin: 0;
-  max-width: none;
-}
-
-/* IMAGES */
-.main-image {
-  width: 260px;
-  max-width: 100%;
-  display: block;
-  margin: 18px auto;
-  border-radius: 12px;
-}
-
-.circle-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 16px auto;
-  border: 4px solid var(--soft-purple);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  background: var(--primary);
-  color: white;
-  margin-top: 50px;
-  font-size: 14px;
-}
-
+/* =========================
+   BUTTONS / CTA
+========================= */
 .cta-button {
   display: inline-block;
   margin-top: 16px;
-  padding: 12px 26px;
+  padding: 13px 28px;
   background: white;
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 999px;
   text-decoration: none;
+  box-shadow: 0 6px 18px rgba(94, 43, 151, 0.10);
   transition: all 0.25s ease;
 }
 
 .cta-button:hover {
   background: var(--soft-purple);
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
-.contact-card {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 24px;
+/* Optional secondary button style if you ever want it */
+.button-purple {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 13px 28px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(94, 43, 151, 0.14);
+  transition: all 0.25s ease;
+}
+
+.button-purple:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* =========================
+   CARDS
+========================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+.card {
+  background: var(--white);
+  padding: 24px 22px;
   border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
 }
 
-/* tighten form spacing */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 0;
+  max-width: none;
+  line-height: 1.65;
+}
+
+/* =========================
+   IMAGES
+========================= */
+.main-image {
+  width: 260px;
+  max-width: 100%;
+  margin: 18px auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(94, 43, 151, 0.08);
+}
+
+.circle-image {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 16px auto;
+  border: 5px solid var(--soft-purple);
+  box-shadow: 0 6px 18px rgba(94, 43, 151, 0.08);
+}
+
+/* =========================
+   CONTENT CONTAINERS
+========================= */
+.contact-card,
+.info-card,
+.quote-card {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 26px 24px;
+  background: var(--white);
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
 .contact-form {
   width: 100%;
+  text-align: left;
 }
 
 .contact-form label {
   display: block;
   margin-top: 14px;
+  margin-bottom: 0;
   font-weight: 600;
   color: var(--primary);
-  text-align: left;
+  font-size: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
   margin-top: 6px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #ddd;
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
   transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* nicer focus state */
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(140,82,217,0.15);
+  box-shadow: 0 0 0 3px rgba(140, 82, 217, 0.14);
 }
 
 .contact-form button {
@@ -254,8 +336,9 @@ footer {
   color: white;
   border: none;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -267,8 +350,9 @@ footer {
 
 .contact-note {
   font-size: 13px;
-  opacity: 0.75;
+  opacity: 0.8;
   margin-top: 10px;
+  text-align: center;
 }
 
 .contact-success {
@@ -276,25 +360,80 @@ footer {
   margin: 16px auto 0;
   padding: 15px;
   background: var(--soft-purple);
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
   display: none;
+  font-size: 15px;
 }
 
 #contact-success:target {
   display: block;
 }
 
-/* ANIMATIONS */
+/* =========================
+   LISTS (if used later)
+========================= */
+ul, ol {
+  max-width: 700px;
+  margin: 0 auto 14px;
+  padding-left: 22px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* =========================
+   QUOTES (nice for footer quote)
+========================= */
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-style: italic;
+  color: var(--primary);
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 10px auto 0;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 24px 18px;
+  background: var(--primary);
+  color: white;
+  margin-top: 48px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -302,47 +441,86 @@ footer {
   }
 }
 
-/* subtle floating logo */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
+  50%      { transform: translateY(-6px); }
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 700px) {
   nav {
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    gap: 10px 16px;
+    padding: 10px 14px;
   }
 
   nav a {
-    margin: 8px 10px;
     font-size: 13px;
   }
 
   .hero {
-    padding: 55px 15px 40px;
+    padding: 52px 16px 40px;
+  }
+
+  .logo {
+    width: 135px;
+    margin-bottom: 12px;
   }
 
   .hero h1 {
     font-size: 42px;
   }
 
-  .logo {
-    width: 140px;
+  .hero p {
+    font-size: 17px;
   }
 
   .section {
-    padding: 32px 15px;
+    padding: 32px 16px;
   }
 
   .section h2 {
-    font-size: 28px;
+    font-size: 30px;
+  }
+
+  .section h3 {
+    font-size: 20px;
   }
 
   .section p {
     font-size: 16px;
     margin-bottom: 12px;
+  }
+
+  .cards {
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  .card {
+    padding: 20px 18px;
+  }
+
+  .main-image {
+    width: 220px;
+  }
+
+  .circle-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .contact-card,
+  .info-card,
+  .quote-card {
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  footer {
+    margin-top: 36px;
   }
 }
