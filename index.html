@@ -16,19 +16,20 @@
       color: #333;
     }
 
-    /* NAV BAR */
+    /* NAV BAR (THINNER) */
     nav {
       display: flex;
       justify-content: flex-end;
-      padding: 15px 40px;
+      padding: 8px 30px; /* reduced height */
       background-color: #5e2b97;
     }
 
     nav a {
       color: white;
-      margin-left: 25px;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 14px;
     }
 
     nav a:hover {
@@ -87,12 +88,12 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav>
-    <a href="#index">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#students">Students</a>
-    <a href="#contact">Contact</a>
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <!-- HERO -->
