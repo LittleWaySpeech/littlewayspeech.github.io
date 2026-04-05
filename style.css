@@ -119,6 +119,11 @@ nav a:hover::after {
   height: auto;
 }
 
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .hero h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 60px;
