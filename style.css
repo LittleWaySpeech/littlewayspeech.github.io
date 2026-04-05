@@ -1,3 +1,38 @@
+  <title>Little Way Speech Therapy</title>
+  <meta name="description" content="Early intervention speech therapy in San Diego specializing in pediatric speech and language therapy and school evaluations.">
+
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SpeechPathology",
+    "name": "Little Way Speech Therapy",
+    "image": "https://littlewayspeech.com/logo.jpg",
+    "url": "https://littlewayspeech.com/",
+    "description": "Early intervention speech therapy in San Diego specializing in pediatric communication, IEEs, and individualized care for young children and families.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Diego",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "San Diego" }
+    ],
+    "serviceType": [
+      "Early Intervention Speech Therapy",
+      "Pediatric Speech Therapy",
+      "Independent Educational Evaluations (IEEs)",
+      "Speech and Language Therapy for Children"
+    ],
+    "provider": {
+      "@type": "Person",
+      "name": "Kathleen Winger, M.S., CCC-SLP",
+      "jobTitle": "Speech-Language Pathologist"
+    }
+  }
+  </script>
+
 /* =========================================
    LITTLE WAY SPEECH THERAPY - POLISHED CSS
    Copy/paste this entire file
@@ -112,6 +147,11 @@ nav a:hover::after {
   width: 165px;
   margin: 0 auto 14px;
   animation: float 4s ease-in-out infinite;
+}
+
+.logo2 {
+  width: 200px;
+  margin: 0 auto 14px;
 }
 
 .hero h1 {
