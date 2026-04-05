@@ -1,13 +1,15 @@
 :root {
-  --bg: #f8f4fb;
+  --bg: #f9f6fc;
   --text: #3f3550;
   --primary: #5e2b97;
   --primary-dark: #4a217a;
-  --accent: #7b3fcf;
-  --accent-light: #b084f5;
+  --accent: #8c52d9;
+  --accent-light: #c2a6f7;
+  --soft-purple: #efe7fb;
   --white: #ffffff;
 }
 
+/* Reset + base */
 * { box-sizing: border-box; }
 
 body {
@@ -15,89 +17,116 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
+  line-height: 1.6;
 }
 
+/* NAV */
 nav {
   display: flex;
   justify-content: flex-end;
-  padding: 8px 30px;
+  align-items: center;
+  padding: 12px 30px;
   background: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 24px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  position: relative;
 }
 
-nav a:hover { text-decoration: underline; }
+/* subtle underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background: var(--accent-light);
+  transition: width 0.3s ease;
+}
 
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px 80px;
   background: linear-gradient(135deg, var(--accent), var(--accent-light));
   color: white;
+  animation: fadeIn 1s ease-in;
 }
 
 .hero h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 64px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .hero p {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
+  opacity: 0.95;
 }
 
+/* Logo */
 .logo {
-  width: 120px;
-  margin: 15px auto;
+  width: 180px;
+  margin: 5px auto;
   display: block;
+  animation: float 4s ease-in-out infinite;
 }
 
+/* SECTIONS */
 .section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   max-width: 900px;
   margin: auto;
   text-align: center;
+  animation: fadeUp 0.8s ease both;
 }
 
-.section h2, h1 {
+.section h2 {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
+  font-size: 36px;
+  margin-bottom: 10px;
 }
-
-.section h2 { font-size: 36px; }
-h1 { font-size: 48px; }
 
 p {
   font-size: 18px;
-  line-height: 1.6;
   max-width: 650px;
   margin: 0 auto;
 }
 
+/* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
   margin-top: 40px;
 }
 
 .card {
   background: var(--white);
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(94,43,151,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(94,43,151,0.15);
 }
 
 .card h3 {
@@ -105,19 +134,13 @@ p {
   margin-bottom: 10px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: var(--primary);
-  color: white;
-  margin-top: 60px;
-}
-
+/* IMAGES */
 .main-image {
-  width: 250px;
+  width: 260px;
   max-width: 100%;
   display: block;
-  margin: 20px auto;
+  margin: 25px auto;
+  border-radius: 12px;
 }
 
 .circle-image {
@@ -127,9 +150,77 @@ footer {
   border-radius: 50%;
   display: block;
   margin: 20px auto;
+  border: 4px solid var(--soft-purple);
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--primary);
+  color: white;
+  margin-top: 80px;
+  font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* subtle floating logo */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
-  .hero h1 { font-size: 42px; }
-  .section h2 { font-size: 28px; }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 8px 10px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 70px 15px 60px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .section {
+    padding: 50px 15px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
