@@ -100,12 +100,11 @@ nav a.active::after {
 /* =========================
    HERO
 ========================= */
-
 .hero {
   text-align: center;
   padding: 70px 20px 50px;
   background: linear-gradient(to bottom, #f9f4ef, #fffaf7);
-  color: white;
+  color: var(--text);
   animation: fadeIn 0.9s ease-in;
 }
 
@@ -126,6 +125,7 @@ nav a.active::after {
     opacity: 1;
     transform: translateY(0);
   }
+}
 
 .logo2 {
   max-width: 600px;
@@ -178,10 +178,6 @@ nav a.active::after {
   color: var(--text);
   font-family: 'Playfair Display', serif;
 }
-
-.cta-button {
-  display: inline-block;
-  margin-top: 0;
 
 /* =========================
    GENERAL SECTIONS
@@ -582,6 +578,11 @@ footer p {
 
   .hero p {
     font-size: 17px;
+  }
+
+  .tagline {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
   }
 
   .section {
