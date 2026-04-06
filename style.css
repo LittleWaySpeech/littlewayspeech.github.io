@@ -1,5 +1,5 @@
 /* =========================================
-   LITTLE WAY SPEECH THERAPY - MODERN POLISH
+   LITTLE WAY SPEECH THERAPY
 ========================================= */
 
 :root {
@@ -88,7 +88,6 @@ nav a {
   letter-spacing: 0.3px;
 }
 
-/* modern underline animation */
 nav a::after {
   content: "";
   position: absolute;
@@ -128,6 +127,7 @@ nav a.active::after {
   border-radius: 50%;
   display: block;
   margin: 20px auto;
+}
 
 .hero h1 {
   font-family: 'Dancing Script', cursive;
@@ -227,10 +227,12 @@ nav a.active::after {
 ========================= */
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   border-radius: 14px;
   border: 1px solid #ddd;
   padding: 13px;
   font-size: 15px;
+  margin-bottom: 12px;
   transition: all 0.2s ease;
 }
 
@@ -241,7 +243,7 @@ nav a.active::after {
 }
 
 .contact-form button {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 15px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--primary));
@@ -254,6 +256,14 @@ nav a.active::after {
 
 .contact-form button:hover {
   transform: translateY(-2px);
+}
+
+.thank-you-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primary);
+  font-weight: 600;
 }
 
 /* =========================
