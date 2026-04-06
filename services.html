@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Services | Little Way Speech Therapy</title>
+  <meta name="description" content="Speech therapy services in San Diego including early intervention, articulation, language development, AAC support, and parent coaching.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -16,89 +18,101 @@
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="rates.html">Rates</a>
-  <a href="students.html">Students</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="rates.html">Rates</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-<!-- HEADER -->
-<div class="section">
-  <h1>Services</h1>
+<main>
 
-  <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="logo">
+  <!-- INTRO -->
+  <section class="section">
+    <h1>Services</h1>
 
-  <p>
-    We offer individualized, family-centered speech and language services designed to support each child’s 
-    unique communication needs. Sessions are engaging, play-based, and tailored to promote meaningful progress.
-  </p>
-</div>
+    <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="logo">
 
-<!-- SERVICES GRID -->
-<div class="section">
-  <h2>Areas of Support</h2>
+    <p>
+      We offer individualized, family-centered speech and language services designed to support each child’s 
+      unique communication needs. Sessions are engaging, play-based, and tailored to promote meaningful progress.
+    </p>
+  </section>
 
-  <div class="cards">
+  <!-- SERVICES GRID -->
+  <section class="section">
+    <h2>Areas of Support</h2>
 
-    <div class="card">
-      <h3>Speech Sound Disorders</h3>
-      <p>Support for articulation and phonological development to improve speech intelligibility.</p>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Speech Sound Disorders</h3>
+        <p>Support for articulation and phonological development to improve speech clarity and intelligibility.</p>
+      </div>
+
+      <div class="card">
+        <h3>Language Development</h3>
+        <p>Building both understanding and expressive language skills for more effective communication.</p>
+      </div>
+
+      <div class="card">
+        <h3>Social Communication</h3>
+        <p>Helping children develop conversational skills, perspective-taking, and meaningful social interaction.</p>
+      </div>
+
+      <div class="card">
+        <h3>AAC Support</h3>
+        <p>Guidance with augmentative and alternative communication systems, including device selection, funding, and programming.</p>
+      </div>
+
+      <div class="card">
+        <h3>Early Intervention</h3>
+        <p>Play-based therapy for infants and toddlers to support early communication and developmental milestones.</p>
+      </div>
+
+      <div class="card">
+        <h3>Parent Coaching</h3>
+        <p>Equipping caregivers with practical, easy-to-use strategies to support communication in everyday routines.</p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Language Development</h3>
-      <p>Building comprehension and expressive language skills for effective communication.</p>
-    </div>
+  <!-- PROCESS -->
+  <section class="section">
+    <h2>What to Expect</h2>
 
-    <div class="card">
-      <h3>Social Communication</h3>
-      <p>Helping children develop conversational skills with perspective-taking for improved social interaction.</p>
-    </div>
+    <p>
+      Services typically begin with an initial evaluation, followed by individualized therapy sessions. 
+      Close collaboration with families is prioritized to ensure strategies carry over into daily life, 
+      supporting consistent and lasting progress.
+    </p>
+  </section>
 
-    <div class="card">
-      <h3>AAC Support</h3>
-      <p>Guidance with augmentative and alternative communication systems, including funding and programming.</p>
-    </div>
+  <!-- CTA -->
+  <section class="section">
+    <h2>Get In Touch</h2>
 
-    <div class="card">
-      <h3>Early Intervention</h3>
-      <p>Play-based therapy for infants and toddlers to support early communication development.</p>
-    </div>
+    <p>
+      If you’re interested in services or have questions about your child’s communication, let’s connect!
+    </p>
 
-    <div class="card">
-      <h3>Parent Coaching</h3>
-      <p>Equipping caregivers with practical strategies to support communication in everyday routines.</p>
-    </div>
+    <a href="contact.html" class="cta-button">Request a Consultation</a>
+  </section>
 
-  </div>
-</div>
-
-<!-- PROCESS SECTION -->
-<div class="section">
-  <h2>What to Expect</h2>
-  <p>
-    Services typically begin with an initial evaluation, followed by individualized 
-    therapy sessions.  Close collaboration with with families is prioritized to ensure strategies carry over into daily life, 
-    supporting consistent and lasting progress.
-  </p>
-</div>
-  
-<!-- CTA -->
-<div class="section">
-  <h2>Get In Touch</h2>
-  <p>
-    If you’re interested in services or have questions about your child’s communication, let's connect!
-  </p>
-
-  <a href="contact.html" class="cta-button">Request a Consultation</a>
-</div>
+</main>
 
 <footer>
-  &copy; <script>document.write(new Date().getFullYear())</script> Little Way Speech Therapy
+  &copy; <span id="year"></span> Little Way Speech Therapy
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
