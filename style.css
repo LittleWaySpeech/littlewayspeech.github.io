@@ -121,6 +121,14 @@ nav a.active::after {
   animation: floatIn 1.4s ease-out forwards;
 }
 
+.logo2 {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+
 .hero h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 64px;
