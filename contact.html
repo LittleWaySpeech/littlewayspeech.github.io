@@ -55,7 +55,8 @@
         class="contact-form"
       >
         <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-        <input type="hidden" name="_next" value="https://littlewayspeech.com/contact.html#contact-success">
+        <!-- ✅ UPDATED -->
+        <input type="hidden" name="_next" value="contact.html?submitted=true">
         <input type="text" name="_gotcha" style="display:none">
 
         <label for="name">Name</label>
@@ -74,7 +75,8 @@
         <button type="submit">Send Message</button>
       </form>
 
-      <div id="contact-success" class="contact-success">
+      <!-- ✅ UPDATED CLASS -->
+      <div class="thank-you-message">
         Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
       </div>
 
@@ -99,6 +101,16 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  // ✅ Show thank-you message ONLY after submission
+  const params = new URLSearchParams(window.location.search);
+  const thankYou = document.querySelector(".thank-you-message");
+
+  if (params.get("submitted") === "true") {
+    if (thankYou) thankYou.style.display = "block";
+  } else {
+    if (thankYou) thankYou.style.display = "none";
+  }
 </script>
 
 </body>
