@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About | Little Way Speech Therapy</title>
+  <meta name="description" content="Learn more about Little Way Speech Therapy and Kathleen Winger, M.S., CCC-SLP, providing pediatric speech therapy in San Diego.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -16,73 +18,89 @@
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="rates.html">Rates</a>
-  <a href="students.html">Students</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="services.html">Services</a>
+    <a href="rates.html">Rates</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-<!-- ABOUT INTRO -->
-<div class="section">
-  <h1>About</h1>
+<main>
 
-  <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="logo">
+  <!-- INTRO -->
+  <section class="section">
+    <h1>About</h1>
 
-  <p>
-  Little Way Speech Therapy is a sole proprietorship in San Diego County owned and operated by Kathleen "Kat" Winger, M.S., CCC-SLP, a licensed pediatric speech-language pathologist.
-      </p>
+    <img src="Little Way logo no background.png" alt="Little Way Speech Therapy logo" class="logo">
 
-  <img src="profile.jpg" alt="Kathleen Winger, M.S., CCC-SLP" class="circle-image">
-  
-  <p>
-  Kat has been working with children of all ages in pediatric private practice since 2019, both in the clinic and home health settings. She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
-      </p>
-<!-- PHILOSOPHY -->
-<div class="section">
-  <h2>Mission</h2>
-      <p>
-        Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s “Little Way," this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
-      </p>
+    <p>
+      Little Way Speech Therapy is a sole proprietorship in San Diego County owned and operated by Kathleen "Kat" Winger, M.S., CCC-SLP, a licensed pediatric speech-language pathologist.
+    </p>
 
-  <img src="St_Therese.jpg" alt="St. Thérèse of Lisieux" class="circle-image">
-<!-- VALUES / HIGHLIGHTS -->
-<div class="section">
-  <h2>Core Values</h2>
+    <img src="profile.jpg" alt="Kathleen Winger, M.S., CCC-SLP" class="circle-image">
 
-  <div class="cards">
-    <div class="card">
-      <h3>Individualized Care</h3>
-      <p>Every child’s communication journey is unique, so therapy is tailored to meet each child's needs.</p>
+    <p>
+      Kat has been working with children of all ages in pediatric private practice since 2019, both in clinic and home health settings. She is trained in PROMPT, Kaufman, Lidcombe, TalkTools, Orton-Gillingham, Lively Letters, and Natural Language Acquisition approaches.
+    </p>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <h2>Mission</h2>
+
+    <p>
+      Little Way Speech is grounded in the belief that no act of care is too small when done with great love. Inspired by St. Thérèse of Lisieux’s “Little Way,” this philosophy reflects patience, compassion, and the belief that small moments of connection can lead to meaningful growth.
+    </p>
+
+    <img src="St_Therese.jpg" alt="St. Thérèse of Lisieux" class="circle-image">
+  </section>
+
+  <!-- VALUES -->
+  <section class="section">
+    <h2>Core Values</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Individualized Care</h3>
+        <p>Every child’s communication journey is unique, so therapy is tailored to meet each child's needs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Family Collaboration</h3>
+        <p>A team-based approach supports the best therapy outcomes, so caregiver education is always a priority.</p>
+      </div>
+
+      <div class="card">
+        <h3>Evidence-Based Practice</h3>
+        <p>Therapy approaches are grounded in research and clinical best practices.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Family Collaboration</h3>
-      <p>A team-based approach supports the best therapy outcomes, so caregiver education is always a priority.</p>
-    </div>
+  <!-- CTA -->
+  <section class="section">
+    <h2>Let's Connect</h2>
 
-    <div class="card">
-      <h3>Evidence-Based Practice</h3>
-      <p>Therapy approaches are grounded in research and clinical best practices.</p>
-    </div>
-  </div>
-</div>
+    <p>
+      If you’d like to learn more about services or discuss your child’s needs, I’d love to hear from you!
+    </p>
 
-<!-- CTA -->
-<div class="section">
-  <h2>Let's Connect</h2>
-  <p>
-If you’d like to learn more about services or discuss your child’s needs, I'd love to hear from you!
-  </p>
+    <a href="contact.html" class="cta-button">Contact</a>
+  </section>
 
-  <a href="contact.html" class="cta-button">Contact</a>
-</div>
+</main>
 
 <footer>
-  &copy; <script>document.write(new Date().getFullYear())</script> Little Way Speech Therapy
+  &copy; <span id="year"></span> Little Way Speech Therapy
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
