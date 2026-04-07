@@ -159,6 +159,14 @@ nav a.active::after {
   animation: fadeUp 0.8s ease both;
 }
 
+.section h1 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--primary);
+  font-size: 48px;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
 .section h2 {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
@@ -353,6 +361,10 @@ footer {
   .section + .section {
     padding-top: 16px;
   }
+
+  .section h1 {
+    font-size: 36px;
+}
 
   .section h2 {
     font-size: 32px;
