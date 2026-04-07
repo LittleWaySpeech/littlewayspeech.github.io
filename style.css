@@ -285,7 +285,7 @@ nav a.active::after {
   font-weight: 500;
   position: relative;
   transition: all 0.25s ease;
-  border-left: 5px solid #c7a86c; /* soft gold accent */
+  border-left: 5px solid ##4a217a;
 }
 
 .rates-list li:hover {
