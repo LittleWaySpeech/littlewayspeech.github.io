@@ -272,37 +272,76 @@ nav a.active::after {
   margin-bottom: 20px;
 }
 
-.rates-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Layout */
+.rates-grid {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
 }
 
-.rates-list li {
-  background: #f9fafb;
-  margin: 12px 0;
-  padding: 14px 18px;
-  border-radius: 12px;
-  font-weight: 500;
+/* Card style */
+.rate-card {
+  background: #ffffff;
+  padding: 20px 22px;
+  border-radius: 16px;
   position: relative;
-  transition: all 0.25s ease;
-  border-left: 5px solid ##4a217a;
+
+  border: 2px solid #e6ddf2;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
 }
 
-.rates-list li:hover {
-  transform: translateX(6px);
-  background: #fdfaf5;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-
-.rates-list li::before {
-  content: "•";
-  color: #c7a86c;
-  font-size: 20px;
+.rate-card::before {
+  content: "";
   position: absolute;
-  left: -14px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: #6b3fa0;
+  border-radius: 16px 0 0 16px;
+}
+
+.rate-card:hover {
+  transform: translateY(-4px);
+  border-color: #6b3fa0;
+  box-shadow: 0 12px 28px rgba(107, 63, 160, 0.2);
+}
+
+.rate-header {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #3d2a5c;
+  margin-bottom: 4px;
+}
+
+.rate-description {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.rate-price {
+  margin-top: 12px;
+  display: inline-block;
+
+  background: linear-gradient(135deg, #6b3fa0, #8e63c7);
+  color: white;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+}
+
+.featured {
+  border: 2px solid #6b3fa0;
+  background: linear-gradient(to right, #faf7ff, #ffffff);
+}
+
+.featured .rate-price {
+  background: linear-gradient(135deg, #4a217a, #6b3fa0);
 }
 
 /* =========================
