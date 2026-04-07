@@ -45,6 +45,16 @@ body {
   font-weight: 600;
 }
 
+.purple-text {
+  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-top: 22px;
+  letter-spacing: 0.3px;
+}
+
 /* CLEAN SPACING SYSTEM */
 h1, h2, h3, p {
   margin: 0;
@@ -346,16 +356,6 @@ nav a.active::after {
   border-radius: 999px;
 
   font-size: 0.9rem;
-}
-
-.rate-text {
-  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
-  font-size: 1.35rem;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--primary);
-  margin-top: 22px;
-  letter-spacing: 0.3px;
 }
 
 .featured {
