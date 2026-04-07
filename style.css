@@ -132,7 +132,7 @@ nav a.active::after {
 
 .logo {
   width: 320px;
-  margin: 0 auto 12px;
+  margin: 14px auto 22px;
   animation: floatIn 1.4s ease-out forwards;
 }
 
