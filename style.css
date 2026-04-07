@@ -142,8 +142,7 @@ nav a.active::after {
 }
 
 .USAHSlogo {
-  width: 1400px;
-  max-width: 100%;
+  width: min(1400px, calc(100vw - 40px));
   display: block;
   margin: 80px auto;
   animation: floatIn 1.4s;
