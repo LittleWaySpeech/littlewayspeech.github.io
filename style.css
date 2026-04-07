@@ -122,9 +122,9 @@ nav a.active::after {
 }
 
 .USAHSlogo {
-  width: 280px;
-  margin: 0 auto 2px;
-  animation: floatIn 1.4s ease-out forwards;
+  width: 300px;
+  margin: 20px auto;
+  animation: floatIn 1.4s;
 }
 
 .circle-image {
