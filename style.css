@@ -285,18 +285,18 @@ nav a.active::after {
   font-weight: 500;
   position: relative;
   transition: all 0.25s ease;
-  border-left: 5px solid #7aa6c2; /* soft blue accent */
+  border-left: 5px solid #c7a86c; /* soft gold accent */
 }
 
 .rates-list li:hover {
   transform: translateX(6px);
-  background: #eef5f9;
+  background: #fdfaf5;
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 .rates-list li::before {
   content: "•";
-  color: #7aa6c2;
+  color: #c7a86c;
   font-size: 20px;
   position: absolute;
   left: -14px;
