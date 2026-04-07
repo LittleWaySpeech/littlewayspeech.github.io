@@ -277,6 +277,14 @@ nav a.active::after {
   transform: translateY(-2px);
 }
 
+.contact-subheadline {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--primary);
+  margin: 6px 0 12px;
+  text-align: center;
+}
+
 .thank-you-message {
   display: none;
   text-align: center;
