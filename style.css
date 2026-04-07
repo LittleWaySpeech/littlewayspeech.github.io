@@ -121,6 +121,12 @@ nav a.active::after {
   animation: floatIn 1.4s ease-out forwards;
 }
 
+.USAHSlogo {
+  width: 280px;
+  margin: 0 auto 2px;
+  animation: floatIn 1.4s ease-out forwards;
+}
+
 .circle-image {
   width: 120px;
   height: 120px;
