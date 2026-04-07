@@ -121,13 +121,13 @@ nav a.active::after {
   animation: floatIn 1.4s ease-out forwards;
 }
 
-.logo2 {
+.circle-image {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 6px;
+  margin: 14px auto;
 }
 
 .hero h1 {
