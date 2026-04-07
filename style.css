@@ -195,7 +195,7 @@ nav a.active::after {
 .section {
   max-width: 960px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 28px 20px;
   text-align: center;
   animation: fadeUp 0.8s ease both;
 }
@@ -204,7 +204,7 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
   font-size: 48px;
-  margin: 0 0 6px;
+  margin: 0 0 10px;
   line-height: 1.08;
 }
 
@@ -212,18 +212,18 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
   font-size: 42px;
-  margin: 0 0 6px;
+  margin: 0 0 10px;
   line-height: 1.08;
 }
 
 .section p {
   font-size: 17.5px;
   max-width: 720px;
-  margin: 0 auto 8px;
+  margin: 0 auto 10px;
 }
 
 .section + .section {
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 /* =========================
@@ -231,7 +231,7 @@ nav a.active::after {
 ========================= */
 .cta-button {
   display: inline-block;
-  margin-top: 14px;
+  margin-top: 16px;
   padding: 14px 32px;
   background: linear-gradient(135deg, var(--accent), var(--primary));
   color: white;
@@ -253,7 +253,7 @@ nav a.active::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .card {
@@ -272,7 +272,7 @@ nav a.active::after {
 
 .card h3 {
   font-size: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .card p {
@@ -309,10 +309,8 @@ nav a.active::after {
   padding: 20px 22px;
   border-radius: 16px;
   position: relative;
-
   border: 2px solid #e6ddf2;
   transition: all 0.3s ease;
-
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
 }
 
@@ -348,13 +346,11 @@ nav a.active::after {
 .rate-price {
   margin-top: 12px;
   display: inline-block;
-
   background: linear-gradient(135deg, #6b3fa0, #8e63c7);
   color: white;
   font-weight: 600;
   padding: 6px 14px;
   border-radius: 999px;
-
   font-size: 0.9rem;
 }
 
@@ -441,7 +437,7 @@ nav a.active::after {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
   color: var(--primary);
-  margin: 2px 0 10px;
+  margin: 4px 0 14px;
   text-align: center;
   line-height: 1.35;
 }
@@ -490,7 +486,7 @@ footer {
   padding: 24px 20px;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
-  margin-top: 28px;
+  margin-top: 36px;
   font-size: 14px;
 }
 
@@ -535,7 +531,7 @@ footer {
     padding: 12px;
   }
 
-   .hero {
+  .hero {
     padding: 26px 16px 14px;
   }
 
@@ -555,6 +551,17 @@ footer {
     width: 210px;
     margin: 12px auto 20px;
   }
+
+  .smalllogo {
+    width: 170px;
+  }
+
+  .USAHSlogo {
+    width: 100%;
+    max-width: 95%;
+    margin: 40px auto;
+  }
+
   .circle-image {
     width: 105px;
     height: 105px;
@@ -568,23 +575,38 @@ footer {
   }
 
   .section {
-    padding: 18px 16px;
+    padding: 22px 16px;
   }
 
   .section + .section {
-    padding-top: 8px;
+    padding-top: 10px;
   }
 
   .section h1 {
     font-size: 36px;
+    margin-bottom: 8px;
   }
 
   .section h2 {
     font-size: 32px;
+    margin-bottom: 8px;
   }
 
   .section p {
     font-size: 16.5px;
+  }
+
+  .cards {
+    gap: 18px;
+    margin-top: 14px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 20px;
   }
 
   .contact-subheadline {
@@ -592,7 +614,17 @@ footer {
   }
 
   .contact-card,
-  .quote-card {
+  .quote-card,
+  .info-card {
     padding: 18px;
+  }
+
+  .cta-button {
+    padding: 13px 26px;
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 28px;
   }
 }
