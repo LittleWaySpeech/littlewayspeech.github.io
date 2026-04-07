@@ -257,6 +257,54 @@ nav a.active::after {
 }
 
 /* =========================
+   RATES
+========================= */
+.info-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rates-list li {
+  background: #f9fafb;
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.25s ease;
+  border-left: 5px solid #7aa6c2; /* soft blue accent */
+}
+
+.rates-list li:hover {
+  transform: translateX(6px);
+  background: #eef5f9;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.rates-list li::before {
+  content: "•";
+  color: #7aa6c2;
+  font-size: 20px;
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* =========================
    FORMS
 ========================= */
 .contact-card {
