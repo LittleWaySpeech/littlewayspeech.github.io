@@ -43,6 +43,7 @@ body {
 .large-text {
   font-size: 19px;
   line-height: 1.7;
+  font-weight: bold;
 }
 
 /* CLEAN SPACING SYSTEM */
