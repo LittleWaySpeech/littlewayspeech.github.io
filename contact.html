@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contact | Little Way Speech Therapy</title>
-  <meta name="description" content="Contact Little Way Speech Therapy to schedule a consultation or ask questions about speech and language services in San Diego.">
+  <meta name="description" content="Contact Little Way Speech Therapy to ask questions, discuss services, or request a consultation for pediatric speech and language support in San Diego.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
     <a href="services.html">Services</a>
     <a href="rates.html">Rates</a>
     <a href="students.html">Students</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
   </nav>
 </header>
 
@@ -40,7 +40,7 @@
     <img src="Skipper.jpg" alt="Friendly dog named Skipper" class="logo2">
 
     <p>
-      Reach out any time!
+      Questions about services, availability, or next steps are always welcome. Whether support is just beginning or additional guidance is needed, reaching out is a simple first step.
     </p>
   </section>
 
@@ -55,7 +55,6 @@
         class="contact-form"
       >
         <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-        <!-- ✅ UPDATED -->
         <input type="hidden" name="_next" value="contact.html?submitted=true">
         <input type="text" name="_gotcha" style="display:none">
 
@@ -75,7 +74,6 @@
         <button type="submit">Send Message</button>
       </form>
 
-      <!-- ✅ UPDATED CLASS -->
       <div class="thank-you-message">
         Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
       </div>
@@ -102,7 +100,7 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // ✅ Show thank-you message ONLY after submission
+  // Show thank-you message only after submission
   const params = new URLSearchParams(window.location.search);
   const thankYou = document.querySelector(".thank-you-message");
 
