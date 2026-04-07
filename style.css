@@ -44,7 +44,6 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
-}
 
 /* CLEAN SPACING SYSTEM */
 h1, h2, h3, p {
@@ -347,6 +346,16 @@ nav a.active::after {
   border-radius: 999px;
 
   font-size: 0.9rem;
+}
+
+.rate-text {
+  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-top: 22px;
+  letter-spacing: 0.3px;
 }
 
 .featured {
