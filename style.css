@@ -132,6 +132,7 @@ nav a.active::after {
   display: block;
   margin: 60px auto;
   animation: floatIn 1.4s;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
 }
 
 .circle-image {
