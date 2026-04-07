@@ -125,14 +125,14 @@ nav a.active::after {
 ========================= */
 .hero {
   text-align: center;
-  padding: 28px 20px 12px;
+  padding: 36px 20px 18px;
   background: linear-gradient(180deg, #fdfaff 0%, #f6f0fd 100%);
   animation: fadeIn 0.9s ease-in;
 }
 
 .logo {
   width: 320px;
-  margin: 14px auto 22px;
+  margin: 16px auto 24px;
   animation: floatIn 1.4s ease-out forwards;
 }
 
@@ -173,7 +173,7 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   font-size: 64px;
   color: var(--primary);
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   letter-spacing: 0.5px;
   line-height: 1.05;
 }
@@ -182,7 +182,7 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   font-size: 34px;
   max-width: 700px;
-  margin: 0 auto 26px;
+  margin: 0 auto 28px;
   color: var(--primary);
   opacity: 0.95;
   line-height: 1.25;
