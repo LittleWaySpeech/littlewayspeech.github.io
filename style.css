@@ -197,7 +197,6 @@ nav a.active::after {
   margin: 0 auto 8px;
 }
 
-/* Tighter spacing when sections stack */
 .section + .section {
   padding-top: 10px;
 }
