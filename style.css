@@ -140,6 +140,16 @@ nav a.active::after {
   width: 210px;
   margin: 0 auto 12px;
   display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: smallLogoFade 1s ease-out forwards;
+}
+
+@keyframes smallLogoFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================================
