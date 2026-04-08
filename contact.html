@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contact | Little Way Speech Therapy</title>
-  <meta name="description" content="Contact Little Way Speech Therapy to ask questions, discuss services, or request a consultation for pediatric speech and language support in San Diego.">
+  <meta name="description" content="Contact Little Way Speech Therapy to ask questions or request a consultation for pediatric speech therapy in San Diego.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,52 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- PAGE-SPECIFIC STYLE -->
+  <style>
+    .contact-card {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(94, 43, 151, 0.1);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .contact-note {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    .thank-you-message {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 12px;
+      background: #f3ecff;
+      text-align: center;
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,7 +71,7 @@
     <a href="services.html">Services</a>
     <a href="rates.html">Rates</a>
     <a href="students.html">Students</a>
-    <a href="contact.html" class="active" aria-current="page">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 </header>
 
@@ -33,62 +79,91 @@
 
   <!-- INTRO -->
   <section class="section">
-    <h1>Contact</h1>
+    <div class="container">
+      <h1>Contact</h1>
 
-    <img src="Skipper.jpg" alt="Friendly dog named Skipper" class="circle-image">
+      <img src="Skipper.jpg" alt="Friendly dog named Skipper" class="circle-image">
 
-    <p class="purple-text">
-      Have a question about services or availability?  Reaching out is the first step!
-    </p>
-        
+      <p class="purple-text">
+        Have a question or wondering if speech therapy is the right next step? You’re in the right place.
+      </p>
+
+      <p>
+        Reaching out is often the first step toward clarity and support. Messages are typically returned within 1–2 business days.
+      </p>
+    </div>
   </section>
 
   <!-- FORM -->
   <section class="section">
-    <div class="contact-card">
+    <div class="container">
 
-      <form
-        action="https://formspree.io/f/mgopnkok"
-        method="POST"
-        autocomplete="on"
-        class="contact-form"
-      >
-        <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-        <input type="hidden" name="_next" value="contact.html?submitted=true">
-        <input type="text" name="_gotcha" style="display:none">
+      <div class="contact-card">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <form
+          action="https://formspree.io/f/mgopnkok"
+          method="POST"
+          autocomplete="on"
+          class="contact-form"
+        >
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+          <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
+          <input type="hidden" name="_next" value="contact.html?submitted=true">
+          <input type="text" name="_gotcha" style="display:none">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="name">Parent / Caregiver Name</label>
+          <input type="text" id="name" name="name" required>
 
-        <p class="contact-note">
-          Please do not include medical or confidential information.
-        </p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-        <button type="submit">Send Message</button>
-      </form>
+          <label for="child-age">Child’s Age</label>
+          <input type="text" id="child-age" name="child-age">
 
-      <div class="thank-you-message">
-        Thank you for your message. Your inquiry has been received, and a response will be provided as soon as possible.
+          <label for="service">Type of Support</label>
+          <select id="service" name="service">
+            <option value="">Select one (optional)</option>
+            <option>Evaluation</option>
+            <option>Ongoing Therapy</option>
+            <option>Not sure / Seeking guidance</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <p class="contact-note">
+            Please do not include sensitive medical or confidential information.
+          </p>
+
+          <button type="submit">Send Message</button>
+
+        </form>
+
+        <div class="thank-you-message">
+          Thank you for your message. Your inquiry has been received, and a response will be provided shortly.
+        </div>
+
       </div>
 
     </div>
   </section>
 
-    <img src="little-way-logo-small.png" alt="Little Way Speech Therapy logo" class="smalllogo">
-  
+  <!-- LOGO -->
+  <section class="section">
+    <div class="container">
+      <img src="little-way-logo-small.png" alt="Little Way Speech Therapy logo" class="smalllogo">
+    </div>
+  </section>
+
   <!-- QUOTE -->
   <section class="section">
-    <div class="quote-card">
-      <p class="quote">
-        “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm. If every tiny flower wanted to be a rose, spring would lose its loveliness.”
-      </p>
-      <p class="quote-author">— St. Thérèse of Lisieux</p>
+    <div class="container">
+      <div class="quote-card">
+        <p class="quote">
+          “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm.”
+        </p>
+        <p class="quote-author">— St. Thérèse of Lisieux</p>
+      </div>
     </div>
   </section>
 
@@ -101,14 +176,11 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Show thank-you message only after submission
   const params = new URLSearchParams(window.location.search);
   const thankYou = document.querySelector(".thank-you-message");
 
   if (params.get("submitted") === "true") {
     if (thankYou) thankYou.style.display = "block";
-  } else {
-    if (thankYou) thankYou.style.display = "none";
   }
 </script>
 
