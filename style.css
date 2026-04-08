@@ -145,13 +145,13 @@ nav a.active::after {
   width: 500px;
   max-width: 90%;
   display: block;
-  margin: 30px auto 8px; /* smaller bottom margin */
+  margin: 30px auto 0px;
   animation: floatIn 1.4s;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
 }
 
 .location-text {
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 .circle-image {
