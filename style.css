@@ -74,6 +74,7 @@ p {
 .rate-item {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .rate-item:hover {
