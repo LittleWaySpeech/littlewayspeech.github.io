@@ -132,7 +132,7 @@ nav a:hover::after {
 }
 
 /* =========================
-   SECTIONS (ALTERNATING ✨)
+   SECTIONS
 ========================= */
 .section {
   margin: 50px auto;
@@ -145,7 +145,6 @@ nav a:hover::after {
   border-radius: 24px;
 }
 
-/* HEADERS ✨ */
 .section h2 {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
@@ -249,6 +248,14 @@ button:hover {
 .purple-text {
   color: var(--primary);
   font-weight: 600;
+}
+
+/* =========================
+   RATES PAGE
+========================= */
+.rate-item {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* =========================
