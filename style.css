@@ -154,6 +154,24 @@ nav a.active {
   transform: scale(1.04);
 }
 
+.circle-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover; /* 🔥 THIS IS THE MAGIC */
+  border-radius: 50%;
+  display: block;
+  margin: 24px auto;
+
+  box-shadow: 0 8px 24px rgba(94, 43, 151, 0.2);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.circle-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 36px rgba(94, 43, 151, 0.28);
+}
+
 /* =========================
    BUTTON
 ========================= */
