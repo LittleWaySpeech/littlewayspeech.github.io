@@ -209,10 +209,6 @@ nav a.active::after {
   margin: 0 auto 16px;
 }
 
-.section + .section {
-  margin-top: 20px;
-}
-
 /* =========================
    DIVIDER (CROSS)
 ========================= */
