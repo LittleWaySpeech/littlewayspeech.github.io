@@ -1,16 +1,20 @@
 /* =========================================
-   LITTLE WAY SPEECH THERAPY
+   LITTLE WAY SPEECH THERAPY — PREMIUM POP
 ========================================= */
 
 :root {
   --bg: #f9f6fc;
   --text: #3f3550;
+
   --primary: #5e2b97;
   --primary-dark: #4a217a;
-  --accent: #8c52d9;
-  --accent-light: #cbb0f7;
-  --soft-purple: #efe7fb;
-  --soft-lilac: #f6f0fd;
+
+  --accent: #9b6df0;
+  --accent-light: #d7c3ff;
+
+  --soft-purple: #f3ecff;
+  --soft-lilac: #faf6ff;
+
   --white: #ffffff;
 
   --radius: 20px;
@@ -29,22 +33,21 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to bottom, #fbf9fe, #f6f0fd);
+  background:
+    radial-gradient(circle at top, #ffffff 0%, #f6f0fd 60%, #efe7fb 100%);
   color: var(--text);
   line-height: 1.6;
-}
-
-body {
   animation: fadeIn 0.6s ease;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
+/* ✨ Typography Glow */
 h1, h2, h3 {
   margin: 0 0 12px;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  text-shadow: 0 2px 8px rgba(94, 43, 151, 0.15);
 }
 
 p {
@@ -55,83 +58,91 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* =========================
-   NAV
+   NAV — GLASS + GLOW
 ========================= */
 nav {
   display: flex;
   justify-content: flex-end;
   gap: 24px;
   padding: 16px 36px;
-  background: rgba(94, 43, 151, 0.92);
+  background: linear-gradient(135deg, #5e2b97, #8c52d9);
+  box-shadow: 0 4px 20px rgba(94, 43, 151, 0.2);
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   font-weight: 600;
   position: relative;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -4px;
+  background: white;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a.active {
   text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 /* =========================
-   HERO
+   HERO — ELEGANT
 ========================= */
 .hero {
   text-align: center;
-  padding: 36px 20px 16px;
+  padding: 40px 20px 20px;
 }
 
 .hero h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 46px;
+  font-size: 52px;
   color: var(--primary);
 }
 
 .tagline {
   font-family: 'Playfair Display', serif;
-  font-size: 19px;
+  font-size: 22px;
   color: var(--primary);
-  margin-bottom: 10px;
+  font-style: italic;
+  margin-bottom: 12px;
 }
 
 .logo {
-  width: 300px;
-  margin: 12px auto 18px;
+  width: 320px;
+  margin: 14px auto 20px;
+  filter: drop-shadow(0 6px 14px rgba(94, 43, 151, 0.2));
 }
 
 /* =========================
-   BUTTON GLOW
+   BUTTON — GLOW
 ========================= */
 .cta-button,
 button {
-  display: inline-block;
-  padding: 12px 22px;
-  background: var(--primary);
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #5e2b97, #8c52d9);
   color: white;
   border-radius: 999px;
   border: none;
   font-weight: 600;
   cursor: pointer;
-  text-decoration: none;
-  transition: 0.25s ease;
-  margin-top: 8px;
+  transition: 0.3s;
 }
 
 .cta-button:hover,
 button:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(94, 43, 151, 0.25);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(94, 43, 151, 0.3);
 }
 
 /* =========================
@@ -139,155 +150,85 @@ button:hover {
 ========================= */
 .section {
   max-width: 900px;
-  margin: 32px auto;
-  padding: 24px 20px;
+  margin: 34px auto;
+  padding: 26px 20px;
   text-align: center;
 }
 
-.section h1,
 .section h2 {
   font-family: 'Dancing Script', cursive;
+  font-size: 40px;
   color: var(--primary);
 }
 
-.section h1 {
-  font-size: 42px;
-}
-
-.section h2 {
-  font-size: 36px;
-}
-
 /* =========================
-   CARDS ANIMATION
+   CARDS — GLASS STYLE
 ========================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .card {
-  background: white;
-  padding: 20px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  padding: 22px;
   border-radius: var(--radius-lg);
-  transition: 0.3s ease;
-  animation: fadeUp 0.6s ease;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 12px 30px rgba(94, 43, 151, 0.08);
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(94, 43, 151, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(94, 43, 151, 0.18);
 }
 
 /* =========================
-   CONTACT PAGE
+   RATES — PREMIUM CARDS
 ========================= */
-
-.circle-image {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 12px auto;
-}
-
-.purple-text {
-  font-style: italic;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-
-/* FORM */
-.contact-form {
-  max-width: 520px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.contact-form label {
-  margin-bottom: 4px;
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-
-.contact-note {
-  font-size: 13px;
-  color: #777;
-  margin: 4px 0 10px;
-}
-
-/* THANK YOU MESSAGE */
-.thank-you-message {
-  display: none;
-  margin-top: 16px;
-  padding: 14px;
-  border-radius: 12px;
-  background: var(--soft-purple);
-  color: var(--primary);
-  text-align: center;
-  font-weight: 600;
-}
-
-/* =========================
-   RATES GRID RESTORED + POLISHED
-========================= */
-
 .rates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 10px auto 30px; /* ✨ FIXED SPACING */
+  gap: 22px;
+  margin: 12px auto 30px;
   padding: 0 20px;
 }
 
 .rate-card {
   background: white;
-  border-radius: 24px;
-  padding: 22px 18px;
+  border-radius: 26px;
+  padding: 24px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(94, 43, 151, 0.08);
-  transition: 0.3s ease;
-  animation: fadeUp 0.6s ease;
+  box-shadow: 0 12px 30px rgba(94, 43, 151, 0.12);
+  transition: 0.3s;
 }
 
 .rate-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(94, 43, 151, 0.14);
+  transform: translateY(-8px) scale(1.02);
 }
 
-/* FEATURED POP */
 .rate-card.featured {
-  background: linear-gradient(135deg, #5e2b97, #8c52d9);
+  background: linear-gradient(135deg, #5e2b97, #9b6df0);
   color: white;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .rate-header {
-  font-weight: 700;
   font-size: 18px;
-  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 .rate-description {
   font-size: 14px;
   opacity: 0.85;
-  margin-bottom: 10px;
 }
 
 .rate-price {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
-  color: var(--primary);
+  margin-top: 8px;
 }
 
 .rate-card.featured .rate-price {
@@ -297,54 +238,41 @@ button:hover {
 /* =========================
    INFO CARD
 ========================= */
-
 .info-card {
   background: white;
-  padding: 24px;
-  border-radius: 24px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 10px 25px rgba(94, 43, 151, 0.08);
+  padding: 26px;
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(94, 43, 151, 0.1);
   text-align: left;
 }
 
-/* NOTE */
-.note {
-  background: var(--soft-purple);
-  padding: 16px;
-  border-radius: 16px;
-  margin-top: 12px;
-}
-
-.inline-link {
-  color: var(--primary);
-  font-weight: 600;
-}
-
 /* =========================
-   QUOTE
+   QUOTE — ELEGANT
 ========================= */
 .quote-card {
-  background: var(--soft-lilac);
-  padding: 20px;
-  border-radius: var(--radius-lg);
-  max-width: 600px;
-  margin: auto;
+  background: linear-gradient(135deg, #f6f0fd, #efe7fb);
+  padding: 24px;
+  border-radius: 24px;
 }
 
 .quote {
   font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
 }
 
 .quote-author {
-  margin-top: 4px;
+  margin-top: 6px;
   font-weight: 600;
 }
 
-/* SMALL LOGO */
+/* =========================
+   SMALL LOGO
+========================= */
 .smalllogo {
-  width: 160px;
-  margin: 16px auto;
+  width: 170px;
+  margin: 20px auto;
+  opacity: 0.9;
 }
 
 /* =========================
@@ -352,23 +280,16 @@ button:hover {
 ========================= */
 footer {
   text-align: center;
-  padding: 16px;
+  padding: 18px;
   color: #777;
-  font-size: 14px;
 }
 
 /* =========================
-   ANIMATION KEYFRAMES
+   ANIMATIONS
 ========================= */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* =========================
@@ -383,16 +304,15 @@ footer {
   }
 
   .hero h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .logo {
-    width: 220px;
+    width: 240px;
   }
 
   .section {
     margin: 24px 14px;
-    padding: 18px;
   }
 
   .cards {
