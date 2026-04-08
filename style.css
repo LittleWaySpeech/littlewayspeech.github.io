@@ -34,16 +34,25 @@ body {
   line-height: 1.6;
 }
 
-/* 🔥 FIXED SPACING SYSTEM */
+/* ✨ SMOOTH FADE-IN */
+body {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 🔥 SPACING SYSTEM */
 h1, h2, h3 {
   margin: 0 0 12px;
 }
 
 p {
-  margin: 0 0 10px; /* 👈 reduced from 16px */
+  margin: 0 0 10px;
 }
 
-/* tighter spacing inside sections */
 .section p:last-child {
   margin-bottom: 0;
 }
@@ -68,6 +77,13 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  position: relative;
+}
+
+/* ✨ ACTIVE PAGE */
+nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* =========================
@@ -75,7 +91,7 @@ nav a {
 ========================= */
 .hero {
   text-align: center;
-  padding: 36px 20px 16px; /* 👈 slightly tighter */
+  padding: 36px 20px 16px;
 }
 
 .hero h1 {
@@ -93,11 +109,11 @@ nav a {
 
 .logo {
   width: 300px;
-  margin: 12px auto 18px; /* 👈 tightened */
+  margin: 12px auto 18px;
 }
 
 /* =========================
-   BUTTON
+   BUTTON ✨ GLOW
 ========================= */
 .cta-button,
 button {
@@ -110,13 +126,15 @@ button {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
-  margin-top: 8px; /* 👈 reduced */
+  transition: 0.25s ease;
+  margin-top: 8px;
 }
 
 .cta-button:hover,
 button:hover {
   background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(94, 43, 151, 0.25);
 }
 
 /* =========================
@@ -124,8 +142,8 @@ button:hover {
 ========================= */
 .section {
   max-width: 900px;
-  margin: 32px auto; /* 👈 reduced from 40px */
-  padding: 24px 20px; /* 👈 slightly tighter */
+  margin: 32px auto;
+  padding: 24px 20px;
   text-align: center;
 }
 
@@ -144,18 +162,25 @@ button:hover {
 }
 
 /* =========================
-   CARDS
+   CARDS ✨ ANIMATION
 ========================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px; /* 👈 tighter */
+  gap: 18px;
 }
 
 .card {
   background: white;
   padding: 20px;
   border-radius: var(--radius-lg);
+  transition: 0.3s ease;
+  animation: fadeUp 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(94, 43, 151, 0.12);
 }
 
 /* =========================
@@ -173,7 +198,7 @@ button:hover {
 .purple-text {
   font-style: italic;
   color: var(--primary);
-  margin-bottom: 8px; /* 👈 tighter above form */
+  margin-bottom: 8px;
 }
 
 /* FORM */
@@ -192,7 +217,7 @@ button:hover {
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 12px; /* 👈 reduced */
+  margin-bottom: 12px;
   border-radius: 10px;
   border: 1px solid #ddd;
 }
@@ -200,7 +225,7 @@ button:hover {
 .contact-note {
   font-size: 13px;
   color: #777;
-  margin: 4px 0 10px; /* 👈 tighter */
+  margin: 4px 0 10px;
 }
 
 /* THANK YOU MESSAGE */
@@ -215,13 +240,93 @@ button:hover {
   font-weight: 600;
 }
 
-/* SMALL LOGO */
-.smalllogo {
-  width: 160px;
-  margin: 16px auto;
+/* =========================
+   RATES GRID ✨ RESTORED + POLISHED
+========================= */
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 10px auto 30px; /* ✨ FIXED SPACING */
+  padding: 0 20px;
 }
 
-/* QUOTE */
+.rate-card {
+  background: white;
+  border-radius: 24px;
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(94, 43, 151, 0.08);
+  transition: 0.3s ease;
+  animation: fadeUp 0.6s ease;
+}
+
+.rate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(94, 43, 151, 0.14);
+}
+
+/* ✨ FEATURED POP */
+.rate-card.featured {
+  background: linear-gradient(135deg, #5e2b97, #8c52d9);
+  color: white;
+  transform: scale(1.03);
+}
+
+.rate-header {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.rate-description {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.rate-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.rate-card.featured .rate-price {
+  color: white;
+}
+
+/* =========================
+   INFO CARD
+========================= */
+
+.info-card {
+  background: white;
+  padding: 24px;
+  border-radius: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(94, 43, 151, 0.08);
+  text-align: left;
+}
+
+/* NOTE */
+.note {
+  background: var(--soft-purple);
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.inline-link {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* =========================
+   QUOTE
+========================= */
 .quote-card {
   background: var(--soft-lilac);
   padding: 20px;
@@ -232,12 +337,17 @@ button:hover {
 
 .quote {
   font-style: italic;
-  margin-bottom: 6px;
 }
 
 .quote-author {
   margin-top: 4px;
   font-weight: 600;
+}
+
+/* SMALL LOGO */
+.smalllogo {
+  width: 160px;
+  margin: 16px auto;
 }
 
 /* =========================
@@ -248,6 +358,20 @@ footer {
   padding: 16px;
   color: #777;
   font-size: 14px;
+}
+
+/* =========================
+   ANIMATION KEYFRAMES
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
