@@ -220,6 +220,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(94, 43, 151, 0.2);
+  display: inline-block;
 }
 
 .cta-button:hover,
@@ -278,7 +279,7 @@ footer {
 }
 
 /* =========================
-   FADE-IN ANIMATION ✨
+   FADE-IN ANIMATION
 ========================= */
 .section {
   animation: fadeInUp 0.6s ease both;
