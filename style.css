@@ -139,6 +139,7 @@ nav a.active::after {
 .smalllogo {
   width: 210px;
   margin: 0 auto 12px;
+  display: block;
 }
 
 /* =========================================
