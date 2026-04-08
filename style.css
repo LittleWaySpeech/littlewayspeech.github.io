@@ -225,6 +225,14 @@ button:hover {
   background: var(--primary-dark);
 }
 
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
 /* =========================
    FOOTER
 ========================= */
