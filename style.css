@@ -23,7 +23,9 @@
 /* =========================
    RESET + BASE
 ========================= */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -40,7 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ✨ CLEAN SPACING SYSTEM */
+/* Typography spacing */
 h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 16px;
@@ -56,26 +58,26 @@ img {
   display: block;
 }
 
+/* Utility text */
 .large-text {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .purple-text {
-  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  font-family: "Georgia", serif;
   font-size: 1.35rem;
   font-style: italic;
-  font-weight: 400;
   color: var(--primary);
   margin-top: 22px;
-  margin-bottom: 8px; /* ✨ tightened space before form */
-  letter-spacing: 0.3px;
+  margin-bottom: 10px;
 }
 
+/* Links */
 a {
   color: var(--primary);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
 a:hover {
@@ -96,7 +98,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
 nav a {
@@ -104,7 +105,6 @@ nav a {
   font-size: 14px;
   font-weight: 600;
   position: relative;
-  letter-spacing: 0.3px;
 }
 
 nav a::after {
@@ -118,8 +118,7 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-nav a:hover::after,
-nav a.active::after {
+nav a:hover::after {
   width: 100%;
 }
 
@@ -128,31 +127,17 @@ nav a.active::after {
 ========================= */
 .hero {
   text-align: center;
-  padding: 36px 20px 18px;
-  background: linear-gradient(180deg, #fdfaff 0%, #f6f0fd 100%);
-  animation: fadeIn 0.9s ease-in;
+  padding: 36px 20px 20px;
 }
 
 .logo {
   width: 320px;
   margin: 16px auto 24px;
-  animation: floatIn 1.4s ease-out forwards;
 }
 
 .smalllogo {
   width: 210px;
   margin: 0 auto 16px;
-  display: block;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: smallLogoFade 1s ease-out forwards;
-}
-
-@keyframes smallLogoFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* =========================
@@ -163,9 +148,7 @@ nav a.active::after {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 16px auto 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 16px auto;
 }
 
 .contact-image {
@@ -173,72 +156,37 @@ nav a.active::after {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  display: block;
-  margin: 16px auto 16px;
+  margin: 16px auto;
 }
 
 /* =========================
    SECTIONS
 ========================= */
 .section {
-  max-width: 960px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 28px 20px;
   text-align: center;
-  animation: fadeUp 0.8s ease both;
 }
 
-.section + .section {
-  margin-top: 20px;
-}
-
-.section h1 {
-  font-family: 'Dancing Script', cursive;
-  color: var(--primary);
-  font-size: 48px;
-  line-height: 1.08;
-}
-
+.section h1,
 .section h2 {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
-  font-size: 42px;
-  line-height: 1.08;
-  margin-bottom: 12px;
+}
+
+.section h1 {
+  font-size: 46px;
+}
+
+.section h2 {
+  font-size: 40px;
 }
 
 .section p {
-  font-size: 17.5px;
-  max-width: 720px;
+  font-size: 17px;
+  max-width: 700px;
   margin: 0 auto 16px;
-}
-
-/* =========================
-   DIVIDER (CROSS)
-========================= */
-.divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 24px 0 12px;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #e5e5e5);
-}
-
-.divider::after {
-  background: linear-gradient(to left, transparent, #e5e5e5);
-}
-
-.divider span {
-  margin: 0 10px;
-  color: #bdbdbd;
-  font-size: 15px;
 }
 
 /* =========================
@@ -252,58 +200,78 @@ nav a.active::after {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.8);
   padding: 22px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
 }
 
-.card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+/* =========================
+   CONTACT FORM (FIXED 🔥)
+========================= */
+form {
+  max-width: 520px;
+  margin: 20px auto 0;
+  text-align: left;
 }
 
-.card p {
-  font-size: 16px;
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
-.contact-card {
-  margin-top: 10px;
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(140, 82, 217, 0.15);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button */
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
 }
 
 /* =========================
-   ANIMATIONS
+   SPACING FIXES
 ========================= */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes floatIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section + .section {
+  margin-top: 10px;
 }
