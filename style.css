@@ -256,6 +256,16 @@ button:hover {
 .rate-item {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.rate-item:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.rate-sub {
+  font-size: 14px;
+  opacity: 0.75;
 }
 
 /* =========================
