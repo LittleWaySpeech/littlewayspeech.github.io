@@ -142,11 +142,16 @@ nav a.active::after {
 }
 
 .USAHSlogo {
-  width: min(1400px, calc(100vw - 40px));
+  width: 500px;
+  max-width: 90%;
   display: block;
-  margin: 80px auto;
+  margin: 30px auto 8px; /* smaller bottom margin */
   animation: floatIn 1.4s;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.14));
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
+}
+
+.location-text {
+  margin-top: 0;
 }
 
 .circle-image {
