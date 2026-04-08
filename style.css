@@ -40,6 +40,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ✨ CLEAN SPACING SYSTEM */
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .large-text {
   font-size: 1.2rem;
   font-weight: 600;
@@ -53,20 +69,6 @@ body {
   color: var(--primary);
   margin-top: 22px;
   letter-spacing: 0.3px;
-}
-
-/* CLEAN SPACING SYSTEM */
-h1, h2, h3, p {
-  margin: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 a {
@@ -138,7 +140,7 @@ nav a.active::after {
 
 .smalllogo {
   width: 210px;
-  margin: 0 auto 12px;
+  margin: 0 auto 16px;
   display: block;
   opacity: 0;
   transform: translateY(10px);
@@ -152,93 +154,16 @@ nav a.active::after {
   }
 }
 
-/* =========================================
-   PARTNERSHIP SECTION
-========================================= */
-
-.partnership-section {
-  text-align: center;
-}
-
-.partnership-section h2 {
-  margin-bottom: 12px;
-}
-
-.partner-intro {
-  margin: 0 0 10px;
-  font-size: 1.05rem;
-  color: #5a4d6d;
-  letter-spacing: 0.3px;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* =========================================
-   PARTNERSHIP SECTION
-========================================= */
-
-.partnership-section {
-  text-align: center;
-}
-
-.partnership-section h2 {
-  margin-bottom: 12px;
-}
-
-.partner-intro {
-  margin: 0 0 10px;
-  font-size: 1.05rem;
-  color: #5a4d6d;
-  letter-spacing: 0.3px;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.USAHSlogo {
-  width: 500px;
-  max-width: 90%;
-  display: block;
-  margin: 0 auto 4px; /* keeps bottom very close to location text */
-  animation: floatIn 1.4s;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
-  transition: transform 0.3s ease;
-}
-
-.USAHSlogo:hover {
-  transform: scale(1.02);
-}
-
-.location-text {
-  margin: 0;
-  font-size: 1rem;
-  color: #6a5a80;
-  font-style: italic;
-  letter-spacing: 0.2px;
-}
-
-.location-text {
-  margin: 0;
-  font-size: 1rem;
-  color: #6a5a80;
-  font-style: italic;
-  letter-spacing: 0.2px;
-}
-
+/* =========================
+   IMAGES
+========================= */
 .circle-image {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 10px auto 8px;
+  margin: 16px auto 16px; /* ✨ balanced spacing */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -248,27 +173,7 @@ nav a.active::after {
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 10px auto 8px;
-}
-
-.hero h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 64px;
-  color: var(--primary);
-  margin: 0 0 12px;
-  letter-spacing: 0.5px;
-  line-height: 1.05;
-}
-
-.hero p {
-  font-family: 'Dancing Script', cursive;
-  font-size: 34px;
-  max-width: 700px;
-  margin: 0 auto 28px;
-  color: var(--primary);
-  opacity: 0.95;
-  line-height: 1.25;
-  letter-spacing: 0.3px;
+  margin: 16px auto 16px;
 }
 
 /* =========================
@@ -276,7 +181,7 @@ nav a.active::after {
 ========================= */
 .section {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 40px auto; /* ✨ consistent vertical rhythm */
   padding: 28px 20px;
   text-align: center;
   animation: fadeUp 0.8s ease both;
@@ -286,7 +191,6 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
   font-size: 48px;
-  margin: 0 0 10px;
   line-height: 1.08;
 }
 
@@ -294,25 +198,24 @@ nav a.active::after {
   font-family: 'Dancing Script', cursive;
   color: var(--primary);
   font-size: 42px;
-  margin: 0 0 10px;
   line-height: 1.08;
+  margin-bottom: 12px; /* ✨ tighter under headers */
 }
 
 .section p {
   font-size: 17.5px;
   max-width: 720px;
-  margin: 0 auto 10px;
+  margin: 0 auto 16px;
 }
 
-.section + .section {
-  padding-top: 14px;
-}
-
+/* =========================
+   DIVIDER (CROSS)
+========================= */
 .divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0 20px;
+  margin: 24px 0 12px; /* ✨ tighter below divider */
 }
 
 .divider::before,
@@ -320,37 +223,17 @@ nav a.active::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, #d6d6d6);
+  background: linear-gradient(to right, transparent, #e5e5e5);
 }
 
 .divider::after {
-  background: linear-gradient(to left, transparent, #d6d6d6);
+  background: linear-gradient(to left, transparent, #e5e5e5);
 }
 
 .divider span {
-  margin: 0 12px;
+  margin: 0 10px;
   color: #bdbdbd;
-  font-size: 16px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-.cta-button {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 14px 32px;
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  color: white;
-  font-weight: 700;
-  border-radius: 999px;
-  box-shadow: 0 10px 24px rgba(94, 43, 151, 0.18);
-  transition: all 0.25s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 16px 34px rgba(94, 43, 151, 0.25);
+  font-size: 15px;
 }
 
 /* =========================
@@ -360,7 +243,7 @@ nav a.active::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .card {
@@ -379,222 +262,11 @@ nav a.active::after {
 
 .card h3 {
   font-size: 22px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .card p {
   font-size: 16px;
-  margin-bottom: 0;
-}
-
-/* =========================
-   RATES
-========================= */
-.info-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.info-card h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Layout */
-.rates-grid {
-  max-width: 700px;
-  margin: 0 auto;
-  display: grid;
-  gap: 18px;
-}
-
-/* Card style */
-.rate-card {
-  background: #ffffff;
-  padding: 20px 22px;
-  border-radius: 16px;
-  position: relative;
-  border: 2px solid #e6ddf2;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-}
-
-.rate-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 6px;
-  background: #6b3fa0;
-  border-radius: 16px 0 0 16px;
-}
-
-.rate-card:hover {
-  transform: translateY(-4px);
-  border-color: #6b3fa0;
-  box-shadow: 0 12px 28px rgba(107, 63, 160, 0.2);
-}
-
-.rate-header {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #3d2a5c;
-  margin-bottom: 4px;
-}
-
-.rate-description {
-  font-size: 0.95rem;
-  color: #666;
-}
-
-.rate-price {
-  margin-top: 12px;
-  display: inline-block;
-  background: linear-gradient(135deg, #6b3fa0, #8e63c7);
-  color: white;
-  font-weight: 600;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-}
-
-.featured {
-  border: 2px solid #6b3fa0;
-  background: linear-gradient(to right, #faf7ff, #ffffff);
-}
-
-.featured .rate-price {
-  background: linear-gradient(135deg, #4a217a, #6b3fa0);
-}
-
-/* =========================
-   FORMS
-========================= */
-.contact-card {
-  max-width: 700px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(8px);
-  padding: 24px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-}
-
-.contact-form {
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  font-weight: 600;
-  margin: 0 0 6px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  padding: 13px;
-  font-size: 15px;
-  margin-bottom: 10px;
-  transition: all 0.2s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 4px rgba(140, 82, 217, 0.12);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 15px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--primary));
-  color: white;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.contact-form button:hover {
-  transform: translateY(-2px);
-}
-
-.contact-note {
-  font-size: 14px;
-  color: rgba(63, 53, 80, 0.85);
-  margin: 2px 0 6px;
-}
-
-.contact-subheadline {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: var(--primary);
-  margin: 4px 0 14px;
-  text-align: center;
-  line-height: 1.35;
-}
-
-.thank-you-message {
-  display: none;
-  text-align: center;
-  margin-top: 16px;
-  color: var(--primary);
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-/* =========================
-   QUOTE
-========================= */
-.quote-card {
-  max-width: 760px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(8px);
-  padding: 24px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-}
-
-.quote {
-  font-family: 'Playfair Display', serif;
-  font-size: 19px;
-  line-height: 1.7;
-  font-style: italic;
-}
-
-.quote-author {
-  margin-top: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 24px 20px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  margin-top: 36px;
-  font-size: 14px;
 }
 
 /* =========================
@@ -624,114 +296,5 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 700px) {
-  nav {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 14px;
-    padding: 12px;
-  }
-
-  .hero {
-    padding: 26px 16px 14px;
-  }
-
-  .hero h1 {
-    font-size: 44px;
-    margin: 0 0 10px;
-    line-height: 1.08;
-  }
-
-  .hero p {
-    font-size: 24px;
-    margin: 0 auto 22px;
-    line-height: 1.3;
-  }
-
-  .logo {
-    width: 210px;
-    margin: 12px auto 20px;
-  }
-
-  .smalllogo {
-    width: 170px;
-  }
-
-  .USAHSlogo {
-    width: 100%;
-    max-width: 95%;
-    margin: 40px auto;
-  }
-
-  .circle-image {
-    width: 105px;
-    height: 105px;
-    margin: 8px auto 6px;
-  }
-
-  .contact-image {
-    width: 90px;
-    height: 90px;
-    margin: 8px auto 6px;
-  }
-
-  .section {
-    padding: 22px 16px;
-  }
-
-  .section + .section {
-    padding-top: 10px;
-  }
-
-  .section h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
-  }
-
-  .section h2 {
-    font-size: 32px;
-    margin-bottom: 8px;
-  }
-
-  .section p {
-    font-size: 16.5px;
-  }
-
-  .cards {
-    gap: 18px;
-    margin-top: 14px;
-  }
-
-  .card {
-    padding: 18px;
-  }
-
-  .card h3 {
-    font-size: 20px;
-  }
-
-  .contact-subheadline {
-    font-size: 20px;
-  }
-
-  .contact-card,
-  .quote-card,
-  .info-card {
-    padding: 18px;
-  }
-
-  .cta-button {
-    padding: 13px 26px;
-    font-size: 15px;
-  }
-
-  footer {
-    margin-top: 28px;
   }
 }
