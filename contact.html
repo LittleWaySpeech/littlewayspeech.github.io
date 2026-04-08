@@ -15,7 +15,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- PAGE-SPECIFIC STYLE -->
   <style>
     .contact-card {
       max-width: 600px;
@@ -59,6 +58,16 @@
       text-align: center;
       display: none;
     }
+
+    .service-banner {
+      display: none;
+      margin-bottom: 15px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #f3ecff;
+      font-weight: 600;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -100,6 +109,9 @@
 
       <div class="contact-card">
 
+        <!-- ⭐ Selected Service Banner -->
+        <div id="selected-service-banner" class="service-banner"></div>
+
         <form
           action="https://formspree.io/f/mgopnkok"
           method="POST"
@@ -123,9 +135,9 @@
           <label for="service">Type of Support</label>
           <select id="service" name="service">
             <option value="">Select one (optional)</option>
-            <option>Evaluation</option>
-            <option>Ongoing Therapy</option>
-            <option>Not sure / Seeking guidance</option>
+            <option value="Evaluation">Evaluation</option>
+            <option value="Ongoing Therapy">Ongoing Therapy</option>
+            <option value="Not sure">Not sure / Seeking guidance</option>
           </select>
 
           <label for="message">Message</label>
@@ -179,35 +191,46 @@
   const params = new URLSearchParams(window.location.search);
   const thankYou = document.querySelector(".thank-you-message");
 
-  if (params.get("submitted") === "true") {
-    if (thankYou) thankYou.style.display = "block";
-  }
-
-  <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  const params = new URLSearchParams(window.location.search);
-  const thankYou = document.querySelector(".thank-you-message");
-
   // Show thank-you message
   if (params.get("submitted") === "true") {
     if (thankYou) thankYou.style.display = "block";
   }
 
-  // 🔥 SUPER CLICK FEATURE (pre-fill form)
-  const service = params.get("service");
+  // SUPER CLICK FEATURE
+  const serviceParam = params.get("service");
   const messageField = document.getElementById("message");
+  const serviceDropdown = document.getElementById("service");
+  const banner = document.getElementById("selected-service-banner");
 
-  if (service && messageField) {
-    let readableService = service
+  if (serviceParam) {
+
+    let readable = serviceParam
       .replace(/%20/g, " ")
       .replace("30", "30-minute")
       .replace("50", "50-minute");
 
-    messageField.value =
-      "Hello,\n\nI’m interested in learning more about " +
-      readableService +
-      " services.\n\nThank you!";
+    // Prefill message
+    if (messageField) {
+      messageField.value =
+        "Hello,\n\nI’m interested in learning more about " +
+        readable +
+        " services.\n\nThank you!";
+    }
+
+    // Auto-select dropdown
+    if (serviceDropdown) {
+      if (readable.includes("Evaluation")) {
+        serviceDropdown.value = "Evaluation";
+      } else if (readable.includes("Home") || readable.includes("Virtual")) {
+        serviceDropdown.value = "Ongoing Therapy";
+      }
+    }
+
+    // Show banner
+    if (banner) {
+      banner.style.display = "block";
+      banner.textContent = "Inquiry: " + readable;
+    }
   }
 </script>
 
