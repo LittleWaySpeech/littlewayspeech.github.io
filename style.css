@@ -68,7 +68,7 @@ img {
   font-weight: 400;
   color: var(--primary);
   margin-top: 22px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* ✨ tightened space before form */
   letter-spacing: 0.3px;
 }
 
@@ -164,7 +164,7 @@ nav a.active::after {
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 16px auto 16px; /* ✨ balanced spacing */
+  margin: 16px auto 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -182,10 +182,15 @@ nav a.active::after {
 ========================= */
 .section {
   max-width: 960px;
-  margin: 40px auto; /* ✨ consistent vertical rhythm */
+  margin: 40px auto;
   padding: 28px 20px;
   text-align: center;
   animation: fadeUp 0.8s ease both;
+}
+
+/* ✨ KEY FIX: reduce space between stacked sections */
+.section + .section {
+  margin-top: 20px;
 }
 
 .section h1 {
@@ -200,7 +205,7 @@ nav a.active::after {
   color: var(--primary);
   font-size: 42px;
   line-height: 1.08;
-  margin-bottom: 12px; /* ✨ tighter under headers */
+  margin-bottom: 12px;
 }
 
 .section p {
@@ -216,7 +221,7 @@ nav a.active::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 24px 0 12px; /* ✨ tighter below divider */
+  margin: 24px 0 12px;
 }
 
 .divider::before,
