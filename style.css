@@ -308,6 +308,14 @@ nav a.active::after {
   padding-top: 14px;
 }
 
+.divider {
+  width: 80px;
+  height: 2px;
+  margin: 30px auto 40px;
+  background: linear-gradient(to right, transparent, #cfcfcf, transparent);
+  opacity: 0.8;
+}
+
 /* =========================
    BUTTONS
 ========================= */
