@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Rates | Little Way Speech Therapy</title>
-  <meta name="description" content="Private pay rates for speech therapy services in San Diego, including evaluations, therapy sessions, travel fees, and insurance reimbursement information.">
+  <meta name="description" content="Private pay rates for speech therapy services in San Diego, including evaluations, therapy sessions, and insurance reimbursement information.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,57 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- PAGE-SPECIFIC STYLE -->
+  <style>
+    .rates-vertical {
+      max-width: 520px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .rate-item {
+      background: white;
+      border-radius: 24px;
+      padding: 22px 26px;
+      box-shadow: 0 12px 30px rgba(94, 43, 151, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rate-item.featured {
+      background: linear-gradient(135deg, #5e2b97, #9b6df0);
+      color: white;
+      transform: scale(1.03);
+    }
+
+    .rate-text {
+      text-align: left;
+    }
+
+    .rate-title {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .rate-sub {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .rate-price {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .inline-link {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -31,121 +82,146 @@
 
 <main>
 
-      <!-- INTRO -->
+  <!-- INTRO -->
   <section class="section">
-    <h1>Rates</h1>
+    <div class="container">
+      <h1>Rates</h1>
 
       <p class="purple-text">
-      Little Way Speech Therapy offers private pay services for families seeking flexible, personalized care, 
-  in addition to contracted services through the San Diego Regional Center and local school districts.
-    </p>
+        Little Way Speech Therapy offers private pay services for families seeking flexible, personalized care.
+      </p>
+
+      <p>
+        Services are also provided through partnerships with the San Diego Regional Center and local school districts.
+      </p>
+    </div>
   </section>
 
   <!-- PRIVATE PAY -->
   <section class="section">
-    <div class="info-card">
-      <h2>Private Pay Information</h2>
+    <div class="container">
+      <div class="info-card">
+        <h2>Private Pay</h2>
 
-      <p>
-        Private pay allows families to access services directly, without needing a doctor’s referral or being limited 
-        by insurance visit caps.
-      </p>
+        <p>
+          Private pay allows families to access services directly without needing a referral or being limited by insurance visit caps.
+        </p>
 
-      <p>
-        Sessions can take place in your home, at a private school, or virtually, depending on what works best for your family.
-      </p>
+        <p>
+          Sessions may take place in your home, at a private school, or virtually depending on what best supports your child.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- RATES -->
-<div class="rates-grid">
+  <!-- RATES (VERTICAL) -->
+  <section class="section">
+    <div class="container">
+      <h2>Session Rates</h2>
 
-  <div class="rate-card featured">
-    <div class="rate-header">Initial Evaluation</div>
-    <div class="rate-description">60-minute session (home or virtual)</div>
-    <div class="rate-price">$190</div>
-  </div>
+      <div class="rates-vertical">
 
-  <div class="rate-card">
-    <div class="rate-header">Home Visit</div>
-    <div class="rate-description">30-minute therapy session</div>
-    <div class="rate-price">$65</div>
-  </div>
+        <div class="rate-item featured">
+          <div class="rate-text">
+            <div class="rate-title">Initial Evaluation</div>
+            <div class="rate-sub">60-minute session (home or virtual)</div>
+          </div>
+          <div class="rate-price">$190</div>
+        </div>
 
-  <div class="rate-card">
-    <div class="rate-header">Home Visit</div>
-    <div class="rate-description">50-minute therapy session</div>
-    <div class="rate-price">$90</div>
-  </div>
+        <div class="rate-item">
+          <div class="rate-text">
+            <div class="rate-title">Home Visit</div>
+            <div class="rate-sub">30-minute therapy session</div>
+          </div>
+          <div class="rate-price">$65</div>
+        </div>
 
-  <div class="rate-card">
-    <div class="rate-header">Virtual Session</div>
-    <div class="rate-description">30-minute therapy session</div>
-    <div class="rate-price">$60</div>
-  </div>
+        <div class="rate-item">
+          <div class="rate-text">
+            <div class="rate-title">Home Visit</div>
+            <div class="rate-sub">50-minute therapy session</div>
+          </div>
+          <div class="rate-price">$90</div>
+        </div>
 
-  <div class="rate-card">
-    <div class="rate-header">Virtual Session</div>
-    <div class="rate-description">50-minute therapy session</div>
-    <div class="rate-price">$85</div>
-  </div>
+        <div class="rate-item">
+          <div class="rate-text">
+            <div class="rate-title">Virtual Session</div>
+            <div class="rate-sub">30-minute therapy session</div>
+          </div>
+          <div class="rate-price">$60</div>
+        </div>
 
-</div>
+        <div class="rate-item">
+          <div class="rate-text">
+            <div class="rate-title">Virtual Session</div>
+            <div class="rate-sub">50-minute therapy session</div>
+          </div>
+          <div class="rate-price">$85</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- TRAVEL -->
   <section class="section">
-    <div class="info-card">
-      <h2>Travel Fee</h2>
+    <div class="container">
+      <div class="info-card">
+        <h2>Travel Fee</h2>
 
-      <div class="note">
         <p>
-          For longer travel distances or consistently heavy traffic areas, 
-          a <strong>$30 travel fee</strong> may be added per session.
+          For longer travel distances or consistently high-traffic areas, a <strong>$30 travel fee</strong> may be applied.
         </p>
 
         <p>
-          This will apply to locations such as National City, Chula Vista, Del Mar, Escondido, Lakeside, and Alpine.
+          This may include locations such as National City, Chula Vista, Del Mar, Escondido, Lakeside, and Alpine.
         </p>
 
         <p>
-          You will always be informed in advance if this fee will be added.
+          You will always be informed in advance if this fee applies.
         </p>
       </div>
+
+      <img src="little-way-logo-small.png" alt="Little Way Speech Therapy logo" class="smalllogo">
     </div>
   </section>
-<img src="little-way-logo-small.png" alt="Little Way Speech Therapy logo" class="smalllogo">
+
   <!-- INSURANCE -->
   <section class="section">
-    <div class="info-card">
-      <h2>Insurance & Funding</h2>
+    <div class="container">
+      <div class="info-card">
+        <h2>Insurance & Funding</h2>
 
-      <p>
-        While insurance is not directly accepted, superbills are available upon request. These detailed invoices can be 
-        submitted to your insurance provider for possible reimbursement.
-      </p>
+        <p>
+          While insurance is not directly accepted, superbills are available upon request and may be submitted for possible reimbursement.
+        </p>
 
-      <p>
-        Your child may also qualify for services funded through the San Diego Regional Center.  <a href="https://www.sdrc.org/apply" target="_blank" rel="noopener noreferrer" class="inline-link">
-          Click here to apply.</a>
+        <p>
+          Your child may also qualify for services funded through the San Diego Regional Center.
+          <a href="https://www.sdrc.org/apply" target="_blank" class="inline-link">Apply here</a>.
         </p>
       </div>
     </div>
   </section>
-<img src="little-way-logo-small.png" alt="Little Way Speech Therapy logo" class="smalllogo">
-    <section class="section">
-    <div class="info-card">
-      <h2>Virtual Sessions</h2>
-      
-      <p>
-        Virtual sessions are available to families anywhere within the state of California.
-      </p>
 
-      <p>
-Online speech therapy is not recommended for children under age 5, as well as children with attention deficits, lisps or 'S' production, or significantly low speech inteligibility.  Progress may be limited in these areas without in-person sessions.
-      </p>
+  <!-- VIRTUAL -->
+  <section class="section">
+    <div class="container">
+      <div class="info-card">
+        <h2>Virtual Sessions</h2>
 
-      <p>
-Good candidates for virtual speech therapy include clients working on 'R' production, school-aged language, fluency, voice, and social pragmatic skills.    
+        <p>
+          Virtual sessions are available to families throughout California.
+        </p>
+
+        <p>
+          Teletherapy is generally not recommended for children under age 5 or for those working on certain speech sound needs, including /s/ production or significantly reduced intelligibility.
+        </p>
+
+        <p>
+          Virtual therapy is often a strong fit for clients working on /r/ production, language development, fluency, voice, and social communication skills.
         </p>
       </div>
     </div>
@@ -153,14 +229,15 @@ Good candidates for virtual speech therapy include clients working on 'R' produc
 
   <!-- CTA -->
   <section class="section">
-    <h2>Questions?</h2>
+    <div class="container">
+      <h2>Questions?</h2>
 
-    <p>
-      If you have questions about rates, funding options, or what might be the best fit for your child, 
-      feel free to reach out.
-    </p>
+      <p>
+        If you have questions about rates, funding options, or what may be the best fit for your child, feel free to reach out.
+      </p>
 
-    <a href="contact.html" class="cta-button">Contact</a>
+      <a href="contact.html" class="cta-button">Contact</a>
+    </div>
   </section>
 
 </main>
