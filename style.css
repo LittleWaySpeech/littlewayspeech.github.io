@@ -166,6 +166,31 @@ nav a.active::after {
   align-items: center;
 }
 
+/* =========================================
+   PARTNERSHIP SECTION
+========================================= */
+
+.partnership-section {
+  text-align: center;
+}
+
+.partnership-section h2 {
+  margin-bottom: 12px;
+}
+
+.partner-intro {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: #5a4d6d;
+  letter-spacing: 0.3px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .USAHSlogo {
   width: 500px;
   max-width: 90%;
@@ -178,6 +203,14 @@ nav a.active::after {
 
 .USAHSlogo:hover {
   transform: scale(1.02);
+}
+
+.location-text {
+  margin: 0;
+  font-size: 1rem;
+  color: #6a5a80;
+  font-style: italic;
+  letter-spacing: 0.2px;
 }
 
 .location-text {
