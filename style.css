@@ -15,9 +15,6 @@
 
   --radius: 20px;
   --radius-lg: 28px;
-
-  --shadow-soft: 0 10px 30px rgba(94, 43, 151, 0.08);
-  --shadow-hover: 0 18px 40px rgba(94, 43, 151, 0.14);
 }
 
 /* =========================
@@ -34,15 +31,21 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: linear-gradient(to bottom, #fbf9fe, #f6f0fd);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
+/* 🔥 FIXED SPACING SYSTEM */
 h1, h2, h3 {
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 
 p {
-  margin: 0 0 16px;
+  margin: 0 0 10px; /* 👈 reduced from 16px */
+}
+
+/* tighter spacing inside sections */
+.section p:last-child {
+  margin-bottom: 0;
 }
 
 img {
@@ -72,24 +75,25 @@ nav a {
 ========================= */
 .hero {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 36px 20px 16px; /* 👈 slightly tighter */
 }
 
 .hero h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 48px;
+  font-size: 46px;
   color: var(--primary);
 }
 
 .tagline {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--primary);
+  margin-bottom: 10px;
 }
 
 .logo {
   width: 300px;
-  margin: 16px auto;
+  margin: 12px auto 18px; /* 👈 tightened */
 }
 
 /* =========================
@@ -107,12 +111,12 @@ button {
   cursor: pointer;
   text-decoration: none;
   transition: 0.2s;
+  margin-top: 8px; /* 👈 reduced */
 }
 
 .cta-button:hover,
 button:hover {
   background: var(--primary-dark);
-  transform: translateY(-1px);
 }
 
 /* =========================
@@ -120,8 +124,8 @@ button:hover {
 ========================= */
 .section {
   max-width: 900px;
-  margin: 40px auto;
-  padding: 28px 20px;
+  margin: 32px auto; /* 👈 reduced from 40px */
+  padding: 24px 20px; /* 👈 slightly tighter */
   text-align: center;
 }
 
@@ -132,11 +136,11 @@ button:hover {
 }
 
 .section h1 {
-  font-size: 44px;
+  font-size: 42px;
 }
 
 .section h2 {
-  font-size: 38px;
+  font-size: 36px;
 }
 
 /* =========================
@@ -145,31 +149,31 @@ button:hover {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
+  gap: 18px; /* 👈 tighter */
 }
 
 .card {
   background: white;
-  padding: 22px;
+  padding: 20px;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
 }
 
 /* =========================
-   CONTACT PAGE 🔥
+   CONTACT PAGE
 ========================= */
 
 .circle-image {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 16px auto;
+  margin: 12px auto;
 }
 
 .purple-text {
   font-style: italic;
   color: var(--primary);
+  margin-bottom: 8px; /* 👈 tighter above form */
 }
 
 /* FORM */
@@ -180,33 +184,31 @@ button:hover {
 }
 
 .contact-form label {
-  display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px; /* 👈 reduced */
+  border-radius: 10px;
   border: 1px solid #ddd;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .contact-note {
   font-size: 13px;
   color: #777;
-  margin-top: -8px;
+  margin: 4px 0 10px; /* 👈 tighter */
 }
 
 /* THANK YOU MESSAGE */
 .thank-you-message {
   display: none;
-  margin-top: 20px;
-  padding: 16px;
-  border-radius: 14px;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
   background: var(--soft-purple);
   color: var(--primary);
   text-align: center;
@@ -215,14 +217,14 @@ button:hover {
 
 /* SMALL LOGO */
 .smalllogo {
-  width: 180px;
-  margin: 20px auto;
+  width: 160px;
+  margin: 16px auto;
 }
 
 /* QUOTE */
 .quote-card {
   background: var(--soft-lilac);
-  padding: 24px;
+  padding: 20px;
   border-radius: var(--radius-lg);
   max-width: 600px;
   margin: auto;
@@ -230,10 +232,11 @@ button:hover {
 
 .quote {
   font-style: italic;
+  margin-bottom: 6px;
 }
 
 .quote-author {
-  margin-top: 10px;
+  margin-top: 4px;
   font-weight: 600;
 }
 
@@ -242,23 +245,24 @@ button:hover {
 ========================= */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 16px;
   color: #777;
+  font-size: 14px;
 }
 
 /* =========================
-   MOBILE 📱
+   MOBILE
 ========================= */
 @media (max-width: 768px) {
 
   nav {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
   }
 
   .hero h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .logo {
@@ -266,8 +270,8 @@ footer {
   }
 
   .section {
-    margin: 30px 16px;
-    padding: 20px;
+    margin: 24px 14px;
+    padding: 18px;
   }
 
   .cards {
@@ -277,6 +281,5 @@ footer {
   .cta-button,
   button {
     width: 100%;
-    text-align: center;
   }
 }
