@@ -22,24 +22,38 @@
 ========================= */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.6;
-  font-size: 16px;
+  line-height: 1.75;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
-h1 { font-size: 44px; }
-h2 { font-size: 30px; }
-h3 { font-size: 20px; }
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
 
 p {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  font-size: 17px;
 }
 
 .service-banner {
