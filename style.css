@@ -511,6 +511,10 @@ img {
   transform: scale(1.03);
 }
 
+.section p + p {
+  margin-top: 6px;
+}
+
 /* =========================
    INLINE
 ========================= */
