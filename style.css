@@ -458,12 +458,28 @@ img {
 /* =========================
    BIO
 ========================= */
-.bio-layout {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 50px;
+
+.bio-text {
+  text-align: left;
+  max-width: 520px;
+}
+
+.bio-image-wrap {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+.bio-image-wrap .circle-image {
+  margin: 0;
+}
+
+.bio-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}   
 
 .bio-text {
   text-align: left;
@@ -473,8 +489,8 @@ img {
   margin-bottom: 18px;
 }
 
-.bio-image-wrap {
-  text-align: center;
+.bio-image-wrap .circle-image {
+  margin: 0;
 }
 
 /* =========================
@@ -653,5 +669,10 @@ footer {
 
   .bio-text {
     text-align: center;
-  }  
+    max-width: 100%;
+  }
+
+  .bio-image-wrap {
+    justify-content: center;
+  }
 }
