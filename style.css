@@ -148,6 +148,30 @@ nav a:hover::after {
 }
 
 /* =========================
+   TEXT
+========================= */
+.large-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.purple-text {
+  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-top: 22px;
+  letter-spacing: 0.3px;
+}
+
+.small-intro-text {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* =========================
    SECTIONS
 ========================= */
 .section {
@@ -279,24 +303,6 @@ button:hover {
 .quote {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-}
-
-/* =========================
-   TEXT
-========================= */
-.large-text {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.purple-text {
-  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
-  font-size: 1.35rem;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--primary);
-  margin-top: 22px;
-  letter-spacing: 0.3px;
 }
 
 /* =========================
