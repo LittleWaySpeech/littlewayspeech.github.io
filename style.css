@@ -24,7 +24,7 @@
 }
 
 /* =========================
-   BODY (SOFTER + AIRIER)
+   BODY
 ========================= */
 body {
   margin: 0;
@@ -35,7 +35,7 @@ body {
 }
 
 /* =========================
-   NAV (GLASS EFFECT)
+   NAV
 ========================= */
 nav {
   display: flex;
@@ -66,7 +66,7 @@ nav a::after {
 }
 
 /* =========================
-   HERO (EDITORIAL STYLE)
+   HERO
 ========================= */
 .hero {
   text-align: center;
@@ -99,7 +99,7 @@ nav a::after {
 }
 
 /* =========================
-   SECTIONS (MORE BREATHING ROOM)
+   SECTIONS
 ========================= */
 .section {
   margin: 80px auto;
@@ -126,7 +126,7 @@ nav a::after {
 }
 
 /* =========================
-   CARDS (LUXURY FEEL)
+   CARDS
 ========================= */
 .card {
   background: rgba(255, 255, 255, 0.85);
@@ -145,7 +145,7 @@ nav a::after {
 }
 
 /* =========================
-   BUTTONS (MINIMAL + PREMIUM)
+   BUTTONS
 ========================= */
 .cta-button,
 button {
@@ -170,19 +170,23 @@ button:hover {
 }
 
 /* =========================
-   IMAGES (SOFTER)
+   IMAGES
 ========================= */
 .circle-image {
   box-shadow: var(--shadow-soft);
 }
 
-.partner-logo,
 .logo {
-  opacity: 0.95;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
 }
 
 /* =========================
-   ANIMATION (SMOOTHER)
+   ANIMATION
 ========================= */
 .section {
   animation: fadeInUp 0.9s ease both;
