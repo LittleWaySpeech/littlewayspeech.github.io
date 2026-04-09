@@ -557,16 +557,17 @@ img {
    PARTNER
 ========================= */
 .partner-feature {
-  background: white;
-  border-radius: 24px;
-  padding: 35px;
-  box-shadow: var(--shadow);
-  max-width: 520px;
-  margin: 30px auto;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
 }
 
 .partner-logo {
-  transition: transform 0.3s ease;
+  width: 360px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
 }
 
 .partner-logo:hover {
@@ -575,6 +576,26 @@ img {
 
 .section p + p {
   margin-top: 6px;
+}
+
+.partner-block {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.partner-intro {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.location-text {
+  font-size: 18px;
+  color: var(--text);
+  opacity: 0.8;
+  margin-top: 10px;
 }
 
 /* =========================
