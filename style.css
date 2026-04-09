@@ -33,16 +33,17 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: radial-gradient(circle at top, #ffffff 0%, #f6f0fd 60%, #efe7fb 100%);
+  background: linear-gradient(to bottom, #fbf9fe, #f6f0fd);
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* =========================
    TYPOGRAPHY
 ========================= */
-h1, h2, h3 {
-  margin: 0 0 10px;
+h1, h2, h3, p {
+  margin: 0;
 }
 
 h1 {
@@ -54,7 +55,7 @@ h2 {
 }
 
 p {
-  margin: 0 0 12px;
+  margin-bottom: 0;
 }
 
 /* =========================
@@ -218,6 +219,11 @@ nav a:hover::after {
   margin: 10px auto 8px;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* =========================
    CARDS
 ========================= */
@@ -277,11 +283,21 @@ button:hover {
 }
 
 /* =========================
-   UTILITIES
+   TEXT
 ========================= */
-.purple-text {
-  color: var(--primary);
+.large-text {
+  font-size: 1.2rem;
   font-weight: 600;
+}
+
+.purple-text {
+  font-family: "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-top: 22px;
+  letter-spacing: 0.3px;
 }
 
 /* =========================
