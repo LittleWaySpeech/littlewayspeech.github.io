@@ -191,6 +191,12 @@ nav a:hover::after {
   font-size: 52px;
 }
 
+.rates-hero {
+  background: linear-gradient(to bottom, #ffffff, #f7f4fb);
+  padding: 75px 20px;
+  border-radius: 28px;
+}
+
 /* =========================
    CARDS
 ========================= */
