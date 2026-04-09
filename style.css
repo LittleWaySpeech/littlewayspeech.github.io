@@ -180,6 +180,17 @@ nav a:hover::after {
   border-radius: 28px;
 }
 
+.students-hero {
+  background: linear-gradient(to bottom, #ffffff, #f7f4fb);
+  padding: 80px 20px;
+}
+
+.students-hero h1 {
+  max-width: 750px;
+  margin: 0 auto 20px;
+  font-size: 52px;
+}
+
 /* =========================
    CARDS
 ========================= */
