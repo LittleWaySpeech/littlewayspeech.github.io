@@ -202,12 +202,12 @@ nav a:hover::after {
 }
 
 .USAHSlogo {
-  width: 850px;
-  max-width: 95%;
+  width: 1400px;
+  max-width: 100%;
   display: block;
-  margin: 70px auto;
+  margin: 80px auto;
   animation: floatIn 1.4s;
-  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.12));
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.14));
 }
 
 .contact-image {
