@@ -115,8 +115,23 @@ nav a:hover::after {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
   color: var(--primary);
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+}
+
+.hero p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 34px;
+  max-width: 700px;
+  margin: 0 auto 28px;
+  color: var(--primary);
+  opacity: 0.95;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
 }
 
 .tagline {
