@@ -142,12 +142,13 @@ nav a:hover::after {
 /* =========================
    HERO
 ========================= */
-.hero {
-  text-align: center;
-  padding: 90px 20px 60px;
-  background: linear-gradient(to bottom, #ffffff 0%, #f7f4fb 100%);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+.hero,
+.hero-soft,
+.services-hero,
+.rates-hero,
+.students-hero {
+  background: linear-gradient(to bottom, #fcfaff 0%, #f4eefc 100%);
+  border-radius: 28px;
 }
 
 .tagline {
@@ -248,16 +249,17 @@ nav a:hover::after {
 
 .card {
   background: white;
-  padding: 30px;
+  padding: 28px;
   border-radius: 22px;
-  box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.05);
   border: 1px solid rgba(75,42,122,0.05);
   transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 18px 38px rgba(110,75,184,0.14);
+  border-color: rgba(110,75,184,0.12);
 }
 
 .card h3 {
@@ -305,17 +307,13 @@ button:hover {
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 999px;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  text-decoration: none;
-  margin-top: 20px;
+  background: var(--primary);
+  color: white;
+  border: none;
 }
 
 .cta-button:hover {
-  background: var(--primary);
+  background: var(--secondary);
   color: white;
 }
 
@@ -361,11 +359,13 @@ img {
    QUOTE
 ========================= */
 .quote-card {
-  background: var(--bg-soft);
-  padding: 30px;
+  background: linear-gradient(135deg, #f3edfc, #ede4fb);
+  padding: 36px;
   border-radius: var(--radius);
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
+  border: 1px solid rgba(110,75,184,0.08);
+  box-shadow: 0 12px 28px rgba(110,75,184,0.08);
 }
 
 .quote {
@@ -545,9 +545,12 @@ img {
 ========================= */
 footer {
   text-align: center;
-  padding: 30px 20px;
+  padding: 36px 20px;
   font-size: 14px;
-  color: #777;
+  color: var(--primary);
+  background: linear-gradient(to right, #f7f2ff, #f3edfc);
+  border-top: 1px solid rgba(75,42,122,0.08);
+  margin-top: 60px;
 }
 
 /* =========================
