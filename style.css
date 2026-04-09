@@ -78,6 +78,18 @@ nav a {
   color: var(--secondary);
 }
 
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.purple-text {
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
 /* =========================
    SECTIONS
 ========================= */
@@ -113,22 +125,6 @@ nav a {
 }
 
 /* =========================
-   HERO
-========================= */
-
-.tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  color: var(--primary);
-  margin-top: 10px;
-}
-
-.purple-text {
-  color: var(--secondary);
-  margin-bottom: 20px;
-}
-
-/* =========================
    IMAGES
 ========================= */
 .logo {
@@ -161,6 +157,23 @@ img {
 .circle {
   border-radius: 50%;
   object-fit: cover;
+}
+
+.circle-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto;
+  box-shadow: var(--shadow);
+}
+
+.small-logo {
+  width: 90px;
+  display: block;
+  margin: 30px auto 0;
+  opacity: 0.9;
 }
 
 /* =========================
