@@ -59,6 +59,13 @@ h3 {
   font-size: 24px;
 }
 
+h1 .sub-line {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
 p {
   margin-bottom: 10px;
   line-height: 1.65;
