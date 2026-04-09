@@ -197,6 +197,14 @@ nav a:hover::after {
   border-radius: 28px;
 }
 
+.rate-reassurance {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 28px;
+  font-size: 16px;
+  color: var(--secondary);
+}
+
 /* =========================
    CARDS
 ========================= */
