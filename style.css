@@ -5,19 +5,19 @@
 :root {
   --bg: #f9f6fc;
   --text: #3f3550;
-
   --primary: #5e2b97;
   --primary-dark: #4a217a;
-
-  --accent: #9b6df0;
-
-  --soft-purple: #f3ecff;
-  --soft-lilac: #faf6ff;
-
+  --accent: #8c52d9;
+  --accent-light: #cbb0f7;
+  --soft-purple: #efe7fb;
+  --soft-lilac: #f6f0fd;
   --white: #ffffff;
 
   --radius: 20px;
   --radius-lg: 28px;
+
+  --shadow-soft: 0 10px 30px rgba(94, 43, 151, 0.08);
+  --shadow-hover: 0 18px 40px rgba(94, 43, 151, 0.14);
 }
 
 /* =========================
@@ -240,7 +240,7 @@ nav a:hover::after {
 }
 
 /* =========================
-   BUTTONS (MICRO-INTERACTION ✨)
+   BUTTONS (MICRO-INTERACTION)
 ========================= */
 .cta-button,
 button {
@@ -346,7 +346,7 @@ footer {
     width: 100%;
   }
 
-     .hero {
+  .hero {
     padding: 26px 16px 14px;
   }
 
