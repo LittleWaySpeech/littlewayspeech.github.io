@@ -40,7 +40,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 54px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
 }
 
 h2 {
@@ -52,8 +59,8 @@ h3 {
 }
 
 p {
-  margin-bottom: 18px;
-  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 1.65;
 }
 
 .service-banner {
@@ -70,6 +77,12 @@ p {
 .top-accent-bar {
   height: 6px;
   background: linear-gradient(to right, #6e4bb8, #bfa6f6);
+}
+
+.script-accent {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--secondary);
 }
 
 /* =========================
