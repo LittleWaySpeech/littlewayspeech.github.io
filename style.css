@@ -1,5 +1,5 @@
 /* =========================================
-   LITTLE WAY SPEECH THERAPY — CLEAN RESET
+   LITTLE WAY SPEECH THERAPY
 ========================================= */
 
 :root {
@@ -18,7 +18,7 @@
 }
 
 /* =========================
-   GLOBAL BASE (FIXES SCALE)
+   GLOBAL BASE
 ========================= */
 body {
   margin: 0;
@@ -68,8 +68,13 @@ nav a {
   padding: 60px 20px 30px;
 }
 
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
 .hero p {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--secondary);
 }
 
@@ -108,14 +113,36 @@ nav a {
 }
 
 /* =========================
-   IMAGES (THIS FIXES HUGE IMAGES)
+   HERO
 ========================= */
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.purple-text {
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+.logo {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Controlled image sizes */
 .image-small {
   width: 120px;
   margin: 10px auto;
@@ -131,7 +158,6 @@ img {
   margin: 20px auto;
 }
 
-/* Circle images */
 .circle {
   border-radius: 50%;
   object-fit: cover;
@@ -153,6 +179,52 @@ img {
 .button:hover {
   background: var(--primary);
   color: white;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* =========================
+   QUOTES
+========================= */
+.quote-card {
+  background: var(--bg-soft);
+  padding: 30px;
+  border-radius: var(--radius);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 /* =========================
