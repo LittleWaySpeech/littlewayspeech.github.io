@@ -253,6 +253,7 @@ h2 {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
   padding: 75px 20px;
   border-radius: 28px;
+  text-align: center;
 }
 
 .students-hero {
@@ -629,6 +630,15 @@ img {
   color: var(--text);
   opacity: 0.8;
   margin-top: 10px;
+}
+
+.intro-text {
+  max-width: 650px;
+  margin: 10px auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  opacity: 0.9;
 }
 
 /* =========================
