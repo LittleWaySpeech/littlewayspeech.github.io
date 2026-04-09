@@ -42,6 +42,17 @@ p {
   margin-bottom: 16px;
 }
 
+.service-banner {
+  display: none;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--bg-soft);
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary);
+}
+
 /* =========================
    LAYOUT
 ========================= */
@@ -136,9 +147,35 @@ nav a.active {
   margin: 0 auto;
 }
 
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 /* =========================
    BUTTONS
 ========================= */
+button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
 .cta-button {
   display: inline-block;
   padding: 14px 28px;
@@ -170,6 +207,11 @@ img {
   display: block;
   margin: 30px auto;
   box-shadow: var(--shadow);
+}
+
+.section .circle-image {
+  width: 180px;
+  height: 180px;
 }
 
 .logo {
@@ -276,6 +318,36 @@ img {
 
 .inline-link:hover {
   opacity: 0.8;
+}
+
+/* =========================
+   FORM INPUTS
+========================= */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+  font-size: 15px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px rgba(110, 75, 184, 0.15);
+}
+
+.thank-you-message {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--bg-soft);
+  text-align: center;
 }
 
 /* =========================
