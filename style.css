@@ -89,12 +89,11 @@ nav a::after {
 }
 
 .tagline {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--primary-soft);
-  margin-top: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 /* =========================
@@ -111,7 +110,6 @@ nav a::after {
   border-radius: var(--radius-lg);
 }
 
-/* Elegant section headers */
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 38px;
