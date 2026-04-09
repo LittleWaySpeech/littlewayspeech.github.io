@@ -162,6 +162,7 @@ nav a:hover::after {
 /* =========================
    HERO
 ========================= */
+
 .hero,
 .hero-soft,
 .services-hero,
@@ -172,16 +173,12 @@ nav a:hover::after {
 }
 
 .tagline {
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: var(--primary-dark);
-  letter-spacing: 0.5px;
   margin-bottom: 18px;
 }
 
 .hero {
-  text-align: center;
   padding: 80px 20px 60px;
 }
 
@@ -201,14 +198,16 @@ nav a:hover::after {
   font-size: 42px;
   color: #7a4bc4;
   margin-bottom: 26px;
-  line-height: 1.3;
 }
 
 .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .hero-soft {
@@ -222,10 +221,8 @@ nav a:hover::after {
   font-family: 'Playfair Display', serif;
   font-size: 64px;
   color: var(--primary);
-  letter-spacing: 1px;
   line-height: 1.1;
-  margin-bottom: 14px;
-  text-shadow: 0 3px 12px rgba(94, 43, 151, 0.12);
+  margin-bottom: 16px;
 }
 
 .services-hero {
@@ -363,6 +360,10 @@ button:hover {
   letter-spacing: 0.2px;
 }
 
+.cta-button {
+  margin-top: 10px;
+}
+
 .cta-button:hover {
   background: linear-gradient(135deg, #8c52d9, #6b35ad);
   transform: translateY(-2px);
@@ -401,9 +402,8 @@ img {
 
 .logo {
   width: 280px;
-  max-width: 90%;
-  margin: 10px auto 28px;
   display: block;
+  margin: 0 auto 28px auto;
 }
 
 .small-logo {
