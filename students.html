@@ -136,6 +136,7 @@
     <!-- CTA -->
     <section class="section">
       <div class="container">
+          <div class="quote-card">
         <h2>Questions or Preferences?</h2>
 
         <p>
@@ -144,6 +145,15 @@
 
       <a href="contact.html" class="cta-button">Contact</a>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
+
+  <footer>
+  &copy; <span id="year"></span> Little Way Speech Therapy
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
