@@ -67,6 +67,11 @@ p {
   color: var(--primary);
 }
 
+.top-accent-bar {
+  height: 6px;
+  background: linear-gradient(to right, #6e4bb8, #bfa6f6);
+}
+
 /* =========================
    LAYOUT
 ========================= */
