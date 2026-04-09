@@ -98,20 +98,32 @@ p {
 ========================= */
 nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-  padding: 16px 32px;
+  justify-content: center;
+  gap: 34px;
+  padding: 22px 32px;
   border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
 }
 
 nav a {
   text-decoration: none;
   color: var(--primary);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  position: relative;
 }
 
-nav a.active {
-  font-weight: 600;
+nav a.active::after,
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: var(--secondary);
 }
 
 /* =========================
@@ -119,18 +131,37 @@ nav a.active {
 ========================= */
 .hero {
   text-align: center;
-  padding: 60px 20px 30px;
+  padding: 90px 20px 60px;
 }
 
 .tagline {
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   color: var(--primary);
-  margin-top: 10px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-size: 58px;
+  max-width: 800px;
+  margin: 0 auto 20px;
 }
 
 .purple-text {
   color: var(--secondary);
   font-size: 18px;
+}
+
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--secondary);
+  margin-top: 16px;
+  margin-bottom: 28px;
 }
 
 /* =========================
