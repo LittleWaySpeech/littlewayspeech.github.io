@@ -327,14 +327,31 @@ button:hover {
 }
 
 .cta-button {
-  background: var(--primary);
-  color: white;
+  display: inline-block;
+  background: linear-gradient(135deg, #7b4bb7, #5e2b97);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 999px;
   border: none;
+  box-shadow: 0 8px 20px rgba(94, 43, 151, 0.22);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 0.2px;
 }
 
 .cta-button:hover {
-  background: var(--secondary);
-  color: white;
+  background: linear-gradient(135deg, #8c52d9, #6b35ad);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(94, 43, 151, 0.28);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(94, 43, 151, 0.18);
 }
 
 /* =========================
