@@ -167,6 +167,13 @@ nav a:hover::after {
   margin-bottom: 28px;
 }
 
+.hero-soft {
+  background: linear-gradient(to bottom, #ffffff, #f7f4fb);
+  padding: 70px 20px;
+  border-radius: 28px;
+  margin-top: 20px;
+}
+
 /* =========================
    CARDS
 ========================= */
@@ -295,6 +302,28 @@ img {
   margin-top: 10px;
   font-size: 14px;
   opacity: 0.7;
+}
+
+/* =========================
+   BIO
+========================= */
+.bio-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.bio-text {
+  text-align: left;
+}
+
+.bio-text h2 {
+  margin-bottom: 18px;
+}
+
+.bio-image-wrap {
+  text-align: center;
 }
 
 /* =========================
