@@ -185,6 +185,15 @@ nav a:hover::after {
   display: block;
 }
 
+.USAHSlogo {
+  width: 850px;
+  max-width: 95%;
+  display: block;
+  margin: 70px auto;
+  animation: floatIn 1.4s;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.12));
+}
+
 /* =========================
    CARDS
 ========================= */
