@@ -477,22 +477,12 @@ img {
   align-items: center;
 }
 
-
-/* =========================
-   ABOUT PAGE BIO LAYOUT
-========================= */
 .bio-layout {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
   flex-wrap: nowrap;
-}
-
-.bio-image-wrap {
-  flex: 0 0 260px;
-  display: flex;
-  justify-content: center;
 }
 
 .bio-text {
