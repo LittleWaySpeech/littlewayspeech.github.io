@@ -96,14 +96,16 @@ p {
 /* =========================
    NAV
 ========================= */
+header {
+  background: linear-gradient(to right, #f7f2ff, #f3edfc);
+  border-bottom: 1px solid rgba(75,42,122,0.08);
+}
+
 nav {
   display: flex;
   justify-content: center;
   gap: 34px;
   padding: 22px 32px;
-  border-bottom: 1px solid var(--border);
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(8px);
 }
 
 nav a {
@@ -113,6 +115,11 @@ nav a {
   font-weight: 500;
   letter-spacing: 0.03em;
   position: relative;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--secondary);
 }
 
 nav a.active::after,
@@ -122,8 +129,9 @@ nav a:hover::after {
   left: 0;
   bottom: -6px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: var(--secondary);
+  border-radius: 2px;
 }
 
 /* =========================
