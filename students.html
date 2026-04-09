@@ -18,7 +18,7 @@
     }
 
     .partner-logo {
-      max-width: 300px; /* 🔥 bigger but clean */
+      max-width: 300px;
       width: 100%;
       height: auto;
       margin: 10px auto;
@@ -35,109 +35,94 @@
 
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="rates.html">Rates</a>
-    <a href="students.html" class="active">Students</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="rates.html">Rates</a>
+      <a href="students.html" class="active">Students</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
 
-<section class="section">
-  <div class="container">
-    <h1>Supporting the Next Generation of Clinicians</h1>
+    <section class="section">
+      <div class="container">
+        <h1>Supporting the Next Generation of Clinicians</h1>
 
-    <p class="purple-text">
-      Little Way Speech Therapy proudly serves as a clinical training site for graduate student clinicians.
-    </p>
+        <p class="purple-text">
+          Little Way Speech Therapy is proud to support the next generation of speech-language pathologists.
+        </p>
 
-    <p>
-      Student clinicians participate in therapy under close supervision, contributing to a collaborative and supportive learning environment while maintaining the highest standards of care.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Educational Partnership</h2>
-
-    <div class="partner-block">
-      <p class="partner-intro">Proudly partnering with</p>
-
-      <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank">
-        <img src="USAHS-logo.png" alt="University of St. Augustine for Health Sciences logo" class="partner-logo">
-      </a>
-
-      <p class="location-text">San Marcos, California</p>
-    </div>
-
-    <img src="little-way-logo-small.png" class="small-logo">
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>What This Means for Your Child</h2>
-
-    <p>
-      Graduate student clinicians are carefully selected through an interview process and may assist during sessions as part of their clinical training.
-    </p>
-
-    <p>
-      When available, bilingual student clinicians are prioritized to better support the diverse cultural and linguistic backgrounds of families.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Your Child Comes First</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Your Choice</h3>
-        <p>Participation is always optional and based on your comfort level.</p>
+        <p>
+          Student clinicians participate in therapy under close supervision, contributing to a collaborative and supportive learning environment while maintaining the highest standards of care.
+        </p>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Close Supervision</h3>
-        <p>All student involvement is directly guided to ensure high-quality care.</p>
+    <section class="section">
+      <div class="container">
+        <h2>Educational Partnership</h2>
+
+        <div class="partner-block">
+          <p class="partner-intro">Proudly partnering with</p>
+
+          <a href="https://www.usa.edu/college-of-rehabilitative-sciences/master-science-speech-language-pathology-ms-slp/" target="_blank">
+            <img src="USAHS-logo.png" alt="University of St. Augustine for Health Sciences logo" class="partner-logo">
+          </a>
+
+          <p class="location-text">San Marcos, California</p>
+        </div>
+
+        <section class="section">
+          <p> Student clinicians are carefully interviewed and selected before participating in services. They may assist with Early Start home visits under close supervision.</p>
+          <p> To better support the diverse cultural and linguistic backgrounds of families, bilingual student clinicians are prioritized when available.</p>
+        </section>
+
+        <!-- REASSURANCE -->
+        <section class="section">
+          <h2>Your Child Comes First</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Your Choice</h3>
+              <p>Parents and caregivers always have the option to limit or decline student involvement at any time.</p>
+            </div>
+
+            <div class="card">
+              <h3>Close Supervision</h3>
+              <p>All student participation is guided and supervised to ensure high-quality care and continuity.</p>
+            </div>
+
+            <div class="card">
+              <h3>Service Scope</h3>
+              <p>Student clinicians are not involved in Independent Educational Evaluations (IEEs).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+          <h2>Questions or Preferences?</h2>
+          <p>
+            You are always welcome to share your preferences or ask questions about student clinician involvement.
+          </p>
+          <a href="contact.html" class="cta-button">Contact</a>
+        </section>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Clear Boundaries</h3>
-        <p>Student clinicians do not participate in Independent Educational Evaluations (IEEs).</p>
-      </div>
+  </main>
 
-    </div>
-  </div>
-</section>
+  <footer>
+    &copy; <span id="year"></span> Little Way Speech Therapy
+  </footer>
 
-<section class="section">
-  <div class="container">
-    <h2>Questions or Preferences?</h2>
-
-    <p>You’re always welcome to share your preferences or ask questions.</p>
-
-    <a href="contact.html" class="cta-button">Contact</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  &copy; <span id="year"></span> Little Way Speech Therapy
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
