@@ -186,6 +186,7 @@ nav a:hover::after {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+  color: var(--accent);
 }
 
 .hero {
