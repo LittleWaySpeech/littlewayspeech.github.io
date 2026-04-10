@@ -107,12 +107,12 @@ p {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .section {
   margin: 45px auto;
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-align: center;
 }
 
@@ -124,7 +124,7 @@ p {
 
 .section:nth-of-type(even) {
   background: var(--bg-soft);
-  padding: 40px 0;
+  padding: 20px 0;
   border-radius: var(--radius);
 }
 
@@ -140,7 +140,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 34px;
-  padding: 22px 32px;
+  padding: 20px 30px;
 }
 
 nav a {
@@ -189,7 +189,7 @@ nav a:hover::after {
 }
 
 .hero {
-  padding: 80px 20px 60px;
+  padding: 40px 10px 30px;
 }
 
 h1, h2, h3 {
@@ -236,7 +236,7 @@ h2 {
 
 .hero-soft {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: 70px 20px;
+  padding: 40px 20px;
   border-radius: 28px;
   margin-top: 15px;
 }
@@ -251,14 +251,14 @@ h2 {
 
 .services-hero {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: 75px 20px;
+  padding: 40px 20px;
   border-radius: 28px;
   text-align: center;
 }
 
 .students-hero {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .students-hero h1 {
@@ -269,7 +269,7 @@ h2 {
 
 .rates-hero {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: 75px 20px;
+  padding: 60px 20px;
   border-radius: 28px;
 }
 
@@ -311,7 +311,7 @@ h2 {
 
 .card {
   background: white;
-  padding: 28px;
+  padding: 25px;
   border-radius: 22px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.05);
   border: 1px solid rgba(75,42,122,0.05);
@@ -331,7 +331,7 @@ h2 {
 
 .info-card {
   background: white;
-  padding: 28px;
+  padding: 25px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
@@ -343,7 +343,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto;
   background: white;
-  padding: 30px;
+  padding: 25px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -352,7 +352,7 @@ h2 {
    BUTTONS
 ========================= */
 button {
-  padding: 14px 28px;
+  padding: 14px 25px;
   border-radius: 999px;
   border: 1px solid var(--primary);
   background: transparent;
@@ -376,7 +376,7 @@ button:hover {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 14px 30px;
+  padding: 14px 25px;
   border-radius: 999px;
   border: none;
   box-shadow: 0 8px 20px rgba(94, 43, 151, 0.22);
@@ -443,7 +443,7 @@ img {
 ========================= */
 .quote-card {
   background: linear-gradient(135deg, #f3edfc, #ede4fb);
-  padding: 36px;
+  padding: 25px;
   border-radius: var(--radius);
   max-width: 650px;
   margin: 0 auto;
@@ -471,7 +471,7 @@ img {
 .section h2 {
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .section h2::after {
@@ -534,7 +534,7 @@ img {
 .rate-item {
   background: white;
   border-radius: 20px;
-  padding: 22px 26px;
+  padding: 20px 26px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 
   display: flex;
@@ -592,7 +592,7 @@ img {
 ========================= */
 .partner-feature {
   margin: 50px auto;
-  padding: 30px 20px;
+  padding: 25px 15px;
   text-align: center;
 }
 
@@ -709,7 +709,7 @@ footer {
   }
 
   .hero {
-    padding: 40px 16px;
+    padding: 30px 16px;
   }
 
 @media (max-width: 768px) {
