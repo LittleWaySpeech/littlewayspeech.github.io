@@ -454,7 +454,7 @@ img {
 
 .quote {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
+  color: var(--primary);
   font-weight: 400;
   font-size: 24px;
   line-height: 1.6;
