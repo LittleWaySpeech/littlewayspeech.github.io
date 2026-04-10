@@ -25,7 +25,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.65; /* slightly tighter */
+  line-height: 1.65;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -34,7 +34,7 @@ body {
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
   margin-top: 0;
-  margin-bottom: 8px; /* tightened */
+  margin-bottom: 8px;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -48,7 +48,7 @@ h1 {
   color: var(--primary);
   line-height: 1.15;
   letter-spacing: 0.01em;
-  margin-bottom: 12px; /* tightened */
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -70,7 +70,7 @@ h1 .sub-line {
 }
 
 p {
-  margin-bottom: 8px; /* tightened */
+  margin-bottom: 8px;
   line-height: 1.6;
 }
 
@@ -99,7 +99,7 @@ p {
   line-height: 1.1;
   text-align: center;
   color: #5e2b97;
-  margin-bottom: 12px; /* tightened */
+  margin-bottom: 12px;
   text-shadow: 0 2px 8px rgba(94, 43, 151, 0.08);
 }
 
@@ -113,8 +113,8 @@ p {
 }
 
 .section {
-  margin: 30px auto; /* reduced from 45 */
-  padding: 8px 15px; /* tighter */
+  margin: 30px auto;
+  padding: 8px 15px;
   text-align: center;
 }
 
@@ -126,7 +126,7 @@ p {
 
 .section:nth-of-type(even) {
   background: var(--bg-soft);
-  padding: 16px 0; /* reduced */
+  padding: 16px 0;
   border-radius: var(--radius);
 }
 
@@ -142,7 +142,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 34px;
-  padding: 16px 30px; /* slightly tighter */
+  padding: 16px 30px;
 }
 
 nav a {
@@ -187,12 +187,12 @@ nav a:hover::after {
 .tagline {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px; /* tighter */
+  margin-bottom: 10px;
   color: var(--accent);
 }
 
 .hero {
-  padding: 50px 20px 40px; /* reduced */
+  padding: 50px 20px 40px;
 }
 
 h1, h2, h3 {
@@ -255,7 +255,7 @@ h2 {
    QUOTE
 ========================= */
 .quote-card {
-  padding: 20px; /* tighter */
+  padding: 20px;
 }
 
 .quote {
@@ -265,4 +265,21 @@ h2 {
 
 .quote-author {
   margin-top: 6px;
+}
+
+/* =========================
+   BRAND TITLE (LOOPY + CLASSY)
+========================= */
+
+.brand-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.brand-title {
+  text-shadow: 0 3px 10px rgba(110,75,184,0.15);
 }
