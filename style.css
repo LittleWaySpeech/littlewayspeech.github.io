@@ -120,6 +120,49 @@ p {
   font-size: 17px;
 }
 
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+/* Decorative underline flourish */
+.hero-title::after {
+  height: 4px;
+  width: 160px;
+  background: linear-gradient(to right, transparent, #bfa6f6, transparent);
+  border-radius: 100px;
+  filter: blur(0.3px);
+}
+
+/* Loopy top line */
+.brand-script {
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  color: var(--secondary);
+  line-height: 1;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 12px rgba(110,75,184,0.25);
+}
+
+/* Clean bottom line */
+.brand-main {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Slightly tighter hero spacing */
+.hero-content {
+  gap: 8px;
+}
+
 /* =========================
    CARDS
 ========================= */
