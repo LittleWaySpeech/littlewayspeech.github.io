@@ -157,7 +157,8 @@ p {
    height: 2px;
    background: var(--accent);
    display: block;
-   margin: 10px auto 0; }
+   margin: 10px auto 0;
+}
 
 /* =========================
    NAV
@@ -367,7 +368,6 @@ img {
    height: auto;
 }
 
-
 .circle-image {
    width: 220px;
    height: 220px;
@@ -395,7 +395,8 @@ img {
    width: 90px;
    display: block;
    margin: 30px auto 0;
-   opacity: 0.9; }
+   opacity: 0.9;
+}
 
 /* =========================
    RATE
@@ -456,6 +457,19 @@ img {
    display: flex;
    flex-direction: column;
    gap: 16px; }
+}
+
+/* =========================
+   INLINE
+========================= */
+
+.inline-link {
+   color: var(--primary);
+   text-decoration: underline;
+}
+
+.inline-link:hover {
+   opacity: 0.8;
 }
 
 /* =========================
