@@ -820,82 +820,80 @@ footer {
 /* =========================
    MOBILE
 ========================= */
+/* =========================
+   MOBILE (≤768px)
+========================= */
 @media (max-width: 768px) {
+
   h1 { font-size: 34px; }
   h2 { font-size: 26px; }
   h3 { font-size: 20px; }
-
 
   nav {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-
   .hero {
     padding: 30px 16px;
   }
 
-
-@media (max-width: 768px) {
   .hero-title {
     font-size: 42px;
   }
-
 
   .hero-subtitle {
     font-size: 30px;
   }
 
-
   .tagline {
     font-size: 18px;
   }
+}
+
+
+/* =========================
+   TABLET
+========================= */
 @media (max-width: 900px) {
+
   .bio-layout {
     flex-direction: column;
     text-align: center;
     gap: 30px;
   }
 
-
   .bio-text {
     text-align: center;
     max-width: 100%;
   }
 
-
   .bio-image-wrap {
     flex: none;
   }
 
-    /* Brand title (loopy header) */
+  /* Brand title */
   .brand-title {
     font-size: 42px;
     line-height: 1.2;
   }
-
 
   /* Hero */
   .hero {
     padding: 30px 16px 25px;
   }
 
+  .hero-title {
+    font-size: 40px;
+  }
 
   .hero-subtitle {
     font-size: 28px;
   }
 
-
   .tagline {
     font-size: 17px;
   }
-
-
-  .hero-title {
-    font-size: 40px;
-  }
-
 
   /* Sections */
   .section {
@@ -903,18 +901,15 @@ footer {
     padding: 6px 12px;
   }
 
-
-  /* Cards stack nicely */
+  /* Cards */
   .cards {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-
   .card {
     padding: 18px;
   }
-
 
   /* Images */
   .circle-image {
@@ -922,36 +917,30 @@ footer {
     height: 150px;
   }
 
-
   .logo {
     width: 220px;
     margin-bottom: 20px;
   }
 
-
-  /* Navigation wraps */
+  /* Navigation */
   nav {
     flex-wrap: wrap;
     gap: 18px;
     padding: 14px 10px;
   }
 
-
   nav a {
     font-size: 14px;
   }
-
 
   /* Quote */
   .quote {
     font-size: 20px;
   }
 
-
   .quote-card {
     padding: 18px;
   }
-
 
   /* Buttons */
   .cta-button {
@@ -959,5 +948,4 @@ footer {
     font-size: 15px;
   }
 }
-
       
