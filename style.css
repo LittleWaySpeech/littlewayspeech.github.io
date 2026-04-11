@@ -426,17 +426,12 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(16px, 3vw, 32px);
+  gap: clamp(12px, 2vw, 24px);
   flex-wrap: nowrap;
 }
 
 .bio-layout.reverse {
    flex-direction: row-reverse;
-}
-
-.bio-layout.reverse .bio-image-wrap {
-  margin-left: 10;
-  margin-right: 20px;
 }
 
 .bio-text {
@@ -446,7 +441,7 @@ nav a:hover::after {
 }
 
 .bio-text h2 {
-   margin-top: 10;
+   margin-top: 10px;
    margin-bottom: 10px;
 }
 
@@ -457,7 +452,7 @@ nav a:hover::after {
 }
 
 .bio-image-wrap .circle-image {
-   margin: 40;
+   margin: 10px;
 }
 
 /* =========================
