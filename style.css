@@ -126,9 +126,9 @@ p {
    LAYOUT
 ========================= */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .section {
@@ -426,7 +426,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(24px, 10vw, 24px);
+  gap: clamp(24px, 5vw, 60px); /* now actually responsive */
   flex-wrap: nowrap;
 }
 
@@ -443,8 +443,6 @@ nav a:hover::after {
   flex: 1;
   max-width: 1000px;
   width: 100%;
-  text-align: left;
-  margin: 0;
 }
 
 .bio-text h2 {
