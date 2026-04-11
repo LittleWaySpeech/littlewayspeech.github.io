@@ -426,7 +426,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(25px, 5vw, 25px);
+  gap: clamp(24px, 5vw, 24px);
   flex-wrap: nowrap;
 }
 
@@ -692,5 +692,6 @@ nav {
   .circle-image {
     width: 150px;
     height: 150px;
+    margin: 0;
   }
 }
