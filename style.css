@@ -109,6 +109,11 @@ p {
   text-shadow: 0 2px 8px rgba(94, 43, 151, 0.08);
 }
 
+.purple-text {
+   color: var(--secondary);
+   font-size: 22px; }
+}
+
 /* =========================
    LAYOUT
 ========================= */
@@ -334,12 +339,12 @@ nav a:hover::after {
   max-width: 700px;
   width: 100%;
   text-align: left;
+  margin: 0;
 }
 
-.purple-text {
-   color: var(--secondary);
-   font-size: 22px; }
-}
+
+
+
 
 /* =========================
    IMAGES
