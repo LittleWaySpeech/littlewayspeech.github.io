@@ -299,12 +299,29 @@ nav a:hover::after {
 /* =========================
    IMAGES
 ========================= */
-.circle-image {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
+img {
+   max-width: 100%;
+   height: auto;
 }
+
+
+.circle-image {
+   width: 220px;
+   height: 220px;
+   object-fit: cover;
+   border-radius: 50%;
+   display: block;
+   margin: 30px auto;
+   box-shadow: var(--shadow);
+   border: 6px solid white;
+}
+
+.section .circle-image {
+   width: 180px;
+   height: 180px;
+   box-shadow: 0 18px 35px rgba(0,0,0,0.10);
+}
+
 
 /* =========================
    BRAND
