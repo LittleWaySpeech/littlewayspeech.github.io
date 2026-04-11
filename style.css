@@ -17,6 +17,13 @@
   --shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+
 /* =========================
    BASE + TYPOGRAPHY
 ========================= */
