@@ -293,8 +293,6 @@ nav a:hover::after {
   transform: translateY(-2px);
 }
 
-
-
 /* =========================
    QUOTE
 ========================= */
@@ -322,7 +320,6 @@ nav a:hover::after {
    font-size: 10px;
    opacity: 0.7;
 }
-
 
 /* =========================
    BIO
@@ -399,6 +396,67 @@ img {
    display: block;
    margin: 30px auto 0;
    opacity: 0.9; }
+
+/* =========================
+   RATE
+========================= */
+
+.rate-item {
+   background: white;
+   border-radius: 20px;
+   padding: 20px 26px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   text-decoration: none;
+   color: inherit;
+   
+   transition: all 0.25s ease;
+}
+
+.rate-item:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+
+.rate-item.featured {
+   background: linear-gradient(135deg, #5e2b97, #9b6df0);
+   color: white;
+   transform: scale(1.02);
+}
+
+.rate-text {
+   text-align: left;
+   max-width: 70%;
+}
+
+.rate-title {
+   font-weight: 600;
+   font-size: 17px;
+   margin-bottom: 4px;
+}
+
+.rate-sub {
+   font-size: 14px;
+   opacity: 0.75;
+}
+
+.rate-price {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.rates-vertical {
+   max-width: 560px;
+   margin: 40px auto;
+   display: flex;
+   flex-direction: column;
+   gap: 16px; }
+}
 
 /* =========================
    BRAND
