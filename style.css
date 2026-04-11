@@ -78,8 +78,8 @@ p {
 
 .hero-soft {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: clamp(15px, 4vw, 20px) 20px;
-  border-radius: 28px;
+  padding: clamp(15px, 4vw, 15px) 20px;
+  border-radius: 20px;
   margin-top: 15px;
 }
 
