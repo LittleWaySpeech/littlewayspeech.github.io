@@ -69,6 +69,13 @@ p {
   line-height: 1.65;
 }
 
+.hero-soft {
+  background: linear-gradient(to bottom, #ffffff, #f7f4fb);
+  padding: clamp(30px, 4vw, 40px) 20px;
+  border-radius: 28px;
+  margin-top: 15px;
+}
+
 /* =========================
    ACCENTS / UTILITY
 ========================= */
@@ -101,6 +108,7 @@ p {
   margin-bottom: 12px;
   text-shadow: 0 2px 8px rgba(94, 43, 151, 0.08);
 }
+
 /* =========================
    LAYOUT
 ========================= */
@@ -281,6 +289,11 @@ nav a:hover::after {
   max-width: 700px;
   width: 100%;
   text-align: left;
+}
+
+.purple-text {
+   color: var(--secondary);
+   font-size: 22px; }
 }
 
 /* =========================
