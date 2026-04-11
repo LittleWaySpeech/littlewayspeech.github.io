@@ -525,9 +525,10 @@ img {
 
 
 .bio-text {
-  text-align: left;
+  flex: 1;
   max-width: 700px;
   width: 100%;
+  text-align: left;
   margin: 0;
 }
 
@@ -545,14 +546,6 @@ img {
   justify-content: center;
   gap: 60px;
   flex-wrap: nowrap;
-}
-
-
-.bio-text {
-  flex: 1;
-  max-width: 700px;
-  text-align: left;
-  margin: 0;
 }
 
 
