@@ -868,3 +868,101 @@ footer {
   .bio-image-wrap {
     flex: none;
   }
+
+    /* Brand title (loopy header) */
+  .brand-title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+
+  /* Hero */
+  .hero {
+    padding: 30px 16px 25px;
+  }
+
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+
+  .tagline {
+    font-size: 17px;
+  }
+
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+
+  /* Sections */
+  .section {
+    margin: 25px auto;
+    padding: 6px 12px;
+  }
+
+
+  /* Cards stack nicely */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  .card {
+    padding: 18px;
+  }
+
+
+  /* Images */
+  .circle-image {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .logo {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+
+  /* Navigation wraps */
+  nav {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 14px 10px;
+  }
+
+
+  nav a {
+    font-size: 14px;
+  }
+
+
+  /* Quote */
+  .quote {
+    font-size: 20px;
+  }
+
+
+  .quote-card {
+    padding: 18px;
+  }
+
+
+  /* Buttons */
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+      
