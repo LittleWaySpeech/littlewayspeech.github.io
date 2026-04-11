@@ -604,8 +604,7 @@ img {
 
 .location-text {
    font-size: 18px;
-   color: var(--text);
-   opacity: 0.8;
+   color: var(--text); opacity: 0.9;
    margin-top: 6px;
 }
 
