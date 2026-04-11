@@ -332,6 +332,11 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
   gap: clamp(30px, 5vw, 60px);
+  flex-wrap: nowrap;
+}
+
+.bio-layout.reverse {
+   flex-direction: row-reverse;
 }
 
 .bio-text {
@@ -353,6 +358,9 @@ nav a:hover::after {
    align-items: center;
 }
 
+.bio-image-wrap .circle-image {
+   margin: 0; }
+}
 
 /* =========================
    IMAGES
