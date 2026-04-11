@@ -448,9 +448,10 @@ nav a:hover::after {
 }
 
 .bio-text h2 {
-   margin-top: 10px;
-   margin-bottom: 10px;
-   text-align: center;
+  margin: 10px auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 100%;
 }
 
 .bio-image-wrap {
