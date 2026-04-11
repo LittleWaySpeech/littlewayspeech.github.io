@@ -40,8 +40,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.02em;
