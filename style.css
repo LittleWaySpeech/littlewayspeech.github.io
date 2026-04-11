@@ -71,7 +71,7 @@ p {
 
 .hero-soft {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: clamp(30px, 4vw, 40px) 20px;
+  padding: clamp(15px, 4vw, 20px) 20px;
   border-radius: 28px;
   margin-top: 15px;
 }
@@ -519,7 +519,7 @@ img {
    max-width: 100%;
    height: auto;
    display: block;
-   margin: 0 auto 18px;
+   margin: 0 auto 18px; 
 }
 
 .partner-logo:hover {
@@ -528,6 +528,7 @@ img {
 
 .partner-block {
    max-width: 700px;
+   text-align: center;
    margin: 0 auto;
 }
 
@@ -535,7 +536,7 @@ img {
    font-size: 22px;
    font-weight: 600;
    color: var(--primary);
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    letter-spacing: 0.5px;
 }
 
@@ -543,7 +544,7 @@ img {
    font-size: 18px;
    color: var(--text);
    opacity: 0.8;
-   margin-top: 10px;
+   margin-top: 6px;
 }
 
 .intro-text {
@@ -576,7 +577,8 @@ footer {
    color: var(--primary);
    background: linear-gradient(to right, #f7f2ff, #f3edfc);
    border-top: 1px solid rgba(75,42,122,0.08);
-   margin-top: 10px; }
+   margin-top: 10px;
+}
 
 /* =========================
    MOBILE / TABLET
@@ -590,7 +592,7 @@ footer {
 nav {
    justify-content: center;
    flex-wrap: wrap;
-  }
+}
 
 .hero {
    padding: 30px 16px;
@@ -611,16 +613,16 @@ nav {
 .bio-layout {
     flex-direction: column;
     text-align: center;
-  }
+}
 
   nav {
     flex-wrap: wrap;
     gap: 18px;
-  }
+}
 
   .cards {
     grid-template-columns: 1fr;
-  }
+}
 
   .circle-image {
     width: 150px;
