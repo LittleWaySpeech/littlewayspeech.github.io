@@ -333,7 +333,7 @@ nav a:hover::after {
    FORM INPUTS
 ========================= */
 
- .contact-card {
+.contact-card {
    max-width: 800px;
    margin: 0 auto;
    background: white;
@@ -342,9 +342,17 @@ nav a:hover::after {
    box-shadow: 0 12px 30px rgba(94, 43, 151, 0.1);
 }
 
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+   text-align: left;
+}
+
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
+   width: 100%;
    padding: 12px;
    border-radius: 10px;
    border: 1px solid #ddd;
@@ -361,9 +369,29 @@ nav a:hover::after {
    box-shadow: 0 0 0 2px rgba(110, 75, 184, 0.15);
 }
 
+/* Labels */
 .contact-form label {
    font-weight: 600;
    text-align: left;
+}
+
+.contact-form button {
+   padding: 12px 18px;
+   border-radius: 10px;
+   border: none;
+   background: var(--secondary);
+   color: white;
+   font-size: 15px;
+   cursor: pointer;
+   transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.contact-form button:hover {
+   opacity: 0.9;
+}
+
+.contact-form button:active {
+   transform: scale(0.98);
 }
 
 .contact-note {
