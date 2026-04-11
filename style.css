@@ -426,7 +426,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(24px, 5vw, 24px);
+  gap: clamp(24px, 10vw, 24px);
   flex-wrap: nowrap;
 }
 
@@ -435,7 +435,7 @@ nav a:hover::after {
 }
 
 .bio-layout.reverse .bio-image-wrap {
-  margin-left: 0;
+  margin-left: 10;
   margin-right: 20px;
 }
 
