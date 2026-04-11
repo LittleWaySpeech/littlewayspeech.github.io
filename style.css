@@ -450,6 +450,7 @@ nav a:hover::after {
 .bio-text h2 {
    margin-top: 10px;
    margin-bottom: 10px;
+   text-align: center;
 }
 
 .bio-image-wrap {
