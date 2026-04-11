@@ -120,8 +120,8 @@ p {
 }
 
 .purple-text {
-   color: var(--secondary);
-   font-size: 22px; }
+  color: var(--secondary);
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -416,16 +416,6 @@ nav a:hover::after {
    display: none;
 }
 
-.service-banner {
-   display: none;
-   margin-bottom: 15px;
-   padding: 12px;
-   border-radius: 12px;
-   background: #f3ecff;
-   font-weight: 600;
-   text-align: center;
-}
-
 /* =========================
    BIO
 ========================= */
@@ -556,11 +546,11 @@ img {
 }
 
 .rates-vertical {
-   max-width: 600px;
-   margin: 40px auto;
-   display: flex;
-   flex-direction: column;
-   gap: 15px; }
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* =========================
