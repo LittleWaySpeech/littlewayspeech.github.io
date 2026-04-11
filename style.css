@@ -40,7 +40,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
-  margin-top: 20;
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 600;
   line-height: 1.2;
@@ -68,7 +68,7 @@ h1 .sub-line {
   display: block;
   font-size: 0.6em;
   font-weight: 400;
-  margin: 4px 0;
+  margin: 5px 0;
 }
 
 p {
@@ -78,7 +78,7 @@ p {
 
 .hero-soft {
   background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-  padding: clamp(15px, 4vw, 15px) 20px;
+  padding: 8px 20px;
   border-radius: 20px;
   margin-top: 10px;
 }
