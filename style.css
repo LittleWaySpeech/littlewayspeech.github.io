@@ -342,8 +342,16 @@ nav a:hover::after {
   margin: 0;
 }
 
+.bio-text h2 {
+   margin-top: 0;
+   margin-bottom: 15px;
+}
 
-
+.bio-image-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 
 /* =========================
