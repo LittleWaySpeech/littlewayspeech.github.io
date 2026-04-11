@@ -128,7 +128,7 @@ p {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .section {
@@ -434,6 +434,11 @@ nav a:hover::after {
    flex-direction: row-reverse;
 }
 
+.bio-layout.reverse .bio-image-wrap {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
 .bio-text {
   flex: 1;
   max-width: 1000px;
@@ -455,7 +460,7 @@ nav a:hover::after {
 }
 
 .bio-image-wrap .circle-image {
-   margin: 10; }
+   margin: 10;
 }
 
 /* =========================
