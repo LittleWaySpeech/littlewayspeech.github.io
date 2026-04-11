@@ -140,6 +140,20 @@ p {
   border-radius: var(--radius);
 }
 
+.section h2 {
+   position: relative;
+   display: inline-block;
+   padding-bottom: 8px;
+}
+
+.section h2::after {
+   content: "";
+   width: 50px;
+   height: 2px;
+   background: var(--accent);
+   display: block;
+   margin: 10px auto 0; }
+
 /* =========================
    NAV
 ========================= */
