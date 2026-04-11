@@ -182,7 +182,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 18px;
   padding: 16px 30px;
 }
 
@@ -216,7 +216,6 @@ nav a:hover::after {
    HERO
 ========================= */
 .hero,
-.hero-soft,
 .services-hero,
 .rates-hero,
 .students-hero {
@@ -649,10 +648,6 @@ footer {
   h1 { font-size: 34px; }
   h2 { font-size: 26px; }
   h3 { font-size: 20px; }
-
-nav {
-   justify-content: center;
-   flex-wrap: wrap;
 }
 
 .hero {
@@ -676,18 +671,6 @@ nav {
     text-align: center;
 }
 
-  nav {
-    flex-wrap: wrap;
-    gap: 18px;
-}
-
   .cards {
     grid-template-columns: 1fr;
-}
-
-  .circle-image {
-    width: 150px;
-    height: 150px;
-    margin: 0;
-  }
 }
