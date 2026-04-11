@@ -136,7 +136,7 @@ p {
 }
 
 .section p + p {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .section:nth-of-type(even) {
@@ -456,6 +456,56 @@ img {
    display: flex;
    flex-direction: column;
    gap: 16px; }
+}
+
+/* =========================
+   PARTNER
+========================= */
+
+.partner-feature {
+   margin: 50px auto;
+   padding: 25px 15px;
+   text-align: center;
+}
+
+.partner-logo {
+   width: 500px;
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto 18px;
+}
+
+.partner-logo:hover {
+   transform: scale(1.03);
+}
+
+.partner-block {
+   max-width: 700px;
+   margin: 0 auto;
+}
+
+.partner-intro {
+   font-size: 22px;
+   font-weight: 600;
+   color: var(--primary);
+   margin-bottom: 15px;
+   letter-spacing: 0.5px;
+}
+
+.location-text {
+   font-size: 18px;
+   color: var(--text);
+   opacity: 0.8;
+   margin-top: 10px;
+}
+
+.intro-text {
+   max-width: 650px;
+   margin: 10px auto 0;
+   font-size: 18px;
+   line-height: 1.6;
+   color: var(--text); opacity: 0.9;
 }
 
 /* =========================
