@@ -75,14 +75,14 @@ h1 .sub-line {
   display: block;
   font-size: 0.6em;
   font-weight: 400;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 
 p {
-  margin-bottom: 10px;
-  line-height: 1.65;
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 
