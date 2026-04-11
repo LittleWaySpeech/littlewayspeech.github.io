@@ -125,7 +125,7 @@ p {
    LAYOUT
 ========================= */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -137,7 +137,7 @@ p {
 }
 
 .section p {
-  max-width: 500px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -246,7 +246,7 @@ nav a:hover::after {
 }
 
 .hero-content {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -308,7 +308,7 @@ nav a:hover::after {
    background: linear-gradient(135deg, #f3edfc, #ede4fb);
    padding: 20px;
    border-radius: var(--radius);
-   max-width: 650px;
+   max-width: 800px;
    margin: 0 auto;
    border: 1px solid rgba(110,75,184,0.08);
    box-shadow: 0 12px 28px rgba(110,75,184,0.08);
@@ -334,7 +334,7 @@ nav a:hover::after {
 ========================= */
 
  .contact-card {
-   max-width: 600px;
+   max-width: 800px;
    margin: 0 auto;
    background: white;
    padding: 28px;
@@ -407,7 +407,7 @@ nav a:hover::after {
 
 .bio-text {
   flex: 1;
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   text-align: left;
   margin: 0;
@@ -500,7 +500,7 @@ img {
 
 .rate-text {
    text-align: left;
-   max-width: 70%;
+   max-width: 100%;
 }
 
 .rate-title {
@@ -520,7 +520,7 @@ img {
 }
 
 .rates-vertical {
-   max-width: 560px;
+   max-width: 600px;
    margin: 40px auto;
    display: flex;
    flex-direction: column;
