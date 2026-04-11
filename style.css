@@ -454,7 +454,6 @@ nav a:hover::after {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-left: 40px;
 }
 
 .bio-image-wrap .circle-image {
