@@ -567,9 +567,21 @@ img {
 }
 
 /* =========================
+   footer
+========================= */
+footer {
+   text-align: center;
+   padding: 36px 20px;
+   font-size: 14px;
+   color: var(--primary);
+   background: linear-gradient(to right, #f7f2ff, #f3edfc);
+   border-top: 1px solid rgba(75,42,122,0.08);
+   margin-top: 10px; }
+
+/* =========================
    MOBILE / TABLET
 ========================= */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
   .bio-layout {
     flex-direction: column;
