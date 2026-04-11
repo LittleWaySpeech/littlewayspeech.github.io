@@ -426,7 +426,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(24px, 5vw, 60px); /* now actually responsive */
+  gap: clamp(16px, 3vw, 32px);
   flex-wrap: nowrap;
 }
 
