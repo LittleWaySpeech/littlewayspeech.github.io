@@ -755,10 +755,6 @@ img {
   color: var(--primary);
   letter-spacing: 1px;
   line-height: 1.1;
-}
-
-
-.brand-title {
   text-shadow: 0 3px 10px rgba(110,75,184,0.15);
 }
 
