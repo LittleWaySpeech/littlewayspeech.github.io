@@ -506,7 +506,7 @@ img {
 ========================= */
 .quote-card {
   background: linear-gradient(135deg, #f3edfc, #ede4fb);
-  padding: 25px;
+  padding: 20px;
   border-radius: var(--radius);
   max-width: 650px;
   margin: 0 auto;
@@ -518,15 +518,16 @@ img {
 .quote {
   font-family: 'Playfair Display', serif;
   color: var(--primary);
-  font-weight: 400;
+  font-weight: 400 !important;
+  margin-bottom: 6px;
   font-size: 24px;
   line-height: 1.6;
 }
 
 
 .quote-author {
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 6px;
+  font-size: 10px;
   opacity: 0.7;
 }
 
