@@ -346,6 +346,93 @@ img {
 }
 
 /* =========================
+   QUOTE
+========================= */
+
+.quote-card {
+   background: linear-gradient(135deg, #f3edfc, #ede4fb);
+   padding: 15px;
+   border-radius: var(--radius);
+   max-width: 650px;
+   margin: 0 auto;
+   border: 1px solid rgba(110,75,184,0.08);
+   box-shadow: 0 12px 28px rgba(110,75,184,0.08);
+}
+
+.quote {
+   font-family: 'Playfair Display', serif;
+   color: var(--primary);
+   font-weight: 400 !important;
+   margin-bottom: 6px;
+   font-size: 24px;
+   line-height: 1.6;
+}
+
+.quote-author {
+   margin-top: 6px;
+   font-size: 10px;
+   opacity: 0.7;
+}
+
+/* =========================
+   SECTION DIVIDER
+========================= */
+
+.section h2 {
+   position: relative;
+   display: inline-block;
+   padding-bottom: 8px;
+}
+
+.section h2::after {
+   content: "";
+   width: 50px;
+   height: 2px;
+   background: var(--accent);
+   display: block;
+   margin: 10px auto 0;
+}
+
+/* =========================
+   BIO
+========================= */
+
+.bio-text {
+   flex: 1;
+   max-width: 700px;
+   width: 100%;
+   text-align: left;
+   margin: 0;
+}
+
+.bio-image-wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.bio-layout {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: nowrap;
+}
+
+.bio-text h2 {
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+.bio-layout.reverse {
+   flex-direction: row-reverse;
+}
+
+.bio-image-wrap .circle-image {
+   margin: 0;
+}
+
+/* =========================
    RATE
 ========================= */
 
@@ -518,11 +605,6 @@ font-size: 30px;
 
 .tagline {
 font-size: 18px;
-}
-
-.bio-layout {
-flex-direction: column;
-text-align: center;
 }
 
 .cards {
