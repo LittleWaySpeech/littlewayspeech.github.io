@@ -346,6 +346,156 @@ img {
 }
 
 /* =========================
+   RATE
+========================= */
+
+.rate-item {
+   background: white;
+   border-radius: 20px;
+   padding: 20px 26px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+   text-decoration: none;
+   color: inherit;
+   
+   transition: all 0.25s ease;
+}
+
+.rate-item:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.rate-item.featured {
+   background: linear-gradient(135deg, #5e2b97, #9b6df0);
+   color: white;
+   transform: scale(1.02);
+}
+
+.rate-text {
+   text-align: left;
+   max-width: 100%;
+}
+
+.rate-title {
+   font-weight: 600;
+   font-size: 17px;
+   margin-bottom: 4px;
+}
+
+.rate-sub {
+   font-size: 14px;
+   opacity: 0.75;
+}
+
+.rate-price {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.rates-vertical {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* =========================
+   INLINE
+========================= */
+
+.inline-link {
+   color: var(--primary);
+   text-decoration: underline;
+}
+
+.inline-link:hover {
+   opacity: 0.8;
+}
+
+/* =========================
+   PARTNER
+========================= */
+
+.partner-feature {
+   margin: 50px auto;
+   padding: 25px 15px;
+   text-align: center;
+}
+
+.partner-logo {
+   width: 500px;
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0 auto 18px; 
+}
+
+.partner-logo:hover {
+   transform: scale(1.03);
+}
+
+.partner-block {
+   max-width: 500px;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.partner-intro {
+   font-size: 22px;
+   font-weight: 600;
+   color: var(--primary);
+   margin-bottom: 10px;
+   letter-spacing: 0.5px;
+}
+
+.location-text {
+   font-size: 18px;
+   color: var(--text); opacity: 0.9;
+   margin-top: 6px;
+}
+
+.intro-text {
+   max-width: 500px;
+   margin: 10px auto 0;
+   font-size: 18px;
+   line-height: 1.5;
+   color: var(--text); opacity: 0.9;
+}
+
+/* =========================
+   BRAND
+========================= */
+.brand-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(42px, 6vw, 64px);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.1;
+  text-shadow: 0 3px 10px rgba(110,75,184,0.15);
+}
+
+/* =========================
+   footer
+========================= */
+footer {
+   text-align: center;
+   padding: 25px 15px;
+   font-size: 14px;
+   color: var(--primary);
+   background: linear-gradient(to right, #f7f2ff, #f3edfc);
+   border-top: 1px solid rgba(75,42,122,0.08);
+   margin-top: 10px;
+}
+
+/* =========================
 MOBILE
 ========================= */
 @media (max-width: 768px) {
