@@ -583,19 +583,20 @@ footer {
 }
 
 /* =========================
-   FORM LAYOUT FIX
+   FORM LAYOUT (ADD THIS)
 ========================= */
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .contact-form label {
   font-weight: 500;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-bottom: 2px;
+  display: block;
 }
 
 .contact-form input,
@@ -605,8 +606,25 @@ footer {
   box-sizing: border-box;
 }
 
+.contact-form textarea {
+  resize: vertical;
+}
+
 .contact-form button {
   margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: var(--secondary);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 .thank-you-message {
