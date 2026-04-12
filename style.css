@@ -583,33 +583,34 @@ footer {
 }
 
 /* =========================
-   FORM INPUTS
+   FORM LAYOUT FIX
 ========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
-   padding: 12px;
-   border-radius: 10px;
-   border: 1px solid #ddd;
-   font-family: inherit;
-   font-size: 15px;
-   transition: border 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-   outline: none;
-   border-color: var(--secondary);
-   box-shadow: 0 0 0 2px rgba(110, 75, 184, 0.15);
+.contact-form button {
+  margin-top: 10px;
 }
 
 .thank-you-message {
-   margin-top: 18px;
-   padding: 14px;
-   border-radius: 12px;
-   background: var(--bg-soft);
-   text-align: center;
+  display: none;
 }
 
 /* =========================
