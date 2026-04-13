@@ -315,6 +315,8 @@ transform: translateY(-2px);
   margin: 16px 0 24px;
   max-width: 520px;
   text-align: left !important;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .rate-note-box p {
