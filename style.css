@@ -689,7 +689,16 @@ grid-template-columns: 1fr;
 width: 150px;
 height: 150px;
 }
-}
+
+.bio-layout {
+flex-direction: column;
+flex-wrap: wrap;
+text-align: center;
+  }
+
+.bio-image-wrap {
+    margin-bottom: 20px;
+  }
 
 .bottom-banner img {
 height: auto;
