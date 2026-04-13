@@ -345,17 +345,16 @@ img {
    opacity: 0.9;
 }
 
-.footer-image {
-  display: flex;
-  justify-content: center;
+.bottom-banner {
+  width: 100%;
   margin-top: 40px;
 }
 
-.footer-image img {
+.bottom-banner img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
+  height: 250px; /* controls banner height */
+  object-fit: cover; /* prevents stretching, crops nicely */
+  display: block;
 }
 
 /* =========================
