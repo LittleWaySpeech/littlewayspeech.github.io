@@ -690,3 +690,9 @@ width: 150px;
 height: 150px;
 }
 }
+
+.bottom-banner img {
+height: auto;
+object-fit: contain;
+  }
+}
