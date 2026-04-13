@@ -600,6 +600,7 @@ footer {
 ========================= */
 
 .contact-form {
+  width: 100%;
   max-width: 600px;
   margin: 40px auto;
   padding: 28px;
@@ -616,7 +617,9 @@ footer {
 
 .contact-form input,
 .contact-form textarea,
-.contact-form select {
+.contact-form select
+.contact-form button {
+  display: block;
   border: 1px solid #e3dff0;
   border-radius: 12px;
   background: #faf8ff;
@@ -625,7 +628,9 @@ footer {
 
 .contact-form input:focus,
 .contact-form textarea:focus,
-.contact-form select:focus {
+.contact-form select:focus
+.contact-form button:focus {
+  display: block;
   outline: none;
   border-color: var(--secondary);
   background: #ffffff;
