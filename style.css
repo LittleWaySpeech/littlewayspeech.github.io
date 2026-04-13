@@ -314,6 +314,7 @@ transform: translateY(-2px);
   padding: 16px 18px;
   margin: 16px 0 24px;
   max-width: 520px;
+  text-align: left;
 }
 
 .rate-note-box p {
@@ -321,6 +322,7 @@ transform: translateY(-2px);
   font-size: 0.95em;
   line-height: 1.5;
   color: #4a4458;
+  text-align: left;
 }
 
 .rate-note-box strong {
