@@ -345,6 +345,19 @@ img {
    opacity: 0.9;
 }
 
+.footer-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* =========================
    QUOTE
 ========================= */
