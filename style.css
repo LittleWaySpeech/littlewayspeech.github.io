@@ -307,6 +307,26 @@ margin-top: 10px;
 transform: translateY(-2px);
 }
 
+.rate-note-box {
+  background: #f7f4fb;
+  border: 1px solid #e6def7;
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin: 16px 0 24px;
+  max-width: 520px;
+}
+
+.rate-note-box p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #4a4458;
+}
+
+.rate-note-box strong {
+  color: #4b2a7a;
+}
+
 /* =========================
 IMAGES
 ========================= */
