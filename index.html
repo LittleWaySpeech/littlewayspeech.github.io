@@ -1,99 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-  <!-- SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ""LocalBusiness",
-    "name": "Little Way Speech Therapy",
-    "image": "https://littlewayspeech.com/logo.jpg",
-    "url": "https://littlewayspeech.com/",
-    "description": "Pediatric speech therapy services in San Diego including early intervention, speech sound disorders, language development, dyslexia evaluations, and parent coaching.",
-    "areaServed": {
-      "@type": "Place",
-      "name": "San Diego County"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Diego",
-      "addressRegion": "CA",
-      "addressCountry": "US"
-    }
+<!-- SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Little Way Speech Therapy",
+  "image": "https://littlewayspeech.com/logo.jpg",
+  "url": "https://littlewayspeech.com/",
+  "description": "Pediatric speech therapy services in San Diego including early intervention, speech sound disorders, language development, dyslexia evaluations, and parent coaching.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "San Diego County"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Diego",
+    "addressRegion": "CA",
+    "addressCountry": "US"
   }
-  </script>
+}
+</script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="geo.region" content="US-CA">
-  <meta name="geo.placename" content="San Diego">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Little Way | Pediatric Speech Therapy in San Diego</title>
-  <meta name="description" content="Little Way Speech Therapy provides pediatric speech therapy in San Diego, including early intervention, speech delay support, and school-age services. In-home and virtual sessions available.">
+<title>Little Way | Pediatric Speech Therapy in San Diego</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Dancing+Script:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
-  <div class="top-accent-bar"></div>
-
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="rates.html">Rates</a>
-    <a href="students.html">Students</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-
-<!-- HERO -->
-  <section class="hero">
-  <div class="container hero-content">
-
-    <h1 class="hero-title brand-title">Little Way Speech Therapy</h1>
-
-    <div class="tagline">Pediatric Speech Therapy in San Diego</div>
-
-    <p class="hero-subtitle">
-      Nurturing Communication with Care
-    </p>
-
-    <img src="little-way-logo.png" alt="Little Way Speech Therapy logo" class="logo">
-
-    <a href="contact.html" class="cta-button">Request a Consultation</a>
-
-  </div>
-</section>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="container">
-      <h2>Welcome</h2>
-      <p class="purple-text">
-        Little Way Speech Therapy provides compassionate, individualized speech and language services for children throughout San Diego County.
-      </p>
-      <p class="purple-text">
-        Services are offered both in-home and virtually, providing flexible, accessible support for every family.
-      </p>
-    </div>
-  </section>
-
-  <!-- TRUST BADGE -->
+<!-- TRUST BADGE -->
 <div class="trust-bar">
   <div class="stars">★★★★★</div>
   <div class="trust-text">
@@ -101,9 +43,9 @@
   </div>
 </div>
 
-  <!-- TESTIMONIALS -->
+<!-- TESTIMONIALS -->
 <section class="testimonial-wrapper">
-  <div class="testimonial-section" id="testimonialContainer">
+  <div class="testimonial-section" id="testimonial-container">
 
     <div class="testimonial active">
       <p>"Kat brings great energy and enthusiasm to our home and our son loves working with her. She's given us clear things to work on in-between sessions and resources to use."</p>
@@ -171,26 +113,40 @@
       <span>–Happy, mother of a 4-year-old</span>
     </div>
 
-  
-    <!-- DOTS -->
-    <div class="testimonial-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    
+  </div>
+</section>
+
+
+    <!-- DOTS (AUTO GENERATED) -->
+    <div class="testimonial-dots" id="testimonial-dots"></div>
+
   </div>
 </section>
 
 <script>
 const testimonials = document.querySelectorAll(".testimonial");
-const dots = document.querySelectorAll(".dot");
 const container = document.getElementById("testimonial-container");
+const dotsContainer = document.getElementById("testimonial-dots");
 
 let index = 0;
 let interval;
 
-/* SHOW SPECIFIC TESTIMONIAL */
+/* CREATE DOTS */
+testimonials.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
+  if (i === 0) dot.classList.add("active");
+
+  dot.addEventListener("click", () => {
+    showTestimonial(i);
+  });
+
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll(".dot");
+
+/* SHOW */
 function showTestimonial(i) {
   testimonials.forEach(t => t.classList.remove("active"));
   dots.forEach(d => d.classList.remove("active"));
@@ -205,7 +161,7 @@ function startRotation() {
   interval = setInterval(() => {
     let next = (index + 1) % testimonials.length;
     showTestimonial(next);
-  }, 4000);
+  }, 5000); // slower = readable
 }
 
 function stopRotation() {
@@ -214,18 +170,11 @@ function stopRotation() {
 
 startRotation();
 
-/* PAUSE ON HOVER */
+/* HOVER PAUSE */
 container.addEventListener("mouseenter", stopRotation);
 container.addEventListener("mouseleave", startRotation);
 
-/* CLICKABLE DOTS */
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => {
-    showTestimonial(i);
-  });
-});
-
-/* SWIPE SUPPORT */
+/* SWIPE */
 let startX = 0;
 
 container.addEventListener("touchstart", (e) => {
@@ -236,92 +185,14 @@ container.addEventListener("touchend", (e) => {
   let endX = e.changedTouches[0].clientX;
   let diff = startX - endX;
 
-  if (Math.abs(diff) > 50) { // swipe threshold
+  if (Math.abs(diff) > 50) {
     if (diff > 0) {
-      // swipe left → next
-      let next = (index + 1) % testimonials.length;
-      showTestimonial(next);
+      showTestimonial((index + 1) % testimonials.length);
     } else {
-      // swipe right → previous
-      let prev = (index - 1 + testimonials.length) % testimonials.length;
-      showTestimonial(prev);
+      showTestimonial((index - 1 + testimonials.length) % testimonials.length);
     }
   }
 });
-</script>
-
-  <!-- SERVICES -->
-<section class="section">
-  <div class="container">
-    <h2>Support For Your Child</h2>
-
-  <div class="cards">
-    
-        <div class="card">
-          <h3>Early Intervention</h3>
-          <p>
-            Play-based, family-centered therapy for infants and toddlers to support early communication, connection, and development.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Speech & Language Therapy</h3>
-          <p>
-            Individualized therapy for children needing support with articulation, language, fluency, social communication, and more.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Comprehensive Evaluations</h3>
-          <p>
-            In-depth assessments to understand your child’s strengths and needs, guiding clear and meaningful next steps.
-          </p>
-        </div>
-    
-      </div>
-
-   </div>
- </section>
- 
-<section class="section">
-  <div class="container">
-    <div class="quote-card">
-      <p class="quote">
-        “What matters in life is not great deeds, but great love.”
-      </p>
-      <p class="quote-author">— St. Thérèse of Lisieux</p>
-    </div>
-  </div>
-</section>
-
-  <!-- FINAL CTA -->
-  <section class="section">
-    <div class="container">
-      <h2>Take the First Step</h2>
-      <p>
-        If you have questions about your child’s communication, let's start a conversation.
-      </p>
-
-      <a href="contact.html" class="cta-button">Contact</a>
-    </div>
-  </section>
-
-</main>
-
-<div class="badge-footer">
-  <img src="ASHA-logo-black.png" alt="ASHA CCC">
-  <img src="ACE.png" alt="ACE Award">
-  <img src="meaningful-speech.png" alt="Meaningful Speech NLA">
-  <img src="prompt.png" alt="Prompt Trained SLP">
-  <img src="ally.png" alt="Ally of Stuttering">
-</div>
-
-<footer>
-  &copy; <span id="year"></span> Little Way Speech Therapy
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
