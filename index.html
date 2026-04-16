@@ -177,9 +177,12 @@
 <script>
 const testimonials = document.querySelectorAll(".testimonial");
 const dots = document.querySelectorAll(".dot");
+const container = document.getElementById("testimonial-container");
 
 let index = 0;
+let interval;
 
+/* SHOW SPECIFIC TESTIMONIAL */
 function showTestimonial(i) {
   testimonials.forEach(t => t.classList.remove("active"));
   dots.forEach(d => d.classList.remove("active"));
@@ -189,26 +192,53 @@ function showTestimonial(i) {
   index = i;
 }
 
-function showNextTestimonial() {
-  let next = (index + 1) % testimonials.length;
-  showTestimonial(next);
+/* AUTO ROTATE */
+function startRotation() {
+  interval = setInterval(() => {
+    let next = (index + 1) % testimonials.length;
+    showTestimonial(next);
+  }, 4000);
 }
 
-let interval = setInterval(showNextTestimonial, 4000);
+function stopRotation() {
+  clearInterval(interval);
+}
 
-// Pause on hover
-const container = document.querySelector(".testimonial-section");
+startRotation();
 
-container.addEventListener("mouseenter", () => clearInterval(interval));
-container.addEventListener("mouseleave", () => {
-  interval = setInterval(showNextTestimonial, 4000);
-});
+/* PAUSE ON HOVER */
+container.addEventListener("mouseenter", stopRotation);
+container.addEventListener("mouseleave", startRotation);
 
-// Clickable dots
+/* CLICKABLE DOTS */
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
     showTestimonial(i);
   });
+});
+
+/* SWIPE SUPPORT */
+let startX = 0;
+
+container.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+container.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+  let diff = startX - endX;
+
+  if (Math.abs(diff) > 50) { // swipe threshold
+    if (diff > 0) {
+      // swipe left → next
+      let next = (index + 1) % testimonials.length;
+      showTestimonial(next);
+    } else {
+      // swipe right → previous
+      let prev = (index - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(prev);
+    }
+  }
 });
 </script>
 
