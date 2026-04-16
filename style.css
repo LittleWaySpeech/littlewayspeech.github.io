@@ -382,6 +382,22 @@ img {
   border-radius: 20px;
 }
 
+.badge-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* important for mobile */
+  padding: 30px 15px;
+  background-color: #f4f4f6; /* light gray like your screenshot */
+}
+
+.badge-footer img {
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* =========================
    QUOTE
 ========================= */
@@ -757,5 +773,14 @@ text-align: center;
 .bottom-banner img {
 height: auto;
 object-fit: contain;
+  }
+
+  @media (max-width: 600px) {
+  .badge-footer {
+    gap: 20px;
+  }
+
+  .badge-footer img {
+    max-height: 70px;
   }
 }
