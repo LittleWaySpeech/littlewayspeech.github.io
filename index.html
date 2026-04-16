@@ -93,30 +93,9 @@
     </div>
   </section>
 
-<script>
-const testimonials = document.querySelectorAll(".testimonial");
-let index = 0;
-
-function showNextTestimonial() {
-  testimonials[index].classList.remove("active");
-  index = (index + 1) % testimonials.length;
-  testimonials[index].classList.add("active");
-}
-
-let interval = setInterval(showNextTestimonial, 4000);
-
-// Pause on hover
-const container = document.querySelector(".testimonial-section");
-
-container.addEventListener("mouseenter", () => clearInterval(interval));
-container.addEventListener("mouseleave", () => {
-  interval = setInterval(showNextTestimonial, 4000);
-});
-</script>
-
   <!-- TESTIMONIALS -->
 <section class="testimonial-wrapper">
-  <div class="testimonial-section">
+  <div class="testimonial-section" id="testimonialContainer">
 
     <div class="testimonial active">
       <p>"Kat brings great energy and enthusiasm to our home and our son loves working with her. She's given us clear things to work on in-between sessions and resources to use."</p>
@@ -184,6 +163,14 @@ container.addEventListener("mouseleave", () => {
       <span>–Happy, mother of a 4-year-old</span>
     </div>
 
+  
+    <!-- DOTS -->
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    
   </div>
 </section>
 
