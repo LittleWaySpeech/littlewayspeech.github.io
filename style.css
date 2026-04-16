@@ -399,6 +399,75 @@ img {
 }
 
 /* =========================
+   TESTIMONIAL SECTION
+========================= */
+
+/* SECTION BACKGROUND */
+.testimonial-wrapper {
+  background: #f7f8fb;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.testimonial-section {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* INDIVIDUAL TESTIMONIAL */
+.testimonial {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ACTIVE TESTIMONIAL */
+.testimonial.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+/* QUOTE TEXT */
+.testimonial p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* AUTHOR TEXT */
+.testimonial span {
+  display: block;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* QUOTATION MARK STYLING */
+.testimonial p::before {
+  content: "“";
+  font-size: 2rem;
+  color: #c9a46c;
+  margin-right: 5px;
+}
+
+.testimonial p::after {
+  content: "”";
+  font-size: 2rem;
+  color: #c9a46c;
+  margin-left: 5px;
+}
+
+.testimonial-section:hover {
+  cursor: default;
+}
+
+/* =========================
    QUOTE
 ========================= */
 
@@ -782,5 +851,14 @@ object-fit: contain;
 
   .badge-footer img {
     max-height: 70px;
+  }
+
+@media (max-width: 600px) {
+  .testimonial-wrapper {
+    padding: 40px 15px;
+  }
+
+  .testimonial p {
+    font-size: 1.1rem;
   }
 }
