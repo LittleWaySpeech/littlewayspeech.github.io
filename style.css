@@ -461,8 +461,6 @@ img {
   font-style: italic;
   color: #333;
   margin-bottom: 15px;
-  position: relative;
-  padding: 0 18px;
 }
 
 /* AUTHOR TEXT */
@@ -475,22 +473,16 @@ img {
 /* QUOTATION MARK STYLING */
 .testimonial p::before {
   content: "“";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.8rem;
   color: var(--secondary);
-  line-height: 1;
+  font-size: 1.2em;
+  margin-right: 4px;
 }
 
 .testimonial p::after {
   content: "”";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 1.8rem;
   color: var(--secondary);
-  line-height: 1;
+  font-size: 1.2em;
+  margin-left: 4px;
 }
 
 .testimonial-section:hover {
