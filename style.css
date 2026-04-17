@@ -461,8 +461,9 @@ img {
   font-style: italic;
   color: #333;
   margin-bottom: 15px;
-  text-align: center;
-  text-wrap: balance;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
 }
 
 /* AUTHOR TEXT */
@@ -472,19 +473,22 @@ img {
   color: #777;
 }
 
-/* QUOTATION MARK STYLING */
+/* BIG FADED QUOTE (BACKGROUND STYLE) */
 .testimonial p::before {
   content: "“";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
   color: var(--secondary);
-  font-size: 1.2em;
-  margin-right: 4px;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .testimonial p::after {
-  content: "”";
-  color: var(--secondary);
-  font-size: 1.2em;
-  margin-left: 4px;
+  content: none;
 }
 
 .testimonial-section:hover {
