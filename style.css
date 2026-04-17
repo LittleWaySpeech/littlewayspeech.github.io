@@ -281,12 +281,12 @@ TESTIMONIALS
 .dot {
   width: 10px;
   height: 10px;
-  background: #ccc;
+  background: #c1a1d6;
   border-radius: 50%;
 }
 
 .dot.active {
-  background: #c9a46c;
+  background: #9942d4;
 }
 
 /* =========================
