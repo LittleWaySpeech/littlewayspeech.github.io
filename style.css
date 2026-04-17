@@ -461,6 +461,8 @@ img {
   font-style: italic;
   color: #333;
   margin-bottom: 15px;
+  text-align: center;
+  text-wrap: balance;
 }
 
 /* AUTHOR TEXT */
