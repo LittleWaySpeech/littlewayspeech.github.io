@@ -474,14 +474,14 @@ img {
 .testimonial p::before {
   content: "“";
   font-size: 2rem;
-  color: #c9a46c;
+  color: var(--secondary);
   margin-right: 5px;
 }
 
 .testimonial p::after {
   content: "”";
   font-size: 2rem;
-  color: #c9a46c;
+  color: var(--secondary);
   margin-left: 5px;
 }
 
