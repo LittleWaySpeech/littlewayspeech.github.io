@@ -76,29 +76,6 @@ line-height: 1.65;
 }
 
 /* =========================
-HERO SOFT
-========================= */
-.hero-soft {
-background: linear-gradient(to bottom, #ffffff, #f7f4fb);
-padding: 8px 15px;
-border-radius: 20px;
-margin-top: 5px;
-}
-
-.hero-soft > *:first-child {
-margin-top: 0;
-}
-
-.hero-title-image {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 520px;
-  width: 85%;
-  height: auto;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
-}
-
-/* =========================
 ACCENTS / UTILITY
 ========================= */
 .service-banner {
@@ -267,7 +244,46 @@ text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 10px;
+}
+
+.hero-soft {
+background: linear-gradient(to bottom, #ffffff, #f7f4fb);
+padding: 8px 15px;
+border-radius: 20px;
+margin-top: 5px;
+}
+
+.hero-soft > *:first-child {
+margin-top: 0;
+}
+
+.hero-title-image {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 520px;
+  width: 85%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+}
+
+.tagline {
+  margin-bottom: 8px;
+}
+
+.hero-title-image {
+  margin-bottom: 12px;
+}
+
+.logo {
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  margin: 12px 0 20px;
+}
+
+.cta-button {
+  margin-top: 8px;
 }
 
 /* =========================
