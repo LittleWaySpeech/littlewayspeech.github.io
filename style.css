@@ -501,20 +501,6 @@ img {
   color: #777;
 }
 
-/* BIG FADED QUOTE (BACKGROUND STYLE) */
-.testimonial p::before {
-  content: "“";
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 120px;
-  color: var(--secondary);
-  opacity: 0.08;
-  z-index: 0;
-  pointer-events: none;
-}
-
 .testimonial p::after {
   content: none;
 }
@@ -544,7 +530,7 @@ img {
 }
 
 .dot.active {
-  background-color: ##9323de;
+  background-color: #9323de;
   transform: scale(1.2);
 }
 
