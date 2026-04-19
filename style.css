@@ -882,6 +882,10 @@ footer {
   display: none;
 }
 
+img {
+  border: 5px solid red !important;
+}
+
 /* =========================
 MOBILE
 ========================= */
