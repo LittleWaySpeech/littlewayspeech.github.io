@@ -267,11 +267,13 @@ margin-top: 0;
 }
 
 .tagline {
+  margin-top: 1px;
   margin-bottom: 12px;
 }
 
 .hero-title-image {
-  margin-bottom: 12px;
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
 .logo {
@@ -280,14 +282,17 @@ margin-top: 0;
 
 .little-way-logo  {
   margin-bottom: 8px;
+  margin-top: 6px;
 }
 
 .hero-subtitle {
   margin: 12px 0 20px;
+  margin-top: 6px;
 }
 
 .cta-button {
   margin-top: 8px;
+  margin-top: 6px;
 }
 
 /* =========================
