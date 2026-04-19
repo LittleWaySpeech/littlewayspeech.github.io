@@ -259,7 +259,7 @@ margin-top: 0;
 
 .hero-title-image {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   max-width: 520px;
   width: 85%;
   height: auto;
@@ -286,7 +286,7 @@ margin-top: 0;
 }
 
 .hero-subtitle {
-  margin: 12px 0 20px;
+  margin: 10px 0 15px;
   margin-top: 6px;
 }
 
