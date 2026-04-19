@@ -231,10 +231,11 @@ margin-bottom: 10px;
 }
 
 .tagline {
-font-size: clamp(16px, 2vw, 20px);
-font-weight: 600;
-margin-bottom: 24px;
-color: var(--accent);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 1px;
+  margin-bottom: 28px;
 }
 
 .hero-content {
@@ -259,9 +260,10 @@ margin-top: 0;
 
 .hero-title-image {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 8px;
   max-width: 520px;
-  margin-top: 24px;
   width: 85%;
   height: auto;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
