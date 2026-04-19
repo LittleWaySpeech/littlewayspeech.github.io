@@ -884,6 +884,10 @@ h1 { font-size: 34px; }
 h2 { font-size: 26px; }
 h3 { font-size: 20px; }
 
+h1, h2, h3, p {
+  overflow-wrap: break-word;
+}
+
 .hero {
   padding: 30px 16px;
 }
