@@ -234,7 +234,7 @@ margin-bottom: 10px;
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 600;
   color: var(--accent);
-  margin-top: 1px;
+  margin-top: 0px;
   margin-bottom: 32px;
 }
 
