@@ -46,6 +46,8 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--primary);
 text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+word-break: normal;
+overflow-wrap: break-word;
 }
 
 h1 {
@@ -625,6 +627,11 @@ img {
    margin: 0;
 }
 
+.bio-text,
+.rate-text {
+  min-width: 0;
+}
+
 /* =========================
    RATE
 ========================= */
@@ -634,11 +641,14 @@ img {
    border-radius: 20px;
    padding: 20px 26px;
    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+   flex-wrap: nowrap;
+  }
 
 
    display: flex;
    justify-content: space-between;
    align-items: center;
+  }
 
 
    text-decoration: none;
@@ -677,6 +687,7 @@ img {
 .rate-price {
    font-size: 24px;
    font-weight: 700;
+   white-space: nowrap;
 }
 
 .rates-vertical {
@@ -774,10 +785,6 @@ footer {
    border-top: 1px solid rgba(75,42,122,0.08);
    margin-top: 15px;
 }
-
-/* =========================
-   FORM LAYOUT
-========================= */
 
 /* =========================
    FORM
@@ -904,7 +911,12 @@ height: 150px;
 flex-direction: column;
 flex-wrap: wrap;
 text-align: center;
-  }
+gap: 20px;
+}
+
+.bio-text {
+  text-align: center;
+}
 
 .bio-image-wrap {
     margin-bottom: 20px;
@@ -915,7 +927,6 @@ height: auto;
 object-fit: contain;
   }
 
-  @media (max-width: 600px) {
   .badge-footer {
     gap: 20px;
   }
@@ -924,12 +935,19 @@ object-fit: contain;
     max-height: 70px;
   }
 
-@media (max-width: 600px) {
   .testimonial-wrapper {
     padding: 40px 15px;
   }
 
   .testimonial p {
     font-size: 1.1rem;
+  }
+
+  .rate-item {
+    gap: 10px;
+  }
+
+  .rate-price {
+    font-size: 20px;
   }
 }
