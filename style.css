@@ -267,7 +267,7 @@ margin-top: 0;
 }
 
 .tagline {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .hero-title-image {
@@ -275,6 +275,10 @@ margin-top: 0;
 }
 
 .logo {
+  margin-bottom: 8px;
+}
+
+.little-way-logo  {
   margin-bottom: 8px;
 }
 
