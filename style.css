@@ -885,35 +885,37 @@ h2 { font-size: 26px; }
 h3 { font-size: 20px; }
 
 .hero {
-padding: 30px 16px;
+  padding: 30px 16px;
 }
 
 .hero-title {
-font-size: 42px;
+  font-size: 42px;
 }
 
 .hero-subtitle {
-font-size: 30px;
+  font-size: 30px;
 }
 
 .tagline {
-font-size: 18px;
-}
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .cards {
-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .circle-image {
-width: 150px;
-height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .bio-layout {
-flex-direction: column;
-flex-wrap: wrap;
-text-align: center;
-gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
 }
 
 .bio-text {
@@ -925,31 +927,34 @@ gap: 20px;
   }
 
 .bottom-banner img {
-height: auto;
-object-fit: contain;
+  height: auto;
+  object-fit: contain;
   }
 
-  .badge-footer {
-    gap: 20px;
+.badge-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   }
 
-  .badge-footer img {
-    max-height: 70px;
+.badge-footer img {
+  max-height: 70px;
+  margin: 0 auto;
   }
 
-  .testimonial-wrapper {
-    padding: 40px 15px;
+.testimonial-wrapper {
+  padding: 40px 15px;
   }
 
-  .testimonial p {
-    font-size: 1.1rem;
+.testimonial p {
+  font-size: 1.1rem;
   }
 
-  .rate-item {
-    gap: 10px;
+.rate-item {
+  gap: 10px;
   }
 
-  .rate-price {
-    font-size: 20px;
+.rate-price {
+  font-size: 20px;
   }
 }
