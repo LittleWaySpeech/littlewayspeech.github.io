@@ -261,6 +261,7 @@ margin-top: 0;
   display: block;
   margin: 0 auto 10px;
   max-width: 520px;
+  margin-top: 24px;
   width: 85%;
   height: auto;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
