@@ -271,8 +271,8 @@ margin-top: 0;
 }
 
 .logo {
-  margin-top: 20px;
-  margin-bottom: 8px;
+  margin: 0 auto 8px auto;
+
 }
 
 .little-way-logo  {
