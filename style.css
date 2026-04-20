@@ -399,6 +399,11 @@ img {
    opacity: 0.9;
 }
 
+.meaningful-img {
+  max-height: 55px;
+  width: auto;
+}
+
 .bottom-banner {
   width: 100%;
   margin-top: 40px;
