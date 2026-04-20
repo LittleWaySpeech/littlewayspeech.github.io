@@ -943,6 +943,10 @@ h1, h2, h3, p {
     margin-bottom: 20px;
   }
 
+.meaningful-img {
+    max-height: 45px;
+  }
+
 .bottom-banner img {
   height: auto;
   object-fit: contain;
