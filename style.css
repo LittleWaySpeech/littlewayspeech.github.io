@@ -892,7 +892,7 @@ h1, h2, h3, p {
   overflow-wrap: break-word;
 }
   
-  .mobile-break {
+.mobile-break {
   display: inline;
 }
 
