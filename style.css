@@ -944,16 +944,17 @@ h1, h2, h3, p {
   }
 
 .badge-footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
-  justify-content: center;   /* centers the whole grid */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* centers all rows */
+  align-items: center;
   gap: 20px;
   }
 
 .badge-footer img {
   max-height: 70px;
+  width: auto;
   display: block;
-  margin: 0 auto;
   }
 
 .testimonial-wrapper {
