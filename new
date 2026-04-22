@@ -1,1 +1,56 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="geo.region" content="US-CA">
+  <meta name="geo.placename" content="San Diego">
+
+  <title>New Clients | Little Way Speech Therapy</title>
+  <meta name="description" content="New client forms required for new clients of Little Way Speech Therapy.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="top-accent-bar"></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="rates.html" class="active">Rates</a>
+    <a href="students.html">Students</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- INTRO -->
+  <section class="section hero-soft rates-hero">
+    <div class="container">
+      <h1>New Client Forms</h1>
+
+    </div>
+    
+    <img src="little-way-logo-small.png" class="small-logo">
+  </div>
+
+      <p class="purple-text">
+        Prior to your first appointment, please fill out and return the following documents.
+      </p>
+    </div>
+  </section>
