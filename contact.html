@@ -12,13 +12,10 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -38,93 +35,96 @@
 
 <main>
 
-<section class="section">
-  <div class="container">
-    <h1>Let’s Connect</h1>
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <h1>Let's Connect</h1>
 
-    <p class="purple-text">
-      Have a question or wondering if speech therapy can help your child?
-    </p>
+      <p class="purple-text">
+        Have a question or wondering whether speech therapy could help your child?
+      </p>
 
-    <p>
-      Reaching out is the next step!
-    </p>
-  </div>
-</section>
+      <p>Reaching out is the first step.</p>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container">
+  <!-- FORM -->
+  <section class="section">
+    <div class="container">
 
-    <div class="contact-card">
+      <div class="contact-card">
 
-      <div id="selected-service-banner" class="service-banner"></div>
+        <div id="selected-service-banner" class="service-banner"></div>
 
-      <form action="https://formspree.io/f/mgopnkok" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/mgopnkok" method="POST" class="contact-form">
 
-        <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
-        <input type="hidden" name="_next" value="contact.html?submitted=true">
-        <input type="text" name="_gotcha" style="display:none">
+          <input type="hidden" name="_subject" value="New Website Inquiry – Little Way Speech Therapy">
+          <input type="hidden" name="_next" value="contact.html?submitted=true">
+          <input type="text" name="_gotcha" style="display:none">
 
-        <label>Name</label>
-        <input type="text" name="name" placeholder="Parent/caregiver name" required>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Parent or caregiver name" required>
 
-        <label>Email</label>
-        <input type="email" name="email" placeholder="guardian@example.com" required>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
 
-        <label>Type of Support</label>
-        <select id="service" name="service">
-          <option value="In-Home Services">In-Home Services</option>
-          <option value="Virtual Services">Virtual Services</option>
-          <option value="Single Service Evaluation">Single Service Evaluation</option>
-          <option value="General Inquiry">General inquiries</option>
-        </select>
+          <label>Type of Support</label>
+          <select id="service" name="service">
+            <option value="In-Home Services">In-Home Services</option>
+            <option value="Virtual Services">Virtual Services</option>
+            <option value="Single Service Evaluation">Single-Service Evaluation</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
 
-        <textarea name="message" placeholder="Optional:  Please tell me a little about your child."></textarea>
+          <label>Message (optional)</label>
+          <textarea name="message" placeholder="Feel free to share a little about your child and what brings you here."></textarea>
 
-        <p class="contact-note">
-          Please do not include sensitive medical or confidential information.
-        </p>
+          <p class="contact-note">
+            Please do not include sensitive medical or confidential information in this form.
+          </p>
 
-        <button type="submit">Send Message</button>
+          <button type="submit">Send Message</button>
 
-      </form>
+        </form>
 
-      <div class="thank-you-message">
-        Thank you! Your message has been received.
+        <div class="thank-you-message">
+          Thank you! Your message has been received.
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-        <img src="Skipper.jpg" class="circle-image">
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="quote-card">
-      <p class="quote">
-        “The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm.  If every tiny flower wanted to be a rose, spring would lose its loveliness.”
-      </p>
-      <p class="quote-author">— St. Thérèse of Lisieux</p>
+  <!-- PHOTO -->
+  <section class="section">
+    <div class="container">
+      <img src="Skipper.jpg" class="circle-image" alt="Skipper, Kat's dog">
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="section">
+    <div class="container">
+      <div class="quote-card">
+        <p class="quote">
+          "The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm. If every tiny flower wanted to be a rose, spring would lose its loveliness."
+        </p>
+        <p class="quote-author">— St. Thérèse of Lisieux</p>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <!-- BADGES -->
 <div class="badge-footer">
-  <img src="ASHA-logo-black.png" alt="ASHA CCC">
-  <img src="ACE.png" alt="ACE Award">
-  <img src="prompt.png" alt="Prompt Trained SLP">
-  <img src="ally.png" alt="Ally of Stuttering">
+  <img src="ASHA-logo-black.png" alt="ASHA Certificate of Clinical Competence">
+  <img src="ACE.png" alt="ASHA ACE Award">
+  <img src="prompt.png" alt="PROMPT Trained SLP">
+  <img src="ally.png" alt="Ally of Stuttering — Spero Stuttering">
   <img src="orton.png" alt="Orton-Gillingham Academy">
-  <img src="meaningful-speech.png" class="meaningful-img" alt="Meaningful Speech NLA">
+  <img src="meaningful-speech.png" class="meaningful-img" alt="Meaningful Speech — Natural Language Acquisition">
 </div>
 
 <footer>
@@ -142,7 +142,7 @@
   }
 
   const serviceParam = params.get("service");
-  const messageField = document.getElementById("message");
+  const messageField = document.querySelector("textarea[name='message']");
   const serviceDropdown = document.getElementById("service");
   const banner = document.getElementById("selected-service-banner");
 
@@ -153,16 +153,16 @@
 
     if (messageField) {
       messageField.value =
-        "Hello,\n\nI’m interested in learning more about " +
+        "Hello,\n\nI'm interested in learning more about " +
         readable +
         " services.\n\nThank you!";
     }
 
     if (serviceDropdown) {
       if (readable.includes("Evaluation")) {
-        serviceDropdown.value = "Evaluation";
+        serviceDropdown.value = "Single Service Evaluation";
       } else {
-        serviceDropdown.value = "Ongoing Therapy";
+        serviceDropdown.value = "In-Home Services";
       }
     }
 
