@@ -22,14 +22,6 @@ LITTLE WAY SPEECH THERAPY
   --space-lg: 18px;
 }
 
-<!-- INTRO -->
-<section class="section hero-soft services-hero"
-         style="margin-bottom: 0; padding-bottom: 5px;">
-
-<!-- AREAS -->
-<section class="section hero-soft services-hero"
-         style="margin-top: 0; padding-top: 5px; border-radius: 0;">
-
 /* =========================
    BASE + TYPOGRAPHY
 ========================= */
@@ -81,6 +73,20 @@ h1 .sub-line {
 p {
   margin-bottom: 12px;
   line-height: 1.65;
+}
+
+/* =========================
+   WELCOME TEXT
+========================= */
+.welcome-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 700;
+  color: #4b2a7a;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 14px auto;
+  letter-spacing: 0.01em;
 }
 
 /* =========================
@@ -863,6 +869,10 @@ footer {
 
   .mobile-break {
     display: inline;
+  }
+
+  .welcome-text {
+    font-size: 20px;
   }
 
   .hero {
