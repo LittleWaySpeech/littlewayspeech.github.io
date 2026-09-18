@@ -491,6 +491,17 @@ nav a:hover::after {
   box-shadow: var(--shadow-soft);
 }
 
+.quote-card.interactive {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.quote-card.interactive:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lift);
+  border-color: var(--lilac);
+}
+
 .quote {
   font-family: 'Cormorant Garamond', serif;
   color: var(--primary);
