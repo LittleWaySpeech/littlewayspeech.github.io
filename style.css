@@ -317,6 +317,9 @@ nav a:hover::after {
 .card h3 { margin-bottom: 8px; }
 .card p { margin-bottom: 0; max-width: none; }
 
+/* =========================
+   MEMBER BADGE / VENDOR CODES PANEL
+========================= */
 .member-badge-panel {
   background: #ffffff;
   padding: clamp(22px, 3vw, 28px);
@@ -324,16 +327,39 @@ nav a:hover::after {
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border);
   margin-top: clamp(18px, 2.5vw, 26px);
-  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 3vw, 32px);
+  text-align: left;
 }
 
-.member-badge-panel p {
-  margin: 0;
+.member-badge-panel .badge-side {
+  flex-shrink: 0;
 }
 
 .member-badge-panel img {
   display: inline-block;
   vertical-align: middle;
+}
+
+.member-badge-panel .vendor-side h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.member-badge-panel .vendor-side p {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  max-width: none;
+  color: var(--ink-soft);
+}
+
+.member-badge-panel .vendor-side strong {
+  color: var(--primary);
 }
 
 /* =========================
@@ -894,6 +920,11 @@ footer {
   .badge-footer img { max-height: 42px; }
 
   .testimonial-wrapper { padding: 48px 16px; }
+
+  .member-badge-panel {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
